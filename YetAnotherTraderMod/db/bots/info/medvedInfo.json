@@ -1,0 +1,23 @@
+{
+  "nvgIsActiveChanceDayPercent": 5,
+  "nvgIsActiveChanceNightPercent": 85,
+  "faceShieldIsActiveChancePercent": 100,
+  "lightIsActiveDayChancePercent": 25,
+  "lightIsActiveNightChancePercent": 85,
+  "laserIsActiveChancePercent": 75,
+  "weaponSightWhitelist": {},
+  "weightingAdjustmentsByBotLevel": [],
+  "weightingAdjustmentsByPlayerLevel": [],
+  "randomisation": [],
+  "armorPlateWeighting": [],
+  "blacklist": [],
+  "whitelist": [],
+  "weaponModLimits": {
+    "scopeLimit": 2,
+    "lightLaserLimit": 2
+  },
+  "filterPlatesByLevel": false,
+  "forceOnlyArmoredRigWhenNoArmor": true,
+  "forceStock": false,
+  "weaponSlotIdsToMakeRequired": []
+}

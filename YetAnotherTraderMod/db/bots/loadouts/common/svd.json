@@ -1,0 +1,63 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "svd_mags": {
+      "svd 10rd": {
+        "id": "5c471c442e221602b542a6f8",
+        "chance": 70
+      },
+      "svd 20rd": {
+        "id": "5c471c6c2e221602b66cd9ae",
+        "chance": 30
+      }
+    },
+    "svd_muzzles": {
+      "svd brake": {
+        "id": "5c471b7e2e2216152006e46c",
+        "chance": 60
+      },
+      "svd suppressor": {
+        "id": "5c471bfc2e221602b21d4e17",
+        "chance": 40
+      }
+    },
+    "svd_mounts": {
+      "svd low mount": {
+        "id": "5c471ba12e221602b3137d76",
+        "chance": 50,
+        "slots": {
+          "mod_scope": [
+            "scopes_long",
+            "scopes_mid"
+          ]
+        }
+      },
+      "svd b13v": {
+        "id": "5c471b5d2e221602b21d4e14",
+        "chance": 50,
+        "slots": {
+          "mod_scope": [
+            "scopes_long",
+            "scopes_mid"
+          ]
+        }
+      }
+    },
+    "svd_stocks": {
+      "svd stock": {
+        "id": "5c471bfc2e221602b21d4e17",
+        "chance": 40
+      },
+      "svd modern stock": {
+        "id": "5d2f2ab648f03550091993ca",
+        "chance": 60,
+        "slots": {
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ]
+        }
+      }
+    }
+  }
+}

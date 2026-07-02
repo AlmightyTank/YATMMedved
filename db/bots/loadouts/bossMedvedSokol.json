@@ -1,0 +1,158 @@
+{
+  "equipment": {
+    "FirstPrimaryWeapon": {
+      "ak103 commander": {
+        "id": "5ac66d9b5acfc4001633997a",
+        "chance": 60,
+        "slots": {
+          "mod_magazine": [
+            "ak762_mags"
+          ],
+          "mod_muzzle": [
+            "ak_muzzles_762"
+          ],
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ],
+          "mod_stock": [
+            "ak_stocks"
+          ],
+          "mod_reciever": [
+            "ak_dust_covers"
+          ],
+          "mod_handguard": [
+            "ak_handguards"
+          ],
+          "mod_mount": [
+            "ak_dovetail_mounts"
+          ]
+        }
+      },
+      "as val commander": {
+        "id": "57c44b372459772d2b39b8ce",
+        "chance": 40,
+        "slots": {
+          "mod_magazine": [
+            "val_mags"
+          ],
+          "mod_mount": [
+            "val_mounts"
+          ],
+          "mod_reciever": [
+            "val_dust_covers"
+          ]
+        }
+      }
+    },
+    "SecondPrimaryWeapon": {
+      "saiga backup": {
+        "id": "576165642459773c7a400233",
+        "chance": 25,
+        "slots": {
+          "mod_magazine": [
+            "saiga12_mags"
+          ],
+          "mod_muzzle": [
+            "shotgun_muzzles"
+          ],
+          "mod_reciever": [
+            "saiga12_dust_covers"
+          ],
+          "mod_handguard": [
+            "saiga12_handguards"
+          ]
+        }
+      }
+    },
+    "Headwear": {
+      "altyn": {
+        "id": "5aa7e276e5b5b000171d0647",
+        "chance": 55
+      },
+      "rys-t": {
+        "id": "5f60b34a41e30a4ab12a6947",
+        "chance": 45
+      }
+    },
+    "TacticalVest": {
+      "tv110": {
+        "id": "5c0e722886f7740458316a57",
+        "chance": 55,
+        "slots": {
+          "Front_plate": [
+            "plates"
+          ],
+          "Back_plate": [
+            "plates"
+          ],
+          "Left_side_plate": [
+            "plates_side"
+          ],
+          "Right_side_plate": [
+            "plates_side"
+          ]
+        }
+      },
+      "6b13 assault": {
+        "id": "5c0e746986f7741453628fe5",
+        "chance": 45,
+        "slots": {
+          "Front_plate": [
+            "plates"
+          ],
+          "Back_plate": [
+            "plates"
+          ]
+        }
+      }
+    },
+    "Earpiece": {
+      "gssh": {
+        "id": "5b432b2f5acfc4771e1c6622",
+        "chance": 40
+      },
+      "comtac2": {
+        "id": "5645bcc04bdc2d363b8b4572",
+        "chance": 35
+      },
+      "rac": {
+        "id": "5aa2ba71e5b5b000137b758f",
+        "chance": 25
+      }
+    },
+    "Eyewear": {
+      "condor": {
+        "id": "603409c80ca681766b6a0fb2",
+        "chance": 60
+      },
+      "crossbow": {
+        "id": "5d5fca1ea4b93635fd598c07",
+        "chance": 40
+      }
+    },
+    "FaceCover": {
+      "momex": {
+        "id": "5b432f3d5acfc4704b4a1dfb",
+        "chance": 50
+      },
+      "ghost balaclava": {
+        "id": "5ab8f39486f7745cd93a1cca",
+        "chance": 50
+      }
+    },
+    "Pockets": {
+      "default pockets": {
+        "id": "557ffd194bdc2d28148b457f",
+        "chance": 100
+      }
+    },
+    "Scabbard": {
+      "knife": {
+        "id": "54491bb74bdc2d09088b4567",
+        "chance": 100
+      }
+    }
+  },
+  "weapons": {},
+  "categories": {}
+}

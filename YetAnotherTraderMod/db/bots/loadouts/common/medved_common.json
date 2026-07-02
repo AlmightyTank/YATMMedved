@@ -1,0 +1,141 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "sights": {
+      "eotech 553": {
+        "id": "570fd6c2d2720bc6458b457f",
+        "chance": 25
+      },
+      "xps3-0": {
+        "id": "558022b54bdc2dac148b458d",
+        "chance": 20
+      },
+      "ekp cobra": {
+        "id": "5947db3f86f77447880cf76f",
+        "chance": 20
+      },
+      "pso reflex": {
+        "id": "58491f3324597764bc48fa02",
+        "chance": 15
+      },
+      "okp-7 dovetail": {
+        "id": "5d2da1e948f035477b1ce2ba",
+        "chance": 20
+      }
+    },
+    "scopes_mid": {
+      "pso1": {
+        "id": "5c82342f2e221644f31c0611",
+        "chance": 35
+      },
+      "pso1m2": {
+        "id": "5c82343a2e221644f31c0613",
+        "chance": 25
+      },
+      "valday": {
+        "id": "5b3b6dc75acfc47a8773fb1e",
+        "chance": 20
+      },
+      "elcan": {
+        "id": "57ac965c24597706be5f975c",
+        "chance": 20
+      }
+    },
+    "scopes_long": {
+      "pso1": {
+        "id": "5c82342f2e221644f31c0611",
+        "chance": 40
+      },
+      "pso1m2": {
+        "id": "5c82343a2e221644f31c0613",
+        "chance": 30
+      },
+      "sv98 1p69": {
+        "id": "5d0a29ead7ad1a0026013f27",
+        "chance": 10
+      },
+      "elcan": {
+        "id": "57ac965c24597706be5f975c",
+        "chance": 20
+      }
+    },
+    "lasers_common": {
+      "klesh light": {
+        "id": "560d657b4bdc2da74d8b4572",
+        "chance": 35
+      },
+      "perst-3": {
+        "id": "5c5952732e2216398b5abda2",
+        "chance": 35
+      },
+      "x400": {
+        "id": "56def37dd2720bec348b456a",
+        "chance": 30
+      }
+    },
+    "lights": {
+      "klesh light": {
+        "id": "560d657b4bdc2da74d8b4572",
+        "chance": 60
+      },
+      "25mm ring": {
+        "id": "57d17e212459775a1179a0f5",
+        "chance": 40,
+        "slots": {
+          "mod_flashlight": [
+            "lights_25"
+          ]
+        }
+      }
+    },
+    "lights_25": {
+      "ultrafire wf": {
+        "id": "57d17c5e2459775a5c57d17d",
+        "chance": 100
+      }
+    },
+    "foregrips": {
+      "rk-0": {
+        "id": "5649ade84bdc2d1b2b8b4587",
+        "chance": 30
+      },
+      "rk-1": {
+        "id": "558032614bdc2de7118b4585",
+        "chance": 30
+      },
+      "b-25u": {
+        "id": "5c1bc5fb2e221602b1779b32",
+        "chance": 20
+      },
+      "shift": {
+        "id": "5b057b4f5acfc4771e1bd3e9",
+        "chance": 20
+      }
+    },
+    "plates": {
+      "korund plate": {
+        "id": "656f9d5900d62bcd2e02407c",
+        "chance": 35
+      },
+      "granite plate": {
+        "id": "656f9fa0498d1b7e3e071d98",
+        "chance": 35
+      },
+      "sapi plate": {
+        "id": "655746010177119f4a097ff7",
+        "chance": 30
+      }
+    },
+    "plates_side": {
+      "sapi side": {
+        "id": "6557458f83942d705f0c4962",
+        "chance": 60
+      },
+      "esapi side": {
+        "id": "64afdb577bb3bfe8fe03fd1d",
+        "chance": 40
+      }
+    }
+  }
+}

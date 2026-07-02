@@ -1,0 +1,70 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "saiga12_mags": {
+      "saiga 5rd": {
+        "id": "57616a9e2459773c7a400234",
+        "chance": 40
+      },
+      "saiga 10rd": {
+        "id": "57616ca52459773c69055192",
+        "chance": 45
+      },
+      "saiga 20rd drum": {
+        "id": "5cf8f3b0d7f00c00217872ef",
+        "chance": 15
+      }
+    },
+    "shotgun_muzzles": {
+      "gk-02": {
+        "id": "5a787f7ac5856700177af660",
+        "chance": 45
+      },
+      "hexagon 12k": {
+        "id": "59fb137a86f7740adb646af1",
+        "chance": 35
+      },
+      "salvo adapter": {
+        "id": "5a78813bc5856700186c4abe",
+        "chance": 20
+      }
+    },
+    "saiga12_dust_covers": {
+      "saiga dust cover": {
+        "id": "57616c112459773cce774d66",
+        "chance": 35
+      },
+      "saiga railed cover": {
+        "id": "57616c112459773cce774d66",
+        "chance": 65,
+        "slots": {
+          "mod_scope": [
+            "sights"
+          ]
+        }
+      }
+    },
+    "saiga12_handguards": {
+      "saiga polymer handguard": {
+        "id": "576169e62459773c69055191",
+        "chance": 40
+      },
+      "saiga b-10m handguard": {
+        "id": "5d2c829448f0353a5c7d6674",
+        "chance": 60,
+        "slots": {
+          "mod_foregrip": [
+            "foregrips"
+          ],
+          "mod_tactical_000": [
+            "lasers_common"
+          ],
+          "mod_tactical_001": [
+            "lights"
+          ]
+        }
+      }
+    }
+  }
+}

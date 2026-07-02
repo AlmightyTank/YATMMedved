@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>YATMMedvedPrepatch</AssemblyName>
+    <Description>YATM Medved prepatch needed to add custom MoreBotsAPI WildSpawnTypes.</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug;Release</Configurations>
+    <RootNamespace>YetAnotherTraderMod</RootNamespace>
+
+    <!-- Change this if your SPT folder is somewhere else. Do NOT prefix this with $(ProjectDir). -->
+    <SptInstallPath Condition="'$(SptInstallPath)' == ''">C:\RealSPT</SptInstallPath>
+    <PrepatchDeployDir>$(SptInstallPath)\BepInEx\patchers\</PrepatchDeployDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreBotsPrepatch">
+      <HintPath>..\Reference\MoreBotsPrepatch.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SptInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(SptInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>$(SptInstallPath)\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="DeployPrepatchToSPT" AfterTargets="Build">
+    <MakeDir Directories="$(PrepatchDeployDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PrepatchDeployDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
