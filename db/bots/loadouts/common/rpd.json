@@ -1,0 +1,98 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "rpd_mags": {
+      "rpd 100rd buben": {
+        "id": "6513f0a194c72326990a3868",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_stocks": {
+      "rpd wooden stock": {
+        "id": "6513f1798cb24472490ee331",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_barrels": {
+      "rpd 520mm barrel": {
+        "id": "6513eff1e06849f06c0957d4",
+        "chance": 60,
+        "children": {},
+        "slots": {
+          "mod_muzzle": [
+            "rpd_muzzles"
+          ],
+          "mod_bipod": [
+            "rpd_bipods"
+          ]
+        }
+      },
+      "rpdn 520mm barrel": {
+        "id": "65266fd43341ed9aa903dd56",
+        "chance": 40,
+        "children": {},
+        "slots": {
+          "mod_muzzle": [
+            "rpd_muzzles"
+          ],
+          "mod_bipod": [
+            "rpd_bipods"
+          ]
+        }
+      }
+    },
+    "rpd_handguards": {
+      "rpd wooden handguard": {
+        "id": "6513f05a94c72326990a3866",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_rear_sights": {
+      "rpd rear sight": {
+        "id": "6513f153e63f29908d0ffaba",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_muzzles": {
+      "rpd thread protector": {
+        "id": "6513f0f5e63f29908d0ffab8",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_bipods": {
+      "rpd bipod": {
+        "id": "6513f037e06849f06c0957d7",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "rpd_weapon_slots": {
+      "rpd slot package": {
+        "id": "6513ef33e06849f06c0957ca",
+        "slots": {
+          "mod_magazine": [
+            "rpd_mags"
+          ],
+          "mod_stock": [
+            "rpd_stocks"
+          ],
+          "mod_barrel": [
+            "rpd_barrels"
+          ],
+          "mod_handguard": [
+            "rpd_handguards"
+          ],
+          "mod_sight_rear": [
+            "rpd_rear_sights"
+          ]
+        }
+      }
+    }
+  }
+}

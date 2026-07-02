@@ -20,19 +20,19 @@ public record ModMetadata : AbstractModMetadata
     public override string Author { get; init; } = "AlmightyTank";
     public override List<string>? Contributors { get; init; } = new();
     public override SemanticVersioning.Version Version { get; init; } = new(1, 0, 0);
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
+    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.13");
     public override List<string>? Incompatibilities { get; init; }
     public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
     {
-        { "com.morebotsapi.tacticaltoaster", new SemanticVersioning.Range(">=2.0.0") },
-        { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.0") }
+        { "com.morebotsapi.tacticaltoaster", new SemanticVersioning.Range(">=2.0.1") },
+        { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.20") }
     };
     public override string? Url { get; init; }
     public override bool? IsBundleMod { get; init; }
     public override string License { get; init; } = "MIT";
 }
 
-[Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 1)]
+[Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 10)]
 public class YATMModPreload(ModHelper modHelper, YATMLogger logger) : IOnLoad
 {
     public static MainConfig ModConfig { get; private set; } = new();

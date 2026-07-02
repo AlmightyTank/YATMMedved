@@ -5,56 +5,90 @@
     "svd_mags": {
       "svd 10rd": {
         "id": "5c471c442e221602b542a6f8",
-        "chance": 70
+        "chance": 60,
+        "children": {}
       },
       "svd 20rd": {
         "id": "5c471c6c2e221602b66cd9ae",
-        "chance": 30
+        "chance": 40,
+        "children": {}
       }
     },
     "svd_muzzles": {
       "svd brake": {
         "id": "5c471b7e2e2216152006e46c",
-        "chance": 60
+        "chance": 55,
+        "children": {}
       },
       "svd suppressor": {
         "id": "5c471bfc2e221602b21d4e17",
-        "chance": 40
+        "chance": 45,
+        "children": {}
       }
     },
     "svd_mounts": {
       "svd low mount": {
         "id": "5c471ba12e221602b3137d76",
-        "chance": 50,
+        "chance": 45,
+        "children": {},
         "slots": {
           "mod_scope": [
             "scopes_long",
-            "scopes_mid"
+            "scopes_mid",
+            "scope_30mm_mounts"
           ]
         }
       },
       "svd b13v": {
         "id": "5c471b5d2e221602b21d4e14",
-        "chance": 50,
+        "chance": 45,
+        "children": {},
         "slots": {
           "mod_scope": [
             "scopes_long",
-            "scopes_mid"
+            "scopes_mid",
+            "scope_30mm_mounts"
+          ]
+        }
+      },
+      "pso direct": {
+        "id": "5c82342f2e221644f31c0611",
+        "chance": 10,
+        "children": {}
+      }
+    },
+    "svd_stocks": {
+      "svds folding stock": {
+        "id": "5c471cb32e221602b177afaa",
+        "chance": 60,
+        "children": {}
+      },
+      "svd modern stock": {
+        "id": "5d2f2ab648f03550091993ca",
+        "chance": 40,
+        "children": {},
+        "slots": {
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
           ]
         }
       }
     },
-    "svd_stocks": {
-      "svd stock": {
-        "id": "5c471bfc2e221602b21d4e17",
-        "chance": 40
-      },
-      "svd modern stock": {
-        "id": "5d2f2ab648f03550091993ca",
-        "chance": 60,
+    "svds_weapon_slots": {
+      "svds slot package": {
+        "id": "5c46fbd72e2216398b5a8c9c",
         "slots": {
-          "mod_pistol_grip": [
-            "ak_pistol_grips"
+          "mod_magazine": [
+            "svd_mags"
+          ],
+          "mod_muzzle": [
+            "svd_muzzles"
+          ],
+          "mod_mount": [
+            "svd_mounts"
+          ],
+          "mod_stock": [
+            "svd_stocks"
           ]
         }
       }

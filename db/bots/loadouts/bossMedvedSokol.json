@@ -1,9 +1,9 @@
 {
   "equipment": {
     "FirstPrimaryWeapon": {
-      "ak103 commander": {
-        "id": "5ac66d9b5acfc4001633997a",
-        "chance": 60,
+      "ak103 sokol commander": {
+        "id": "5ac66d2e5acfc43b321d4b53",
+        "chance": 40,
         "slots": {
           "mod_magazine": [
             "ak762_mags"
@@ -28,128 +28,208 @@
           ]
         }
       },
-      "as val commander": {
-        "id": "57c44b372459772d2b39b8ce",
-        "chance": 40,
+      "sr3m sokol compact commander": {
+        "id": "651450ce0e00edc794068371",
+        "chance": 35,
         "slots": {
-          "mod_magazine": [
-            "val_mags"
-          ],
-          "mod_mount": [
-            "val_mounts"
+          "mod_muzzle": [
+            "sr3m_muzzles"
           ],
           "mod_reciever": [
-            "val_dust_covers"
+            "sr3m_receivers"
+          ],
+          "mod_magazine": [
+            "sr3m_mags"
+          ],
+          "mod_pistol_grip": [
+            "sr3m_pistol_grips"
+          ],
+          "mod_stock": [
+            "sr3m_stocks"
+          ],
+          "mod_charge": [
+            "sr3m_charging_handles"
+          ],
+          "mod_handguard": [
+            "sr3m_handguards"
+          ],
+          "mod_foregrip": [
+            "sr3m_foregrips"
           ]
         }
-      }
-    },
-    "SecondPrimaryWeapon": {
-      "saiga backup": {
-        "id": "576165642459773c7a400233",
+      },
+      "ak74n sokol field rifle": {
+        "id": "5644bd2b4bdc2d3b4c8b4572",
         "chance": 25,
         "slots": {
           "mod_magazine": [
-            "saiga12_mags"
+            "ak545_mags"
           ],
           "mod_muzzle": [
-            "shotgun_muzzles"
+            "ak_muzzles_545"
+          ],
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ],
+          "mod_stock": [
+            "ak_stocks"
           ],
           "mod_reciever": [
-            "saiga12_dust_covers"
+            "ak_dust_covers"
           ],
           "mod_handguard": [
-            "saiga12_handguards"
+            "ak_handguards"
           ]
         }
       }
     },
-    "Headwear": {
-      "altyn": {
-        "id": "5aa7e276e5b5b000171d0647",
-        "chance": 55
+    "ArmorVest": {
+      "6b13 assault armor": {
+        "id": "5c0e746986f7741453628fe5",
+        "chance": 55,
+        "children": {},
+        "slots": {
+          "Front_plate": [
+            "plates"
+          ],
+          "Back_plate": [
+            "plates"
+          ]
+        }
       },
-      "rys-t": {
-        "id": "5f60b34a41e30a4ab12a6947",
-        "chance": 45
+      "gzhel armor": {
+        "id": "5ab8e79e86f7742d8b372e78",
+        "chance": 45,
+        "children": {},
+        "slots": {
+          "Front_plate": [
+            "plates"
+          ],
+          "Back_plate": [
+            "plates"
+          ]
+        }
       }
     },
     "TacticalVest": {
-      "tv110": {
-        "id": "5c0e722886f7740458316a57",
-        "chance": 55,
+      "blackrock rig": {
+        "id": "5648a69d4bdc2ded0b8b457b",
+        "chance": 40,
+        "children": {}
+      },
+      "alpha rig": {
+        "id": "5c0e9f2c86f77432297fe0a3",
+        "chance": 35,
+        "children": {}
+      },
+      "triton rig": {
+        "id": "545cdb794bdc2d3a198b456a",
+        "chance": 25,
+        "children": {}
+      }
+    },
+    "Backpack": {
+      "berkut": {
+        "id": "5ca20d5986f774331e7c9602",
+        "chance": 40,
+        "children": {}
+      },
+      "tri-zip": {
+        "id": "545cdae64bdc2d39198b4568",
+        "chance": 35,
+        "children": {}
+      },
+      "scav backpack": {
+        "id": "56e335e4d2720b6c058b456d",
+        "chance": 25,
+        "children": {}
+      }
+    },
+    "Headwear": {
+      "altyn with shield": {
+        "id": "5aa7e276e5b5b000171d0647",
+        "chance": 50,
+        "children": {},
         "slots": {
-          "Front_plate": [
-            "plates"
-          ],
-          "Back_plate": [
-            "plates"
-          ],
-          "Left_side_plate": [
-            "plates_side"
-          ],
-          "Right_side_plate": [
-            "plates_side"
+          "mod_equipment": [
+            "altyn_faceshields"
           ]
         }
       },
-      "6b13 assault": {
-        "id": "5c0e746986f7741453628fe5",
-        "chance": 45,
+      "rys-t with shield": {
+        "id": "5f60b34a41e30a4ab12a6947",
+        "chance": 35,
+        "children": {},
         "slots": {
-          "Front_plate": [
-            "plates"
-          ],
-          "Back_plate": [
-            "plates"
+          "mod_equipment": [
+            "rys_faceshields"
           ]
         }
+      },
+      "6b47 field helmet": {
+        "id": "5a7c4850e899ef00150be885",
+        "chance": 15,
+        "children": {}
       }
     },
     "Earpiece": {
       "gssh": {
         "id": "5b432b2f5acfc4771e1c6622",
-        "chance": 40
+        "chance": 30,
+        "children": {}
       },
       "comtac2": {
         "id": "5645bcc04bdc2d363b8b4572",
-        "chance": 35
+        "chance": 40,
+        "children": {}
       },
       "rac": {
         "id": "5aa2ba71e5b5b000137b758f",
-        "chance": 25
+        "chance": 30,
+        "children": {}
       }
     },
     "Eyewear": {
       "condor": {
         "id": "603409c80ca681766b6a0fb2",
-        "chance": 60
+        "chance": 60,
+        "children": {}
       },
       "crossbow": {
         "id": "5d5fca1ea4b93635fd598c07",
-        "chance": 40
+        "chance": 40,
+        "children": {}
       }
     },
     "FaceCover": {
       "momex": {
         "id": "5b432f3d5acfc4704b4a1dfb",
-        "chance": 50
+        "chance": 45,
+        "children": {}
       },
       "ghost balaclava": {
         "id": "5ab8f39486f7745cd93a1cca",
-        "chance": 50
+        "chance": 35,
+        "children": {}
+      },
+      "cold fear": {
+        "id": "5e54f62086f774219b0f1937",
+        "chance": 20,
+        "children": {}
       }
     },
     "Pockets": {
       "default pockets": {
         "id": "557ffd194bdc2d28148b457f",
-        "chance": 100
+        "chance": 100,
+        "children": {}
       }
     },
     "Scabbard": {
       "knife": {
         "id": "54491bb74bdc2d09088b4567",
-        "chance": 100
+        "chance": 100,
+        "children": {}
       }
     }
   },

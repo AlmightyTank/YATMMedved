@@ -8,7 +8,7 @@
         "chance": 40
       },
       "saiga 10rd": {
-        "id": "57616ca52459773c69055192",
+        "id": "5998529a86f774647f44f421",
         "chance": 45
       },
       "saiga 20rd drum": {
@@ -18,31 +18,35 @@
     },
     "shotgun_muzzles": {
       "gk-02": {
-        "id": "5a787f7ac5856700177af660",
+        "id": "58272d7f2459774f6311ddfd",
         "chance": 45
       },
       "hexagon 12k": {
-        "id": "59fb137a86f7740adb646af1",
+        "id": "59c0ec5b86f77435b128bfca",
         "chance": 35
       },
       "salvo adapter": {
-        "id": "5a78813bc5856700186c4abe",
-        "chance": 20
+        "id": "5b363e1b5acfc4771e1c5e80",
+        "chance": 20,
+        "slots": {
+          "mod_muzzle": [
+            "5b363dd25acfc4001a598fd2"
+          ]
+        }
+      },
+      "monster-claw": {
+        "id": "59fb137a86f7740adb646af1",
+        "chance": 10
       }
     },
     "saiga12_dust_covers": {
       "saiga dust cover": {
         "id": "57616c112459773cce774d66",
-        "chance": 35
+        "chance": 65
       },
-      "saiga railed cover": {
-        "id": "57616c112459773cce774d66",
-        "chance": 65,
-        "slots": {
-          "mod_scope": [
-            "sights"
-          ]
-        }
+      "saiga zombie dust cover": {
+        "id": "676017fe8cfeeba9f707c8d6",
+        "chance": 35
       }
     },
     "saiga12_handguards": {
@@ -50,10 +54,14 @@
         "id": "576169e62459773c69055191",
         "chance": 40
       },
-      "saiga b-10m handguard": {
-        "id": "5d2c829448f0353a5c7d6674",
+      "saiga bravo-18 handguard": {
+        "id": "5f63418ef5750b524b45f116",
         "chance": 60,
         "slots": {
+          "mod_scope": [
+            "sights",
+            "scopes_mid"
+          ],
           "mod_foregrip": [
             "foregrips"
           ],
@@ -62,6 +70,88 @@
           ],
           "mod_tactical_001": [
             "lights"
+          ]
+        }
+      },
+      "saiga titan_quad_rail_cover": {
+        "id": "5f63418ef5750b524b45f116",
+        "chance": 60,
+        "slots": {
+          "mod_mount": [
+            "saiga12_toprails"
+          ],
+          "mod_foregrip": [
+            "foregrips"
+          ],
+          "mod_tactical": [
+            "lasers_common",
+            "lights"
+          ],
+          "mod_sight_front": [
+            "saiga12_sights"
+          ]
+        }
+      }
+    },
+    "saiga12_stocks": {
+      "saiga stock": {
+        "id": "57616ca52459773c69055192",
+        "chance": 50
+      },
+      "saiga skeleton stock": {
+        "id": "5ac78eaf5acfc4001926317a",
+        "chance": 50,
+        "slots": {
+          "mod_stock": [
+            "59ecc3dd86f7746dc827481c",
+            "5b222d405acfc400153af4fe"
+          ]
+        }
+      }
+    },
+    "saiga12_sights": {
+      "saiga iron front sights": {
+        "id": "5fb6567747ce63734e3fa1dc",
+        "chance": 100
+      },
+      "saiga iron rear sights": {
+        "id": "5fb6564947ce63734e3fa1da",
+        "chance": 100
+      }
+    },
+    "saiga12_toprails": {
+      "saiga top rail": {
+        "id": "674fe8b9362ea1f88b0e278d",
+        "chance": 100,
+        "slots": {
+          "mod_scope": [
+            "sights",
+            "scopes_mid"
+          ],
+          "mod_sight_rear": [
+            "saiga12_sights"
+          ]
+        }
+      }
+    },
+    "saiga12_weapon_slots": {
+      "saiga12 slot package": {
+        "id": "576165642459773c7a400233",
+        "slots": {
+          "mod_magazine": [
+            "saiga12_mags"
+          ],
+          "mod_muzzle": [
+            "shotgun_muzzles"
+          ],
+          "mod_reciever": [
+            "saiga12_dust_covers"
+          ],
+          "mod_handguard": [
+            "saiga12_handguards"
+          ],
+          "mod_stock": [
+            "saiga12_stocks"
           ]
         }
       }

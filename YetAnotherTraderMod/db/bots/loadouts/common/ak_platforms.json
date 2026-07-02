@@ -4,7 +4,7 @@
   "categories": {
     "ak545_mags": {
       "6l23 30rd": {
-        "id": "55d482194bdc2d1d4e8b456b",
+        "id": "55d480c04bdc2d1d4e8b456a",
         "chance": 45
       },
       "6l31 60rd": {
@@ -38,11 +38,11 @@
     },
     "ak_pistol_grips": {
       "ak polymer grip": {
-        "id": "5649ad3f4bdc2df8348b4585",
+        "id": "5649ade84bdc2d1b2b8b4587",
         "chance": 35
       },
       "ak12 grip": {
-        "id": "5beec8c20db834001d2c465c",
+        "id": "5beec8ea0db834001a6f9dbf",
         "chance": 35
       },
       "rk-3 grip": {
@@ -52,25 +52,32 @@
     },
     "ak_stocks": {
       "ak74 polymer stock": {
-        "id": "5649b2314bdc2d79388b4576",
+        "id": "5649b0fc4bdc2d17108b4588",
         "chance": 35
       },
       "zhukov-s": {
         "id": "5b0e794b5acfc47a877359b2",
         "chance": 35
       },
-      "pt-1": {
-        "id": "5b222d405acfc400153af4fe",
-        "chance": 30
+      "pt-lock": {
+        "id": "59ecc28286f7746d7a68aa8c",
+        "chance": 30,
+        "slots": {
+          "mod_stock": [
+            "5b222d405acfc400153af4fe",
+            "6492d7847363b8a52206bc52",
+            "59ecc3dd86f7746dc827481c"
+          ]
+        }
       }
     },
     "ak_muzzles_545": {
       "ak74 brake": {
-        "id": "5649ab884bdc2ded0b8b457f",
+        "id": "5649aa744bdc2ded0b8b457e",
         "chance": 35
       },
       "dtk-1": {
-        "id": "5649aa744bdc2ded0b8b457e",
+        "id": "5649ab884bdc2ded0b8b457f",
         "chance": 30
       },
       "pbs-4": {
@@ -78,8 +85,17 @@
         "chance": 20
       },
       "hexagon ak74": {
-        "id": "593d490386f7745ee97a1555",
+        "id": "593d489686f7745c6255d58a",
         "chance": 15
+      },
+      "reactor": {
+        "id": "615d8f5dd92c473c770212ef",
+        "chance": 15,
+        "slots": {
+          "mod_muzzle": [
+            "615d8f8567085e45ef1409ca"
+          ]
+        }
       }
     },
     "ak_muzzles_762": {
@@ -88,16 +104,12 @@
         "chance": 35
       },
       "dtk-1": {
-        "id": "5649aa744bdc2ded0b8b457e",
+        "id": "5649ab884bdc2ded0b8b457f",
         "chance": 30
       },
       "pbs-1": {
-        "id": "5a0d716f1526d8000d26b1e2",
+        "id": "5a0d63621526d8dba31fe3bf",
         "chance": 20
-      },
-      "wafflemaker": {
-        "id": "5cf6937cd7f00c056c53fb39",
-        "chance": 15
       }
     },
     "ak_dust_covers": {
@@ -106,7 +118,7 @@
         "chance": 35
       },
       "akademia bastion": {
-        "id": "5649af884bdc2d1b2b8b4589",
+        "id": "5d2c76ed48f03532f2136169",
         "chance": 40,
         "slots": {
           "mod_scope": [
@@ -129,17 +141,25 @@
     "ak_dovetail_mounts": {
       "b-13 rail": {
         "id": "5c61a40d2e2216001403158d",
-        "chance": 60,
+        "chance": 50,
+        "children": {},
         "slots": {
           "mod_scope": [
             "sights",
-            "scopes_mid"
+            "scopes_mid",
+            "scope_30mm_mounts"
           ]
         }
       },
       "pso direct": {
         "id": "5c82342f2e221644f31c0611",
-        "chance": 40
+        "chance": 30,
+        "children": {}
+      },
+      "pso1m2 direct": {
+        "id": "5c82343a2e221644f31c0613",
+        "chance": 20,
+        "children": {}
       }
     },
     "ak_handguards": {
@@ -148,7 +168,7 @@
         "chance": 25
       },
       "b-10m handguard": {
-        "id": "5d2c829448f0353a5c7d6674",
+        "id": "5648b4534bdc2d3d1c8b4580",
         "chance": 35,
         "slots": {
           "mod_foregrip": [
@@ -163,7 +183,7 @@
         }
       },
       "b-30 handguard": {
-        "id": "5648b4534bdc2d3d1c8b4580",
+        "id": "5efaf417aeb21837e749c7f2",
         "chance": 40,
         "slots": {
           "mod_foregrip": [
@@ -176,6 +196,86 @@
             "lights"
           ]
         }
+      }
+    },
+    "rpk16_barrels": {
+      "rpk16 15 inch barrel": {
+        "id": "5beec1bd0db834001e6006f3",
+        "chance": 55,
+        "slots": {
+          "mod_muzzle": [
+            "ak_muzzles_545"
+          ]
+        }
+      },
+      "rpk16 22 inch barrel": {
+        "id": "5beec2820db834001b095426",
+        "chance": 45,
+        "slots": {
+          "mod_muzzle": [
+            "ak_muzzles_545"
+          ]
+        }
+      }
+    },
+    "rpk16_handguards": {
+      "rpk16 handguard": {
+        "id": "5beec3e30db8340019619424",
+        "chance": 100,
+        "slots": {
+          "mod_foregrip": [
+            "foregrips"
+          ],
+          "mod_tactical_000": [
+            "lasers_common"
+          ],
+          "mod_tactical_001": [
+            "lights"
+          ]
+        }
+      }
+    },
+    "rpk16_stocks": {
+      "rpk16 tube": {
+        "id": "5beec9450db83400970084fd",
+        "chance": 100,
+        "children": {},
+        "slots": {
+          "mod_stock": [
+            "ak_stocks"
+          ]
+        }
+      }
+    },
+    "ak_gp25_launchers": {
+      "gp-25 kostyor": {
+        "id": "62e7e7bbe6da9612f743f1e0",
+        "chance": 100,
+        "children": {}
+      }
+    },
+    "ak_gp25_handguards": {
+      "ak-74m polymer handguard gp25 safe": {
+        "id": "5648b1504bdc2d9d488b4584",
+        "chance": 70,
+        "children": {}
+      },
+      "ak-74 wooden handguard gp25 safe": {
+        "id": "5648b0744bdc2d363b8b4578",
+        "chance": 30,
+        "children": {}
+      }
+    },
+    "ak_gp25_muzzles_762": {
+      "akm standard brake": {
+        "id": "59d64fc686f774171b243fe2",
+        "chance": 70,
+        "children": {}
+      },
+      "dtk-1": {
+        "id": "5649aa744bdc2ded0b8b457e",
+        "chance": 30,
+        "children": {}
       }
     },
     "ak74n_weapon_slots": {
@@ -199,6 +299,31 @@
           ],
           "mod_handguard": [
             "ak_handguards"
+          ]
+        }
+      }
+    },
+    "ak103_weapon_slots": {
+      "ak103 slot package": {
+        "id": "5ac66d2e5acfc43b321d4b53",
+        "slots": {
+          "mod_magazine": [
+            "ak762_mags"
+          ],
+          "mod_muzzle": [
+            "ak_muzzles_762"
+          ],
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ],
+          "mod_stock": [
+            "ak_stocks"
+          ],
+          "mod_reciever": [
+            "ak_dust_covers"
+          ],
+          "mod_handguard": [
+            "ak_handguards"
           ],
           "mod_mount": [
             "ak_dovetail_mounts"
@@ -206,39 +331,63 @@
         }
       }
     },
-    "rpk16_barrels": {
-      "rpk16 15 inch barrel": {
-        "id": "5beec1bd0db834001e6006f3",
-        "chance": 55,
+    "ak103_gp25_weapon_slots": {
+      "ak103 gp25 slot package": {
+        "id": "5ac66d2e5acfc43b321d4b53",
         "slots": {
+          "mod_magazine": [
+            "ak762_mags"
+          ],
           "mod_muzzle": [
-            "ak_muzzles_545"
-          ]
-        }
-      },
-      "rpk16 22 inch barrel": {
-        "id": "5beec2820db834001b095426b",
-        "chance": 45,
-        "slots": {
-          "mod_muzzle": [
-            "ak_muzzles_545"
+            "ak_gp25_muzzles_762"
+          ],
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ],
+          "mod_stock": [
+            "ak_stocks"
+          ],
+          "mod_reciever": [
+            "ak_dust_covers"
+          ],
+          "mod_handguard": [
+            "ak_gp25_handguards"
+          ],
+          "mod_mount": [
+            "ak_dovetail_mounts"
+          ],
+          "mod_launcher": [
+            "ak_gp25_launchers"
           ]
         }
       }
     },
-    "rpk16_handguards": {
-      "rpk16 handguard": {
-        "id": "5beec3e30db8340019619424",
-        "chance": 100,
+    "rpk16_weapon_slots": {
+      "rpk16 slot package": {
+        "id": "5beed0f50db834001c062b12",
         "slots": {
-          "mod_foregrip": [
-            "foregrips"
+          "mod_magazine": [
+            "ak545_drum_mags",
+            "ak545_mags"
           ],
-          "mod_tactical_000": [
-            "lasers_common"
+          "mod_muzzle": [
+            "ak_muzzles_545"
           ],
-          "mod_tactical_001": [
-            "lights"
+          "mod_pistol_grip": [
+            "ak_pistol_grips"
+          ],
+          "mod_stock": [
+            "rpk16_stocks",
+            "ak_stocks"
+          ],
+          "mod_reciever": [
+            "ak_dust_covers"
+          ],
+          "mod_barrel": [
+            "rpk16_barrels"
+          ],
+          "mod_handguard": [
+            "rpk16_handguards"
           ]
         }
       }
