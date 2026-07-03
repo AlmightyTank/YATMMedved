@@ -112,40 +112,48 @@ public class MedvedSpawnController(
         {
             BossChance = chance,
             BossDifficulty = "normal",
+
+            // Main escort = Buran
             BossEscortAmount = "1",
             BossEscortDifficulty = "normal",
             BossEscortType = Buran,
+
             BossName = Sokol,
             IsBossPlayer = false,
             BossZone = zone,
+
             ForceSpawn = false,
             IgnoreMaxBots = true,
             IsRandomTimeSpawn = false,
             SpawnMode = new[] { "regular", "pve" },
+
+            // Extra support = Kedr only.
+            // Do NOT add Buran here or you can get two Burans.
             Supports = new List<BossSupport>
+        {
+            new BossSupport
             {
-                new BossSupport
-                {
-                    BossEscortAmount = "1",
-                    BossEscortDifficulty = new ListOrT<string>(new List<string> { "normal" }, null),
-                    BossEscortType = Buran
-                },
-                new BossSupport
-                {
-                    BossEscortAmount = "1",
-                    BossEscortDifficulty = new ListOrT<string>(new List<string> { "normal" }, null),
-                    BossEscortType = Kedr
-                }
-            },
+                BossEscortAmount = "1",
+                BossEscortDifficulty = new ListOrT<string>(new List<string> { "normal" }, null),
+                BossEscortType = Kedr
+            }
+        },
+
             Time = -1,
             TriggerId = string.Empty,
             TriggerName = string.Empty
         };
     }
 
-    private string GetMedvedBossZones(string map, MedvedCellConfig config, List<BossLocationSpawn> spawns, List<MedvedQuestProgressionStage> unlockedStages, bool legacyQuestCompleted)
+    private string GetMedvedBossZones(
+        string map,
+        MedvedCellConfig config,
+        List<BossLocationSpawn> spawns,
+        List<MedvedQuestProgressionStage> unlockedStages,
+        bool legacyQuestCompleted)
     {
         var configuredZones = GetConfiguredBossZones(map, config, unlockedStages, legacyQuestCompleted);
+
         if (configuredZones.Count == 0)
         {
             var existingZone = TryGetExistingBossZone(spawns);
@@ -154,7 +162,9 @@ public class MedvedSpawnController(
 
         if (!config.AvoidTakenBossZones)
         {
-            return string.Join(",", configuredZones);
+            var selectedZone = PickOneBossZone(configuredZones);
+            _logger.Info($"{map}: Medved selected boss zone: {selectedZone}.");
+            return selectedZone;
         }
 
         var takenZones = GetTakenBossZones(spawns);
@@ -166,14 +176,32 @@ public class MedvedSpawnController(
         {
             if (freeZones.Count != configuredZones.Count)
             {
-                _logger.Info($"{map}: Medved avoiding taken boss zone(s): {string.Join(",", configuredZones.Except(freeZones, StringComparer.OrdinalIgnoreCase))}. Using: {string.Join(",", freeZones)}.");
+                _logger.Info($"{map}: Medved avoiding taken boss zone(s): {string.Join(",", configuredZones.Except(freeZones, StringComparer.OrdinalIgnoreCase))}.");
             }
 
-            return string.Join(",", freeZones);
+            var selectedZone = PickOneBossZone(freeZones);
+            _logger.Info($"{map}: Medved selected free boss zone: {selectedZone}.");
+            return selectedZone;
         }
 
-        _logger.Warning($"{map}: all configured Medved boss zones are already used by active boss waves. Keeping configured zones: {string.Join(",", configuredZones)}.");
-        return string.Join(",", configuredZones);
+        var fallbackZone = PickOneBossZone(configuredZones);
+        _logger.Warning($"{map}: all configured Medved boss zones are already used by active boss waves. Falling back to one configured zone: {fallbackZone}.");
+        return fallbackZone;
+    }
+
+    private static string PickOneBossZone(List<string> zones)
+    {
+        if (zones.Count == 0)
+        {
+            return string.Empty;
+        }
+
+        if (zones.Count == 1)
+        {
+            return zones[0];
+        }
+
+        return zones[Random.Shared.Next(zones.Count)];
     }
 
     private static List<string> GetConfiguredBossZones(string map, MedvedCellConfig config, List<MedvedQuestProgressionStage> unlockedStages, bool legacyQuestCompleted)
