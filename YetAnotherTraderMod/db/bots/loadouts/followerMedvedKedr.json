@@ -152,17 +152,16 @@
       },
       "6b47 field helmet": {
         "id": "5a7c4850e899ef00150be885",
-        "chance": 45,
-        "children": {}
+        "chance": 45
       },
       "altyn no-nonsense": {
         "id": "5aa7e276e5b5b000171d0647",
         "chance": 15,
         "children": {},
         "slots": {
-          "mod_equipment": [
-            "altyn_faceshields"
-          ]
+            "mod_equipment": [
+                "5aa7e373e5b5b000137b76f0"
+            ]
         }
       }
     },
