@@ -18,8 +18,8 @@ public record ModMetadata : AbstractModMetadata
     public override string ModGuid { get; init; } = "com.almightytank.yatm.medved";
     public override string Name { get; init; } = "YATM Medved Cell";
     public override string Author { get; init; } = "AlmightyTank";
-    public override List<string>? Contributors { get; init; } = new();
-    public override SemanticVersioning.Version Version { get; init; } = new(1, 0, 0);
+    public override List<string>? Contributors { get; init; } = [];
+    public override SemanticVersioning.Version Version { get; init; } = new("0.1.0");
     public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.13");
     public override List<string>? Incompatibilities { get; init; }
     public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
