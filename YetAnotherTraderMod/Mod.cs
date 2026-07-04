@@ -3,7 +3,9 @@ using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Helpers;
 using SPTarkov.Server.Core.Models.Eft.Common;
+using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils;
 using SPTarkov.Server.Core.Utils.Json;
 using System.Reflection;
@@ -48,56 +50,89 @@ public class YATMModPreload(ModHelper modHelper, YATMLogger logger) : IOnLoad
 
 [Injectable(InjectionType = InjectionType.Singleton, TypePriority = MoreBotsServer.MoreBotsLoadOrder.LoadBots)]
 public class YATMMedvedBots(
+    MoreBotsServer.MoreBotsAPI moreBotsLib,
     MoreBotsCustomBotTypeService customBotTypeService,
     MoreBotsCustomBotConfigService customBotConfigService,
     FactionService factionService,
     LoadoutService loadoutService,
-    WTTServerCommonLib.WTTServerCommonLib commonLib,
+    DatabaseService databaseService,
     MedvedSpawnController medvedSpawnController,
-    YATMLogger logger
-) : IOnLoad
+    YATMLogger logger) : IOnLoad
 {
     public async Task OnLoad()
     {
-        var typeList = new List<string>
-        {
-            "bossMedvedSokol",
-            "followerMedvedBuran",
-            "followerMedvedKedr"
-        };
-
         var assembly = Assembly.GetExecutingAssembly();
+        var types = MedvedBotTypes.TypeList;
 
-        logger.Info("Loading MoreBotsAPI custom bot types.");
-        await customBotTypeService.CreateCustomBotTypes(assembly);
+        // Create all four Medved bot types from db/bots/sharedTypes/medved.json.
+        await moreBotsLib.LoadBotsShared(assembly, "medved", types);
 
-        logger.Info("Loading shared bot config: db/bots/sharedConfig/medved.jsonc.");
-        await customBotConfigService.LoadCustomBotConfigsShared(assembly, "medved", typeList);
+        // MoreBotsAPI needs this mapping before faction reverse lookups can resolve custom enum values.
+        customBotTypeService.AddCustomWildSpawnTypeNames(MedvedBotTypes.TypeDictionary);
 
-        logger.Info("Loading Medved loadouts.");
+        // Apply per-role sharedTypes/bossMedvedSokol.json, followerMedvedBuran.json, etc.
+        await customBotTypeService.LoadBotTypeReplaceByTypes(assembly, types);
+
+        // Apply loadout pools.
         await loadoutService.LoadLoadouts(assembly);
 
-        logger.Info("Applying Medved shared type replacements.");
-        await customBotTypeService.LoadBotTypeReplace(assembly, "medved_names", typeList);
+        // Apply db/bots/config/*.jsonc.
+        await customBotConfigService.LoadCustomBotConfigs(assembly);
 
-        // Keep relationship arrays empty in bot type JSON. Use faction service for relationships.
-        factionService.AddEnemyByFaction(typeList, "criminals");
-        factionService.AddEnemyByFaction(typeList, "cultists");
-        factionService.AddEnemyByFaction(typeList, "infected");
-        factionService.AddEnemyByFaction(typeList, "pmcs");
+        if (!AllMedvedTypesReady(databaseService))
+        {
+            logger.Warning("Medved bot types did not finish loading cleanly; skipping faction enemy wiring to avoid a MoreBotsAPI null reference.");
+            return;
+        }
 
-        factionService.AddEnemyByFaction("criminals", "medved");
+        // Medved should fight hostile PvE factions + USEC. Keep BEAR out unless you want BEAR hostility too.
+        factionService.AddEnemyByFaction(types, "savage");
+        factionService.AddEnemyByFaction(types, "rogues");
+        factionService.AddEnemyByFaction(types, "usec");
+        factionService.AddEnemyByFaction(types, "cultists");
+        factionService.AddEnemyByFaction(types, "infected");
+
+        // Make those factions recognize Medved as hostile. This requires MedvedFactionRegistration.cs.
+        factionService.AddEnemyByFaction("savage", "medved");
+        factionService.AddEnemyByFaction("rogues", "medved");
+        factionService.AddEnemyByFaction("usec", "medved");
         factionService.AddEnemyByFaction("cultists", "medved");
         factionService.AddEnemyByFaction("infected", "medved");
-        factionService.AddEnemyByFaction("pmcs", "medved");
 
-        factionService.AddRevengeByFaction(typeList, "medved");
-
-        await commonLib.CustomLocaleService.CreateCustomLocales(assembly);
+        factionService.AddFriendlyByFaction(types, "medved");
+        factionService.AddRevengeByFaction(types, "medved");
 
         medvedSpawnController.AdjustAllMedvedSpawns();
+    }
 
-        await Task.CompletedTask;
+    private static bool AllMedvedTypesReady(DatabaseService databaseService)
+    {
+        var botTypes = databaseService.GetTables().Bots.Types;
+
+        foreach (var typeName in MedvedBotTypes.TypeList.Select(x => x.ToLowerInvariant()))
+        {
+            if (!botTypes.TryGetValue(typeName, out BotType? botType))
+            {
+                return false;
+            }
+
+            if (botType.BotDifficulty == null ||
+                !botType.BotDifficulty.ContainsKey("easy") ||
+                !botType.BotDifficulty.ContainsKey("normal") ||
+                !botType.BotDifficulty.ContainsKey("hard") ||
+                !botType.BotDifficulty.ContainsKey("impossible") ||
+                botType.BotDifficulty["normal"]?.Mind == null)
+            {
+                return false;
+            }
+
+            if (botType.BotInventory == null)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
 
@@ -113,7 +148,8 @@ public class YATMMedvedFaction(FactionService factionService) : IOnLoad
             {
                 (WildSpawnType)660010,
                 (WildSpawnType)660011,
-                (WildSpawnType)660012
+                (WildSpawnType)660012,
+                (WildSpawnType)660013
             },
             RevengeAfterRaids = true,
             RevengeRaidAmount = 3

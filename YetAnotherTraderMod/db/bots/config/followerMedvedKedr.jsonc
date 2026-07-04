@@ -1,0 +1,63 @@
+{
+  // Marksman: Serzhant Kedr. Built for SVDS / T-5000 / VSS loadouts.
+  "type": "medved",
+  "presetBatch": 15,
+  "isBoss": false,
+  "mustHaveUniqueName": false,
+
+  "durability": {
+    "armor": {
+      "maxDelta": 15,
+      "minDelta": 0,
+      "minLimitPercent": 15,
+      "lowestMaxPercent": 75,
+      "highestMaxPercent": 100
+    },
+    "weapon": {
+      "highestMax": 100,
+      "lowestMax": 90,
+      "maxDelta": 10,
+      "minDelta": 0,
+      "minLimitPercent": 15
+    }
+  },
+
+  "itemSpawnLimits": {
+    "5734758f24597738025ee253": 1
+  },
+
+  "equipment": {
+    "faceShieldIsActiveChancePercent": 55,
+    "forceOnlyArmoredRigWhenNoArmor": false,
+    "forceStock": true,
+    "laserIsActiveChancePercent": 65,
+    "lightIsActiveDayChancePercent": 15,
+    "lightIsActiveNightChancePercent": 70,
+    "nvgIsActiveChanceDayPercent": 15,
+    "nvgIsActiveChanceNightPercent": 95,
+    "weaponModLimits": {
+      "scopeLimit": 1,
+      "lightLaserLimit": 1
+    }
+  },
+
+  "currencyStackSize": {
+    "5449016a4bdc2d6f028b456f": {
+      "5000": 160,
+      "10000": 65,
+      "15000": 30,
+      "20000": 14,
+      "25000": 6,
+      "30000": 2
+    },
+    "5696686a4bdc2da3298b456a": {
+      "0": 5
+    },
+    "569668774bdc2da2298b4568": {
+      "0": 5
+    },
+    "5d235b4d86f7742e017bc88a": {
+      "0": 15
+    }
+  }
+}

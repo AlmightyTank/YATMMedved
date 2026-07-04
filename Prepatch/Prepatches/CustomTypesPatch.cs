@@ -9,7 +9,9 @@ public static class CustomTypesPatch
     public const int BossMedvedSokolValue = 660010;
     public const int FollowerMedvedBuranValue = 660011;
     public const int FollowerMedvedKedrValue = 660012;
+    public const int FollowerMedvedValue = 660013;
 
+    private const int VanillaFollowerBullyValue = 5;
     private const int VanillaKnightValue = 25;
     private const int VanillaBigPipeValue = 26;
     private const int VanillaBirdEyeValue = 27;
@@ -21,24 +23,14 @@ public static class CustomTypesPatch
         RegisterSokol(assembly);
         RegisterBuran(assembly);
         RegisterKedr(assembly);
+        RegisterFollowerMedved(assembly);
 
         CustomWildSpawnTypeManager.AddSuitableGroup(new List<int>
         {
             BossMedvedSokolValue,
             FollowerMedvedBuranValue,
-            FollowerMedvedKedrValue
-        });
-
-        CustomWildSpawnTypeManager.AddSuitableGroup(new List<int>
-        {
-            BossMedvedSokolValue,
-            FollowerMedvedBuranValue
-        });
-
-        CustomWildSpawnTypeManager.AddSuitableGroup(new List<int>
-        {
-            BossMedvedSokolValue,
-            FollowerMedvedKedrValue
+            FollowerMedvedKedrValue,
+            FollowerMedvedValue
         });
     }
 
@@ -49,8 +41,8 @@ public static class CustomTypesPatch
             "bossMedvedSokol",
             "Medved",
             VanillaKnightValue,
-            true,
-            true,
+            true,   // isBoss
+            false,  // isFollower
             false);
 
         bot.SetCountAsBossForStatistics(true);
@@ -78,8 +70,8 @@ public static class CustomTypesPatch
             "followerMedvedBuran",
             "Medved",
             VanillaBigPipeValue,
-            true,
-            true,
+            false,  // isBoss
+            true,   // isFollower
             false);
 
         bot.SetCountAsBossForStatistics(false);
@@ -107,8 +99,8 @@ public static class CustomTypesPatch
             "followerMedvedKedr",
             "Medved",
             VanillaBirdEyeValue,
-            true,
-            true,
+            false,  // isBoss
+            true,   // isFollower
             false);
 
         bot.SetCountAsBossForStatistics(false);
@@ -124,6 +116,35 @@ public static class CustomTypesPatch
             BrainsToApply = new List<string> { "BirdEye" },
             LayersToRemove = new List<string>(),
             DifficultyModifier = 0.65f
+        });
+
+        CustomWildSpawnTypeManager.RegisterWildSpawnType(bot, assembly);
+    }
+
+    private static void RegisterFollowerMedved(AssemblyDefinition assembly)
+    {
+        var bot = new CustomWildSpawnType(
+            FollowerMedvedValue,
+            "followerMedved",
+            "Medved",
+            VanillaFollowerBullyValue,
+            false,  // isBoss
+            true,   // isFollower
+            false);
+
+        bot.SetCountAsBossForStatistics(false);
+        bot.SetShouldUseFenceNoBossAttack(false, false);
+        bot.SetExcludedDifficulties(new List<int> { 0, 2, 3 });
+
+        bot.SetSAINSettings(new SAINSettings(bot.WildSpawnTypeValue)
+        {
+            Name = "Medved",
+            Description = "Medved Cell rifleman. Uses Reshala guard follower brain behavior.",
+            Section = "Medved",
+            BaseBrain = "FollowerBully",
+            BrainsToApply = new List<string> { "FollowerBully" },
+            LayersToRemove = new List<string>(),
+            DifficultyModifier = 0.55f
         });
 
         CustomWildSpawnTypeManager.RegisterWildSpawnType(bot, assembly);

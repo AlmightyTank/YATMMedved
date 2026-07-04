@@ -1,237 +1,367 @@
 {
-  "equipment": {
-    "FirstPrimaryWeapon": {
-      "ak103 sokol commander": {
-        "id": "5ac66d2e5acfc43b321d4b53",
-        "chance": 40,
-        "slots": {
-          "mod_magazine": [
-            "ak762_mags"
-          ],
-          "mod_muzzle": [
-            "ak_muzzles_762"
-          ],
-          "mod_pistol_grip": [
-            "ak_pistol_grips"
-          ],
-          "mod_stock": [
-            "ak_stocks"
-          ],
-          "mod_reciever": [
-            "ak_dust_covers"
-          ],
-          "mod_handguard": [
-            "ak_handguards"
-          ],
-          "mod_mount": [
-            "ak_dovetail_mounts"
-          ]
-        }
-      },
-      "sr3m sokol compact commander": {
-        "id": "651450ce0e00edc794068371",
-        "chance": 35,
-        "slots": {
-          "mod_muzzle": [
-            "sr3m_muzzles"
-          ],
-          "mod_reciever": [
-            "sr3m_receivers"
-          ],
-          "mod_magazine": [
-            "sr3m_mags"
-          ],
-          "mod_pistol_grip": [
-            "sr3m_pistol_grips"
-          ],
-          "mod_stock": [
-            "sr3m_stocks"
-          ],
-          "mod_charge": [
-            "sr3m_charging_handles"
-          ],
-          "mod_handguard": [
-            "sr3m_handguards"
-          ],
-          "mod_foregrip": [
-            "sr3m_foregrips"
-          ]
-        }
-      },
-      "ak74n sokol field rifle": {
-        "id": "5644bd2b4bdc2d3b4c8b4572",
-        "chance": 25,
-        "slots": {
-          "mod_magazine": [
-            "ak545_mags"
-          ],
-          "mod_muzzle": [
-            "ak_muzzles_545"
-          ],
-          "mod_pistol_grip": [
-            "ak_pistol_grips"
-          ],
-          "mod_stock": [
-            "ak_stocks"
-          ],
-          "mod_reciever": [
-            "ak_dust_covers"
-          ],
-          "mod_handguard": [
-            "ak_handguards"
-          ]
-        }
-      }
-    },
-    "ArmorVest": {
-      "6b13 assault armor": {
-        "id": "5c0e746986f7741453628fe5",
-        "chance": 55,
-        "children": {},
-        "slots": {
-          "Front_plate": [
-            "plates"
-          ],
-          "Back_plate": [
-            "plates"
-          ]
-        }
-      },
-      "gzhel armor": {
-        "id": "5ab8e79e86f7742d8b372e78",
-        "chance": 45,
-        "children": {},
-        "slots": {
-          "Front_plate": [
-            "plates"
-          ],
-          "Back_plate": [
-            "plates"
-          ]
-        }
-      }
-    },
-    "TacticalVest": {
-      "blackrock rig": {
-        "id": "5648a69d4bdc2ded0b8b457b",
-        "chance": 40,
-        "children": {}
-      },
-      "alpha rig": {
-        "id": "5c0e9f2c86f77432297fe0a3",
-        "chance": 35,
-        "children": {}
-      },
-      "triton rig": {
-        "id": "545cdb794bdc2d3a198b456a",
-        "chance": 25,
-        "children": {}
-      }
-    },
-    "Backpack": {
-      "berkut": {
-        "id": "5ca20d5986f774331e7c9602",
-        "chance": 40,
-        "children": {}
-      },
-      "tri-zip": {
-        "id": "545cdae64bdc2d39198b4568",
-        "chance": 35,
-        "children": {}
-      },
-      "scav backpack": {
-        "id": "56e335e4d2720b6c058b456d",
-        "chance": 25,
-        "children": {}
-      }
-    },
-    "Headwear": {
-      "altyn with shield": {
-        "id": "5aa7e276e5b5b000171d0647",
-        "chance": 50,
-        "children": {},
-        "slots": {
-            "mod_equipment": [
-                "5aa7e373e5b5b000137b76f0"
-            ]
-        }
-      },
-        "rys-t with shield": {
-            "id": "5f60c74e3b85f6263c145586",
-            "chance": 35,
-            "children": {},
-            "slots": {
-                "mod_equipment": [
-                    "5f60c85b58eff926626a60f7"
-                ]
+    "equipment": {
+        "FirstPrimaryWeapon": {
+            "ak103_medved_preset": {
+                "id": "5ac66d2e5acfc43b321d4b53",
+                "chance": 100,
+                "slots": {
+                    "mod_gas_block": [
+                        "medved_ak103_gas_block"
+                    ],
+                    "mod_muzzle": [
+                        "5f633f791b231926f2329f13"
+                    ],
+                    "mod_pistol_grip": [
+                        "6087e663132d4d12c81fd96b"
+                    ],
+                    "mod_reciever": [
+                        "medved_ak103_bastion"
+                    ],
+                    "mod_stock": [
+                        "6761779c48fa5c377e06fc3f"
+                    ],
+                    "mod_magazine": [
+                        "5e21a3c67e40bd02257a008a"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ]
+                }
+            },
+            "sr3m_medved_preset": {
+                "id": "651450ce0e00edc794068371",
+                "chance": 35,
+                "slots": {
+                    "mod_muzzle": [
+                        "65144ff50e00edc79406836f"
+                    ],
+                    "mod_reciever": [
+                        "57c44f4f2459772d2c627113"
+                    ],
+                    "mod_magazine": [
+                        "65118f531b90b4fc77015083"
+                    ],
+                    "mod_pistol_grip": [
+                        "medved_sr3m_pistol_grip_stock"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ],
+                    "mod_mount_000": [
+                        "medved_sr3m_optic_mount"
+                    ],
+                    "mod_handguard": [
+                        "medved_sr3m_handguard_light"
+                    ],
+                    "mod_foregrip": [
+                        "6565c0c2ff7eb7070409084c"
+                    ]
+                }
+            },
+            "ak74n_medved_preset": {
+                "id": "5644bd2b4bdc2d3b4c8b4572",
+                "chance": 20,
+                "slots": {
+                    "mod_gas_block": [
+                        "medved_ak74n_gas_block"
+                    ],
+                    "mod_muzzle": [
+                        "5f633f791b231926f2329f13"
+                    ],
+                    "mod_pistol_grip": [
+                        "6087e663132d4d12c81fd96b"
+                    ],
+                    "mod_reciever": [
+                        "medved_ak74n_bastion"
+                    ],
+                    "mod_stock": [
+                        "5b0e794b5acfc47a877359b2"
+                    ],
+                    "mod_magazine": [
+                        "55d482194bdc2d1d4e8b456b"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ]
+                }
             }
         },
-      "6b47 field helmet": {
-        "id": "5a7c4850e899ef00150be885",
-        "chance": 15
-      }
+        "ArmorVest": {
+            "6b43_zabralo": {
+                "id": "545cdb794bdc2d3a198b456a",
+                "chance": 180,
+                "slots": {
+                    "Soft_armor_front": [
+                        "6575ce3716c2762fba0057fd"
+                    ],
+                    "Soft_armor_back": [
+                        "6575ce45dc9932aed601c616"
+                    ],
+                    "Soft_armor_left": [
+                        "6575ce5016c2762fba005802"
+                    ],
+                    "soft_armor_right": [
+                        "6575ce5befc786cd9101a671"
+                    ],
+                    "Collar": [
+                        "6575ce6f16c2762fba005806"
+                    ],
+                    "Shoulder_l": [
+                        "6575ce9db15fef3dd4051628"
+                    ],
+                    "Shoulder_r": [
+                        "6575cea8b15fef3dd405162c"
+                    ],
+                    "Groin": [
+                        "6575ce8bdc9932aed601c61e"
+                    ],
+                    "Front_plate": [
+                        "656fa8d700d62bcd2e024084"
+                    ],
+                    "Back_plate": [
+                        "656fa8d700d62bcd2e024084"
+                    ],
+                    "Left_side_plate": [
+                        "64afd81707e2cf40e903a316"
+                    ],
+                    "Right_side_plate": [
+                        "64afd81707e2cf40e903a316"
+                    ]
+                }
+            },
+            "6b23_emr": {
+                "id": "5c0e5bab86f77461f55ed1f3",
+                "chance": 80,
+                "slots": {
+                    "Soft_armor_front": [
+                        "6571b27a6d84a2b8b6007f92"
+                    ],
+                    "Soft_armor_back": [
+                        "6571baa74cb80d995d0a1490"
+                    ],
+                    "Soft_armor_left": [
+                        "6571baac6d84a2b8b6007fa3"
+                    ],
+                    "soft_armor_right": [
+                        "6571bab0f41985531a038091"
+                    ],
+                    "Collar": [
+                        "6571babb4076795e5e07383f"
+                    ],
+                    "Groin": [
+                        "6571bac34076795e5e073843"
+                    ],
+                    "Groin_back": [
+                        "6571babf4cb80d995d0a1494"
+                    ],
+                    "Front_plate": [
+                        "654a4dea7c17dec2f50cc86a"
+                    ],
+                    "Back_plate": [
+                        "657b22485f444d6dff0c6c2f"
+                    ]
+                }
+            },
+            "6b13_emr": {
+                "id": "5c0e53c886f7747fa54205c7",
+                "chance": 50,
+                "slots": {
+                    "soft_armor_front": [
+                        "654a8b0b0337d53f9102c2ae"
+                    ],
+                    "soft_armor_back": [
+                        "654a8976f414fcea4004d78b"
+                    ],
+                    "soft_armor_left": [
+                        "654a8b3df414fcea4004d78f"
+                    ],
+                    "soft_armor_right": [
+                        "654a8b80f414fcea4004d797"
+                    ],
+                    "Collar": [
+                        "654a8ae00337d53f9102c2aa"
+                    ],
+                    "Groin": [
+                        "654a8bc5f414fcea4004d79b"
+                    ],
+                    "front_plate": [
+                        "656f603f94b480b8a500c0d6"
+                    ],
+                    "back_plate": [
+                        "656efd66034e8e01c407f35c"
+                    ]
+                }
+            }
+        },
+        "TacticalVest": {
+            "tv109": {
+                "id": "59e7643b86f7742cbf2c109a",
+                "chance": 120
+            },
+            "6sh112": {
+                "id": "5929a2a086f7744f4b234d43",
+                "chance": 80
+            },
+            "alpha_vest": {
+                "id": "592c2d1a86f7746dbe2af32a",
+                "chance": 40
+            }
+        },
+        "Headwear": {
+            "ulach_black": {
+                "id": "5b40e1525acfc4771e1c6611",
+                "chance": 120,
+                "slots": {
+                    "Helmet_top": [
+                        "657112234269e9a568089eac"
+                    ],
+                    "Helmet_back": [
+                        "657112a4818110db4600aa66"
+                    ],
+                    "Helmet_ears": [
+                        "657112ce22996eaf110881fb"
+                    ]
+                }
+            },
+            "ulach_coyote": {
+                "id": "5b40e2bc5acfc40016388216",
+                "chance": 90,
+                "slots": {
+                    "Helmet_top": [
+                        "657112234269e9a568089eac"
+                    ],
+                    "Helmet_back": [
+                        "657112a4818110db4600aa66"
+                    ],
+                    "Helmet_ears": [
+                        "657112ce22996eaf110881fb"
+                    ]
+                }
+            },
+            "6b47_emr": {
+                "id": "5aa7cfc0e5b5b00015693143",
+                "chance": 40,
+                "slots": {
+                    "Helmet_top": [
+                        "657baaf0b7e9ca9a02045c02"
+                    ],
+                    "Helmet_back": [
+                        "657bab6ec6f689d3a205b85f"
+                    ],
+                    "Helmet_ears": [
+                        "657babc6f58ba5a6250107a2"
+                    ]
+                }
+            }
+        },
+        "Eyewear": {
+            "tactical_glasses": {
+                "id": "557ff21e4bdc2d89578b4586",
+                "chance": 45
+            },
+            "dundukk_orange": {
+                "id": "67af41dd1eb308667602db4a",
+                "chance": 25
+            }
+        },
+        "FaceCover": {
+            "cold_fear": {
+                "id": "5ab8f39486f7745cd93a1cca",
+                "chance": 70
+            },
+            "balaclava": {
+                "id": "572b7f1624597762ae139822",
+                "chance": 55
+            }
+        }
     },
-    "Earpiece": {
-      "gssh": {
-        "id": "5b432b2f5acfc4771e1c6622",
-        "chance": 30,
-        "children": {}
-      },
-      "comtac2": {
-        "id": "5645bcc04bdc2d363b8b4572",
-        "chance": 40,
-        "children": {}
-      },
-      "rac": {
-        "id": "5aa2ba71e5b5b000137b758f",
-        "chance": 30,
-        "children": {}
-      }
-    },
-    "Eyewear": {
-      "condor": {
-        "id": "603409c80ca681766b6a0fb2",
-        "chance": 60,
-        "children": {}
-      },
-      "crossbow": {
-        "id": "5d5fca1ea4b93635fd598c07",
-        "chance": 40,
-        "children": {}
-      }
-    },
-    "FaceCover": {
-      "momex": {
-        "id": "5b432f3d5acfc4704b4a1dfb",
-        "chance": 45,
-        "children": {}
-      },
-      "ghost balaclava": {
-        "id": "5ab8f39486f7745cd93a1cca",
-        "chance": 35,
-        "children": {}
-      },
-      "cold fear": {
-        "id": "5e54f62086f774219b0f1937",
-        "chance": 20,
-        "children": {}
-      }
-    },
-    "Pockets": {
-      "default pockets": {
-        "id": "557ffd194bdc2d28148b457f",
-        "chance": 100,
-        "children": {}
-      }
-    },
-    "Scabbard": {
-      "knife": {
-        "id": "54491bb74bdc2d09088b4567",
-        "chance": 100,
-        "children": {}
-      }
+    "weapons": {},
+    "categories": {
+        "medved_ak103_gas_block": {
+            "AK-103 gas block with tactical mounts": {
+                "id": "5b237e425acfc4771e1be0b6",
+                "slots": {
+                    "mod_mount_001": [
+                        "medved_ak103_light_mount"
+                    ],
+                    "mod_mount_002": [
+                        "medved_ak103_grip_mount"
+                    ]
+                }
+            }
+        },
+        "medved_ak103_light_mount": {
+            "AK-103 light mount": {
+                "id": "5b4736a986f774040571e998",
+                "slots": {
+                    "mod_tactical": [
+                        "56def37dd2720bec348b456a"
+                    ]
+                }
+            }
+        },
+        "medved_ak103_grip_mount": {
+            "AK-103 foregrip mount": {
+                "id": "5b4736b986f77405cb415c10",
+                "slots": {
+                    "mod_foregrip": [
+                        "5b057b4f5acfc4771e1bd3e9"
+                    ]
+                }
+            }
+        },
+        "medved_ak103_bastion": {
+            "AK-103 Bastion with optic": {
+                "id": "5d2c76ed48f03532f2136169",
+                "slots": {
+                    "mod_scope": [
+                        "64785e7c19d732620e045e15"
+                    ]
+                }
+            }
+        },
+        "medved_ak74n_gas_block": {
+            "AK-74N gas block with tactical mounts": {
+                "id": "5b237e425acfc4771e1be0b6",
+                "slots": {
+                    "mod_mount_001": [
+                        "medved_ak74n_light_mount"
+                    ],
+                    "mod_mount_002": [
+                        "medved_ak74n_grip_mount"
+                    ]
+                }
+            }
+        },
+        "medved_ak74n_light_mount": {
+            "AK-74N light mount": {
+                "id": "5b4736a986f774040571e998",
+                "slots": {
+                    "mod_tactical": [
+                        "56def37dd2720bec348b456a"
+                    ]
+                }
+            }
+        },
+        "medved_ak74n_grip_mount": {
+            "AK-74N foregrip mount": {
+                "id": "5b4736b986f77405cb415c10",
+                "slots": {
+                    "mod_foregrip": [
+                        "5b057b4f5acfc4771e1bd3e9"
+                    ]
+                }
+            }
+        },
+        "medved_ak74n_bastion": {
+            "AK-74N Bastion with optic": {
+                "id": "5d2c76ed48f03532f2136169",
+                "slots": {
+                    "mod_scope": [
+                        "64785e7c19d732620e045e15"
+                    ]
+                }
+            }
+        }
     }
-  },
-  "weapons": {},
-  "categories": {}
 }

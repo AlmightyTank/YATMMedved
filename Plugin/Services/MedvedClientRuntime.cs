@@ -11,7 +11,8 @@ public static class MedvedClientRuntime
     {
         WildSpawnTypeExtensions.BossMedvedSokolValue,
         WildSpawnTypeExtensions.FollowerMedvedBuranValue,
-        WildSpawnTypeExtensions.FollowerMedvedKedrValue
+        WildSpawnTypeExtensions.FollowerMedvedKedrValue,
+        WildSpawnTypeExtensions.FollowerMedvedValue
     }.ConvertAll(x => (WildSpawnType)x);
 
     public static void Init(ManualLogSource logger)

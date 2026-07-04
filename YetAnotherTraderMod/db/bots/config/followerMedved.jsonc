@@ -1,0 +1,63 @@
+{
+  // Generic Ryadovoy rifleman. Built for AK-74M / AK-12 loadouts.
+  "type": "medved",
+  "presetBatch": 25,
+  "isBoss": false,
+  "mustHaveUniqueName": false,
+
+  "durability": {
+    "armor": {
+      "maxDelta": 15,
+      "minDelta": 0,
+      "minLimitPercent": 15,
+      "lowestMaxPercent": 70,
+      "highestMaxPercent": 100
+    },
+    "weapon": {
+      "highestMax": 100,
+      "lowestMax": 85,
+      "maxDelta": 15,
+      "minDelta": 0,
+      "minLimitPercent": 15
+    }
+  },
+
+  "itemSpawnLimits": {
+    "5734758f24597738025ee253": 1
+  },
+
+  "equipment": {
+    "faceShieldIsActiveChancePercent": 40,
+    "forceOnlyArmoredRigWhenNoArmor": true,
+    "forceStock": true,
+    "laserIsActiveChancePercent": 65,
+    "lightIsActiveDayChancePercent": 20,
+    "lightIsActiveNightChancePercent": 75,
+    "nvgIsActiveChanceDayPercent": 5,
+    "nvgIsActiveChanceNightPercent": 80,
+    "weaponModLimits": {
+      "scopeLimit": 1,
+      "lightLaserLimit": 1
+    }
+  },
+
+  "currencyStackSize": {
+    "5449016a4bdc2d6f028b456f": {
+      "5000": 200,
+      "10000": 51,
+      "15000": 28,
+      "20000": 13,
+      "25000": 8,
+      "30000": 3
+    },
+    "5696686a4bdc2da3298b456a": {
+      "0": 5
+    },
+    "569668774bdc2da2298b4568": {
+      "0": 5
+    },
+    "5d235b4d86f7742e017bc88a": {
+      "0": 15
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  // Heavy support: Starshina Buran. Built for RPK-16 / AK-103 GP-25 / RPD / PKM loadouts.
+  "type": "medved",
+  "presetBatch": 15,
+  "isBoss": false,
+  "mustHaveUniqueName": false,
+
+  "durability": {
+    "armor": {
+      "maxDelta": 15,
+      "minDelta": 0,
+      "minLimitPercent": 15,
+      "lowestMaxPercent": 80,
+      "highestMaxPercent": 100
+    },
+    "weapon": {
+      "highestMax": 100,
+      "lowestMax": 88,
+      "maxDelta": 12,
+      "minDelta": 0,
+      "minLimitPercent": 15
+    }
+  },
+
+  "itemSpawnLimits": {
+    "5734758f24597738025ee253": 1
+  },
+
+  "equipment": {
+    "faceShieldIsActiveChancePercent": 80,
+    "forceOnlyArmoredRigWhenNoArmor": false,
+    "forceStock": true,
+    "laserIsActiveChancePercent": 75,
+    "lightIsActiveDayChancePercent": 25,
+    "lightIsActiveNightChancePercent": 85,
+    "nvgIsActiveChanceDayPercent": 10,
+    "nvgIsActiveChanceNightPercent": 90,
+    "weaponModLimits": {
+      "scopeLimit": 1,
+      "lightLaserLimit": 1
+    }
+  },
+
+  "currencyStackSize": {
+    "5449016a4bdc2d6f028b456f": {
+      "5000": 150,
+      "10000": 70,
+      "15000": 35,
+      "20000": 18,
+      "25000": 8,
+      "30000": 3
+    },
+    "5696686a4bdc2da3298b456a": {
+      "0": 5
+    },
+    "569668774bdc2da2298b4568": {
+      "0": 5
+    },
+    "5d235b4d86f7742e017bc88a": {
+      "0": 15
+    }
+  }
+}

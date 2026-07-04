@@ -1,0 +1,65 @@
+{
+  // Boss: Mayor Sokol. Higher preset batch and cleaner durability than followers.
+  "type": "medved",
+  "presetBatch": 15,
+  "isBoss": true,
+  "mustHaveUniqueName": false,
+
+  "durability": {
+    "armor": {
+      "maxDelta": 10,
+      "minDelta": 0,
+      "minLimitPercent": 20,
+      "lowestMaxPercent": 85,
+      "highestMaxPercent": 100
+    },
+    "weapon": {
+      "highestMax": 100,
+      "lowestMax": 92,
+      "maxDelta": 8,
+      "minDelta": 0,
+      "minLimitPercent": 20
+    }
+  },
+
+  "itemSpawnLimits": {
+    "5734758f24597738025ee253": 1
+  },
+
+  "equipment": {
+    "faceShieldIsActiveChancePercent": 100,
+    "forceOnlyArmoredRigWhenNoArmor": false,
+    "forceStock": true,
+    "laserIsActiveChancePercent": 85,
+    "lightIsActiveDayChancePercent": 30,
+    "lightIsActiveNightChancePercent": 90,
+    "nvgIsActiveChanceDayPercent": 15,
+    "nvgIsActiveChanceNightPercent": 95,
+    "weaponModLimits": {
+      "scopeLimit": 1,
+      "lightLaserLimit": 1
+    }
+  },
+
+  "currencyStackSize": {
+    "5449016a4bdc2d6f028b456f": {
+      "10000": 120,
+      "15000": 90,
+      "20000": 65,
+      "25000": 45,
+      "30000": 30,
+      "50000": 8
+    },
+    "5696686a4bdc2da3298b456a": {
+      "0": 10,
+      "100": 1
+    },
+    "569668774bdc2da2298b4568": {
+      "0": 10
+    },
+    "5d235b4d86f7742e017bc88a": {
+      "0": 10,
+      "1": 1
+    }
+  }
+}

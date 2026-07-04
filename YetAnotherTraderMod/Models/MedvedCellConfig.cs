@@ -12,17 +12,19 @@ public class MedvedCellConfig
     // that are already used by active boss waves on the same map.
     public bool AvoidTakenBossZones { get; set; } = true;
 
-    // Base spawn table before progression stages are unlocked.
+    // Spawn chance is config-driven and does not change from quest progression.
+    // Quest progression only controls allowed maps/zones and difficulty.
     public Dictionary<string, int> SpawnChances { get; set; } = new(StringComparer.OrdinalIgnoreCase)
     {
         ["bigmap"] = 3,
-        ["rezervbase"] = 6,
+        ["rezervbase"] = 4,
         ["tarkovstreets"] = 2,
         ["sandbox"] = 2,
         ["interchange"] = 3
     };
 
-    // Base spawn zones before progression stages are unlocked.
+    // Fallback/default zone list. Stage-specific allowed zones are controlled by
+    // MedvedCell/MedvedStageRules.cs so quest progression stays code-defined.
     public Dictionary<string, string> SpawnZones { get; set; } = new(StringComparer.OrdinalIgnoreCase)
     {
         ["bigmap"] = "ZoneDormitory,ZoneGasStation,ZoneFactoryCenter",
@@ -32,9 +34,8 @@ public class MedvedCellConfig
         ["interchange"] = "ZoneCenter,ZoneIDEA,ZoneOLI"
     };
 
-    // Optional progression rules. Stages are applied in order. Each unlocked stage
-    // overlays SpawnChances and SpawnZones. This allows small incremental changes
-    // across several quests and several maps.
+    // WTT quest completion controls which Medved stage is active.
+    // The stage changes only difficulty and allowed spawn maps/zones.
     public MedvedQuestProgressionConfig QuestProgression { get; set; } = new();
 }
 
@@ -42,123 +43,50 @@ public class MedvedQuestProgressionConfig
 {
     public bool Enabled { get; set; } = true;
 
-    // Stages are applied in order:
-    // base -> stage 1 -> stage 2 -> stage 3 -> stage 4 -> stage 5 -> stage 6.
+    // Stages are checked in order. The highest completed stage becomes the active
+    // Medved stage. Stage data should only identify quest requirements.
     public List<MedvedQuestProgressionStage> Stages { get; set; } = new()
     {
         new MedvedQuestProgressionStage
         {
             Name = "Stage 1 - Medved Attention",
-            RequiredQuestIds = new List<string> { "6a300025d2999bc7b9bba916" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 5,
-                ["rezervbase"] = 7,
-                ["tarkovstreets"] = 4,
-                ["sandbox"] = 3,
-                ["interchange"] = 4
-            }
+            RequiredQuestIds = new List<string> { "yatm_medved_bear_tracks" },
+            RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 2 - Medved Moves Woods",
-            RequiredQuestIds = new List<string> { "PUT_QUEST_ID_HERE_STAGE_2" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 6,
-                ["rezervbase"] = 8,
-                ["tarkovstreets"] = 5,
-                ["sandbox"] = 4,
-                ["interchange"] = 5,
-                ["woods"] = 4
-            },
-            SpawnZones = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["woods"] = "ZoneWoodCutter,ZoneScavBase2,ZoneHighPine"
-            }
+            Name = "Stage 2 - Kedr Quieted",
+            RequiredQuestIds = new List<string> { "yatm_medved_voices_in_the_static" },
+            RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 3 - Medved Shoreline Contact",
-            RequiredQuestIds = new List<string> { "PUT_QUEST_ID_HERE_STAGE_3" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 7,
-                ["rezervbase"] = 9,
-                ["tarkovstreets"] = 6,
-                ["sandbox"] = 4,
-                ["interchange"] = 6,
-                ["woods"] = 5,
-                ["shoreline"] = 4
-            },
-            SpawnZones = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["shoreline"] = "ZoneSanatorium1,ZoneSanatorium2,ZonePort"
-            }
+            Name = "Stage 3 - Buran Broken",
+            RequiredQuestIds = new List<string> { "yatm_medved_the_heavy_one" },
+            RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 4 - Medved Lighthouse Route",
-            RequiredQuestIds = new List<string> { "PUT_QUEST_ID_HERE_STAGE_4" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 8,
-                ["rezervbase"] = 10,
-                ["tarkovstreets"] = 7,
-                ["sandbox"] = 5,
-                ["interchange"] = 7,
-                ["woods"] = 6,
-                ["shoreline"] = 5,
-                ["lighthouse"] = 4
-            },
-            SpawnZones = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["lighthouse"] = "Zone_Chalet,Zone_RoofContainers,Zone_TreatmentRocks"
-            }
+            Name = "Stage 4 - Sokol Exposed",
+            RequiredQuestIds = new List<string> { "yatm_medved_cut_the_falcon" },
+            RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 5 - Medved Network Active",
-            RequiredQuestIds = new List<string> { "PUT_QUEST_ID_HERE_STAGE_5" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 10,
-                ["rezervbase"] = 12,
-                ["tarkovstreets"] = 9,
-                ["sandbox"] = 6,
-                ["interchange"] = 9,
-                ["woods"] = 7,
-                ["shoreline"] = 6,
-                ["lighthouse"] = 5
-            }
+            Name = "Stage 5 - No Loose Ends",
+            RequiredQuestIds = new List<string> { "yatm_medved_no_loose_ends" },
+            RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 6 - Medved Cell Fully Active",
-            RequiredQuestIds = new List<string> { "PUT_QUEST_ID_HERE_STAGE_6" },
-            RequireAllQuestIds = true,
-            SpawnChances = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
-            {
-                ["bigmap"] = 12,
-                ["rezervbase"] = 14,
-                ["tarkovstreets"] = 11,
-                ["sandbox"] = 7,
-                ["interchange"] = 11,
-                ["woods"] = 9,
-                ["shoreline"] = 8,
-                ["lighthouse"] = 7
-            }
+            Name = "Stage 6 - Volkov's Warning",
+            RequiredQuestIds = new List<string> { "yatm_medved_volkovs_warning" },
+            RequireAllQuestIds = true
         }
     };
 
     // Legacy single-quest fields are kept so older configs do not break.
-    // If QuestId is set and completed, CompletedSpawnChances/CompletedSpawnZones are applied
-    // after the stage list.
+    // If QuestId is set and completed, MedvedSpawnController applies Stage 6 rules.
     public string QuestId { get; set; } = string.Empty;
     public Dictionary<string, int> CompletedSpawnChances { get; set; } = new(StringComparer.OrdinalIgnoreCase);
     public Dictionary<string, string> CompletedSpawnZones { get; set; } = new(StringComparer.OrdinalIgnoreCase);
@@ -173,10 +101,9 @@ public class MedvedQuestProgressionStage
     public List<string> RequiredQuestIds { get; set; } = new();
     public bool RequireAllQuestIds { get; set; } = true;
 
-    // These override/add to the current effective spawn chances when this stage is unlocked.
-    // Any new map added here becomes active once the stage unlocks.
+    // Kept for backward config compatibility only. The current spawn controller does
+    // not use these for progression because progression should only change difficulty
+    // and allowed map/zones from MedvedStageRules.
     public Dictionary<string, int> SpawnChances { get; set; } = new(StringComparer.OrdinalIgnoreCase);
-
-    // These override/add to the current effective spawn zones when this stage is unlocked.
     public Dictionary<string, string> SpawnZones { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 }
