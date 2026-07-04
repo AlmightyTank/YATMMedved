@@ -311,9 +311,7 @@
                         "medved_grips"
                     ],
                     "mod_tactical_000": [
-                        "medved_lasers_common"
-                    ],
-                    "mod_tactical_001": [
+                        "medved_lasers_common",
                         "medved_lights"
                     ]
                 }
