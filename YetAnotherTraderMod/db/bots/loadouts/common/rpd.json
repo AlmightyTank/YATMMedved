@@ -1,0 +1,36 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_rpd_barrel": {
+      "RPD barrel with muzzle": {
+        "id": "65266fd43341ed9aa903dd56",
+        "slots": {
+          "mod_muzzle": [
+            "6513f0f5e63f29908d0ffab8"
+          ]
+        }
+      }
+    },
+    "medved_rpd_barrels": {
+      "rpd_standard": {
+        "id": "6513eff1e06849f06c0957d4",
+        "chance": 60
+      },
+      "rpd_short": {
+        "id": "65266fd43341ed9aa903dd56",
+        "chance": 35
+      }
+    },
+    "medved_rpd_stock": {
+      "RPD stock with pistol grip": {
+        "id": "6513f1798cb24472490ee331",
+        "slots": {
+          "mod_pistolgrip": [
+            "6513f13a8cb24472490ee32f"
+          ]
+        }
+      }
+    }
+  }
+}

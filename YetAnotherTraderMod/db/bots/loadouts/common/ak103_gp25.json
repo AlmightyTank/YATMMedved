@@ -1,0 +1,46 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_ak103_gp25_gas_block": {
+      "AK-103 gas block with GP-25 handguard": {
+        "id": "59d64ec286f774171d1e0a42",
+        "slots": {
+          "mod_handguard": [
+            "medved_ak103_gp25_handguard"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_handguard": {
+      "AK-103 GP-25 handguard with light": {
+        "id": "5648b4534bdc2d3d1c8b4580",
+        "slots": {
+          "mod_tactical_002": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_reciever": {
+      "AK-103 dust cover with optic": {
+        "id": "5649af884bdc2d1b2b8b4589",
+        "slots": {
+          "mod_scope": [
+            "64785e7c19d732620e045e15"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_stock": {
+      "AK-103 folding stock with pad": {
+        "id": "5ac78eaf5acfc4001926317a",
+        "slots": {
+          "mod_stock": [
+            "59ecc3dd86f7746dc827481c"
+          ]
+        }
+      }
+    }
+  }
+}

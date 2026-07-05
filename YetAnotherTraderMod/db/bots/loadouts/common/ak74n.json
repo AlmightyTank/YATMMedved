@@ -1,0 +1,79 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_ak74n_bastion": {
+      "AK-74N Bastion with optic": {
+        "id": "5d2c76ed48f03532f2136169",
+        "slots": {
+          "mod_scope": [
+            "64785e7c19d732620e045e15"
+          ]
+        }
+      }
+    },
+    "medved_ak74n_dustcovers": {
+      "ak74_dustcover": {
+        "id": "5649af884bdc2d1b2b8b4589",
+        "chance": 75
+      },
+      "bastion": {
+        "id": "5d2c772c48f0355d95672c25",
+        "chance": 15
+      }
+    },
+    "medved_ak74n_gas_block": {
+      "AK-74N gas block with tactical mounts": {
+        "id": "5b237e425acfc4771e1be0b6",
+        "slots": {
+          "mod_mount_001": [
+            "medved_ak74n_light_mount"
+          ],
+          "mod_mount_002": [
+            "medved_ak74n_grip_mount"
+          ]
+        }
+      }
+    },
+    "medved_ak74n_grip_mount": {
+      "AK-74N foregrip mount": {
+        "id": "5b4736b986f77405cb415c10",
+        "slots": {
+          "mod_foregrip": [
+            "5b057b4f5acfc4771e1bd3e9"
+          ]
+        }
+      }
+    },
+    "medved_ak74n_light_mount": {
+      "AK-74N light mount": {
+        "id": "5b4736a986f774040571e998",
+        "slots": {
+          "mod_tactical": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_ak74n_muzzles": {
+      "ak74_brake": {
+        "id": "5649ab884bdc2ded0b8b457f",
+        "chance": 75
+      },
+      "ak74_dtk1": {
+        "id": "5cc9ad73d7f00c000e2579d4",
+        "chance": 20
+      }
+    },
+    "medved_ak74n_stocks": {
+      "ak74_wood_stock": {
+        "id": "5649b0fc4bdc2d17108b4588",
+        "chance": 65
+      },
+      "pt_1": {
+        "id": "5cf50fc5d7f00c056c53f83c",
+        "chance": 25
+      }
+    }
+  }
+}

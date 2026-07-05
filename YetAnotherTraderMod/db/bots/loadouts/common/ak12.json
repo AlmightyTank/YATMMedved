@@ -1,0 +1,59 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_ak12_dustcovers": {
+      "ak12_dustcover": {
+        "id": "649ec2f3961514b22506b111",
+        "chance": 100,
+        "slots": {
+          "mod_scope": [
+            "medved_sights"
+          ],
+          "mod_sight_rear": [
+            "medved_ak12_rear_sights"
+          ]
+        }
+      }
+    },
+    "medved_ak12_handguards": {
+      "ak12_handguard": {
+        "id": "649ec127c93611967b034957",
+        "chance": 100,
+        "slots": {
+          "mod_foregrip": [
+            "medved_grips"
+          ],
+          "mod_tactical_000": [
+            "medved_lasers_common"
+          ],
+          "mod_tactical_001": [
+            "medved_lights"
+          ]
+        }
+      }
+    },
+    "medved_ak12_rear_sights": {
+      "ak12_rear_sight": {
+        "id": "649ec2da59cbb3c813042dca",
+        "chance": 100,
+        "slots": {
+          "mod_sight_rear": [
+            "649ec2cec93611967b03495e"
+          ]
+        }
+      }
+    },
+    "medved_ak12_stocks_special": {
+      "ak12_buffer": {
+        "id": "649ec87d8007560a9001ab36",
+        "chance": 100,
+        "slots": {
+          "mod_stock": [
+            "medved_buffer_stocks"
+          ]
+        }
+      }
+    }
+  }
+}

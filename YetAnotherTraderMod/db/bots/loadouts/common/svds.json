@@ -1,0 +1,170 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_svds_ar_stock_adapter": {
+      "SVDS AR stock adapter": {
+        "id": "58d2946c86f7744e271174b5",
+        "slots": {
+          "mod_stock": [
+            "58d2912286f7744e27117493"
+          ]
+        }
+      }
+    },
+    "medved_svds_barrel": {
+      "SVDS barrel assembly": {
+        "id": "5c471cb32e221602b177afaa",
+        "slots": {
+          "mod_muzzle": [
+            "medved_svds_muzzle_stack"
+          ],
+          "mod_gas_block": [
+            "5c471c842e221615214259b5"
+          ]
+        }
+      }
+    },
+    "medved_svds_barrels": {
+      "svds_barrel": {
+        "id": "5c471cb32e221602b177afaa",
+        "chance": 100,
+        "children": {
+          "svds_muzzlebrake": {
+            "id": "5c471bfc2e221602b21d4e17",
+            "chance": 100,
+            "slots": {
+              "mod_sight_front": [
+                "5c471ba12e221602b3137d76"
+              ]
+            }
+          }
+        },
+        "slots": {
+          "mod_muzzle": [
+            "svds_muzzlebrake"
+          ],
+          "mod_gas_block": [
+            "5c471c842e221615214259b5"
+          ]
+        }
+      }
+    },
+    "medved_svds_buffer_tube": {
+      "SVDS buffer tube": {
+        "id": "5ef1ba28c64c5d0dfc0571a5",
+        "slots": {
+          "mod_stock": [
+            "medved_svds_ar_stock_adapter"
+          ]
+        }
+      }
+    },
+    "medved_svds_chassis_mount": {
+      "SVDS chassis mount with optic and accessories": {
+        "id": "5dfcd0e547101c39625f66f9",
+        "slots": {
+          "mod_mount_002": [
+            "medved_svds_light_mount"
+          ],
+          "mod_scope": [
+            "medved_svds_scope_mount"
+          ],
+          "mod_foregrip": [
+            "medved_svds_foregrip_mount"
+          ]
+        }
+      }
+    },
+    "medved_svds_foregrip_mount": {
+      "SVDS foregrip mount": {
+        "id": "59e0bed186f774156f04ce84",
+        "slots": {
+          "mod_foregrip": [
+            "5b057b4f5acfc4771e1bd3e9"
+          ]
+        }
+      }
+    },
+    "medved_svds_light_mount": {
+      "SVDS light mount": {
+        "id": "59e0be5d86f7742d48765bd2",
+        "slots": {
+          "mod_tactical": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_svds_muzzle_stack": {
+      "SVDS muzzle stack": {
+        "id": "5c471bfc2e221602b21d4e17",
+        "slots": {
+          "mod_sight_front": [
+            "5c471ba12e221602b3137d76"
+          ],
+          "mod_muzzle": [
+            "medved_svds_suppressor_mount"
+          ]
+        }
+      }
+    },
+    "medved_svds_pistol_grip": {
+      "SVDS pistol grip assembly": {
+        "id": "6516b129609aaf354b34b3a8",
+        "slots": {
+          "mod_pistolgrip": [
+            "6087e663132d4d12c81fd96b"
+          ]
+        }
+      }
+    },
+    "medved_svds_scope_mount": {
+      "SVDS scope mount": {
+        "id": "618b9643526131765025ab35",
+        "slots": {
+          "mod_scope": [
+            "5b3b99475acfc432ff4dcbee"
+          ],
+          "mod_mount": [
+            "618b9671d14d6d5ab879c5ea"
+          ]
+        }
+      }
+    },
+    "medved_svds_stock": {
+      "SVDS stock assembly": {
+        "id": "6197b229af1f5202c57a9bea",
+        "slots": {
+          "mod_stock": [
+            "medved_svds_buffer_tube"
+          ]
+        }
+      }
+    },
+    "medved_svds_suppressor_mount": {
+      "SVDS suppressor mount": {
+        "id": "5e01e9e273d8eb11426f5bc3",
+        "slots": {
+          "mod_muzzle": [
+            "5e01ea19e9dc277128008c0b"
+          ]
+        }
+      }
+    },
+    "medved_svds_upper_band": {
+      "svds_upper_band": {
+        "id": "5c471c2d2e22164bef5d077f",
+        "chance": 100,
+        "slots": {
+          "mod_handguard": [
+            "5c471c6c2e221602b66cd9ae"
+          ],
+          "mod_sight_rear": [
+            "5c471b7e2e2216152006e46c"
+          ]
+        }
+      }
+    }
+  }
+}

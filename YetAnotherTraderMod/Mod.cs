@@ -17,7 +17,7 @@ namespace YATMMedved;
 
 public record ModMetadata : AbstractModMetadata
 {
-    public override string ModGuid { get; init; } = "com.almightytank.yatm.medved";
+    public override string ModGuid { get; init; } = "com.amightytank.yatm.medved";
     public override string Name { get; init; } = "YATM Medved Cell";
     public override string Author { get; init; } = "AlmightyTank";
     public override List<string>? Contributors { get; init; } = [];
@@ -27,7 +27,8 @@ public record ModMetadata : AbstractModMetadata
     public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
     {
         { "com.morebotsapi.tacticaltoaster", new SemanticVersioning.Range(">=2.0.1") },
-        { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.20") }
+        { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.20") },
+        { "com.amightytank.yatm", new SemanticVersioning.Range(">=0.2.0") }
     };
     public override string? Url { get; init; }
     public override bool? IsBundleMod { get; init; }
@@ -65,6 +66,7 @@ public class YATMMedvedBots(
     MoreBotsCustomBotConfigService customBotConfigService,
     FactionService factionService,
     LoadoutService loadoutService,
+    WTTServerCommonLib.WTTServerCommonLib commonLib,
     DatabaseService databaseService,
     MedvedSpawnController medvedSpawnController,
     YATMLogger logger) : IOnLoad
@@ -74,20 +76,26 @@ public class YATMMedvedBots(
         var assembly = Assembly.GetExecutingAssembly();
         var types = MedvedBotTypes.TypeList;
 
-        // Create all four Medved bot types from db/bots/sharedTypes/medved.json.
         await moreBotsLib.LoadBotsShared(assembly, "medved", types);
 
-        // MoreBotsAPI needs this mapping before faction reverse lookups can resolve custom enum values.
-        customBotTypeService.AddCustomWildSpawnTypeNames(MedvedBotTypes.TypeDictionary);
+        if (!LogMedvedTypesCreated(databaseService, logger))
+        {
+            logger.Warning("Medved bot types were not created after LoadBotsShared; skipping Medved bot setup to avoid MoreBotsAPI dictionary errors.");
+            return;
+        }
 
-        // Apply per-role sharedTypes/bossMedvedSokol.json, followerMedvedBuran.json, etc.
+        await loadoutService.LoadLoadoutsWithTemplate(assembly, "medved_standard");
+
+        await customBotTypeService.LoadBotTypeReplace(assembly, "medved_all", types);
         await customBotTypeService.LoadBotTypeReplaceByTypes(assembly, types);
 
-        // Apply loadout pools.
-        await loadoutService.LoadLoadouts(assembly);
+        //await commonLib.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly);
 
-        // Apply db/bots/config/*.jsonc.
+        await customBotConfigService.LoadCustomBotConfigsShared(assembly, "medved", types);
+
         await customBotConfigService.LoadCustomBotConfigs(assembly);
+
+        customBotTypeService.AddCustomWildSpawnTypeNames(MedvedBotTypes.TypeDictionary);
 
         if (!AllMedvedTypesReady(databaseService))
         {
@@ -95,14 +103,12 @@ public class YATMMedvedBots(
             return;
         }
 
-        // Medved should fight hostile PvE factions + USEC. Keep BEAR out unless you want BEAR hostility too.
         factionService.AddEnemyByFaction(types, "savage");
         factionService.AddEnemyByFaction(types, "rogues");
         factionService.AddEnemyByFaction(types, "usec");
         factionService.AddEnemyByFaction(types, "cultists");
         factionService.AddEnemyByFaction(types, "infected");
 
-        // Make those factions recognize Medved as hostile. This requires MedvedFactionRegistration.cs.
         factionService.AddEnemyByFaction("savage", "medved");
         factionService.AddEnemyByFaction("rogues", "medved");
         factionService.AddEnemyByFaction("usec", "medved");
@@ -113,6 +119,28 @@ public class YATMMedvedBots(
         factionService.AddRevengeByFaction(types, "medved");
 
         medvedSpawnController.AdjustAllMedvedSpawns();
+    }
+
+    private static bool LogMedvedTypesCreated(DatabaseService databaseService, YATMLogger logger)
+    {
+        var botTypes = databaseService.GetTables().Bots.Types;
+        var allCreated = true;
+
+        foreach (var typeName in MedvedBotTypes.TypeList)
+        {
+            var lowerTypeName = typeName.ToLowerInvariant();
+
+            if (botTypes.ContainsKey(lowerTypeName))
+            {
+                logger.RealDebug($"[Medved Debug] Bot type created: {typeName} -> {lowerTypeName}");
+                continue;
+            }
+
+            allCreated = false;
+            logger.Warning($"[Medved Debug] MISSING bot type after LoadBotsShared: {typeName} -> {lowerTypeName}");
+        }
+
+        return allCreated;
     }
 
     private static bool AllMedvedTypesReady(DatabaseService databaseService)
@@ -176,8 +204,7 @@ public class YATMMedvedStaticRouter : StaticRouter
 
     public YATMMedvedStaticRouter(
         MedvedSpawnController medvedSpawnController,
-        JsonUtil jsonUtil,
-        HttpResponseUtil httpResponseUtil) : base(jsonUtil, GetCustomRoutes())
+        JsonUtil jsonUtil) : base(jsonUtil, GetCustomRoutes())
     {
         _medvedSpawnController = medvedSpawnController;
     }

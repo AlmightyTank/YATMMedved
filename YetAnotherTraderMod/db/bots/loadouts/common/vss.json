@@ -1,0 +1,65 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_vss_front_mount": {
+      "VSS front mount with light and grip": {
+        "id": "59eb7ebe86f7740b373438ce",
+        "slots": {
+          "mod_tactical_001": [
+            "56def37dd2720bec348b456a"
+          ],
+          "mod_foregrip": [
+            "5b057b4f5acfc4771e1bd3e9"
+          ]
+        }
+      }
+    },
+    "medved_vss_handguards": {
+      "vss_modern": {
+        "id": "651178336cad06c37c049eb4",
+        "chance": 60
+      },
+      "vss_tactical": {
+        "id": "6565bb7eb4b12a56eb04b084",
+        "chance": 35
+      }
+    },
+    "medved_vss_muzzle": {
+      "VSS suppressor with rear sight and rail": {
+        "id": "57838c962459774a1651ec63",
+        "slots": {
+          "mod_sight_rear": [
+            "57838e1b2459774a256959b1"
+          ],
+          "mod_mount_000": [
+            "medved_vss_front_mount"
+          ]
+        }
+      }
+    },
+    "medved_vss_razor_mount": {
+      "VSS scope mount with optic": {
+        "id": "618bab21526131765025ab3f",
+        "slots": {
+          "mod_scope": [
+            "5b2388675acfc4771e1be0be"
+          ],
+          "mod_mount": [
+            "618ba91477b82356f91ae0e8"
+          ]
+        }
+      }
+    },
+    "medved_vss_scope_mount": {
+      "VSS optic rail with scope mount": {
+        "id": "5e569a2e56edd02abe09f280",
+        "slots": {
+          "mod_scope": [
+            "medved_vss_razor_mount"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YATMMedved.Loaders;
 
-[Injectable(InjectionType.Singleton, TypePriority = OnLoadOrder.PostDBModLoader + 5)]
+[Injectable(InjectionType.Singleton, TypePriority = OnLoadOrder.PostDBModLoader + 20)]
 public sealed class YATMWTTLoader(
     WTTServerCommonLib.WTTServerCommonLib wttCommon,
     YATMLogger logger) : IOnLoad
@@ -20,6 +20,13 @@ public sealed class YATMWTTLoader(
         {
             var assembly = Assembly.GetExecutingAssembly();
 
+            _logger.Info("Loading WTT Medved custom weapon presets...");
+            _wttCommon.CustomWeaponPresetService.CreateCustomWeaponPresets(assembly);
+
+            _logger.Info("Loading WTT Medved custom assortments...");
+            _wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly);
+
+            _logger.Info("Loading WTT Medved custom locales...");
             _wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
 
             _logger.Info("Loading WTT Medved custom quest zones...");
@@ -27,6 +34,9 @@ public sealed class YATMWTTLoader(
 
             _logger.Info("Loading WTT Medved custom quests...");
             _wttCommon.CustomQuestService.CreateCustomQuests(assembly);
+
+            _logger.Info("Loading WTT custom achievements...");
+            _wttCommon.CustomAchievementService.CreateCustomAchievements(assembly);
 
             _logger.Info("WTT Medved quest loader finished.");
         }

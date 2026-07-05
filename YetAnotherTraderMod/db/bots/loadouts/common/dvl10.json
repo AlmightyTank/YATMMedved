@@ -1,0 +1,19 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_dvl_m2_barrel": {
+      "DVL-10 M2 660mm barrel with handguard and muzzle brake": {
+        "id": "58889d0c2459775bc215d981",
+        "slots": {
+          "mod_muzzle": [
+            "5888996c24597754281f9419"
+          ],
+          "mod_handguard": [
+            "5888976c24597754281f93f5"
+          ]
+        }
+      }
+    }
+  }
+}

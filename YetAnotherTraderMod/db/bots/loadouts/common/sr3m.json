@@ -1,0 +1,44 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_sr3m_foregrips": {
+      "sr3m_grip": {
+        "id": "65329ebcc0d50d0c9204ace1",
+        "chance": 55
+      },
+      "sr3m_alt_grip": {
+        "id": "6565c0c2ff7eb7070409084c",
+        "chance": 35
+      }
+    },
+    "medved_sr3m_grips": {
+      "sr3m_pg": {
+        "id": "5a69a2ed8dc32e000d46d1f1",
+        "chance": 50
+      },
+      "asval_pg": {
+        "id": "57c44fa82459772d2d75e415",
+        "chance": 35
+      },
+      "sr3m_modern_pg": {
+        "id": "6565b91666492762f5029c0b",
+        "chance": 25
+      }
+    },
+    "medved_sr3m_handguards": {
+      "sr3m_standard": {
+        "id": "65144f546ddb773afa0e35e1",
+        "chance": 45
+      },
+      "sr3m_modern": {
+        "id": "6565c3ab977bcc2dbb01c2e7",
+        "chance": 35
+      },
+      "sr3m_tactical": {
+        "id": "6568a6bf2c5fb7afc70bc424",
+        "chance": 25
+      }
+    }
+  }
+}

@@ -53,10 +53,6 @@
 		</Reference>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="db\CustomQuests\" />
-	</ItemGroup>
-
 	<Target Name="DeployServerModToSPT" AfterTargets="Build">
 		<MakeDir Directories="$(ServerModDeployDir)" />
 

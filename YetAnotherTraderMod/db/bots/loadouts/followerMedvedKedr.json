@@ -1,459 +1,149 @@
 {
-    "equipment": {
-        "FirstPrimaryWeapon": {
-            "svds_medved_preset": {
-                "id": "5c46fbd72e2216398b5a8c9c",
-                "chance": 40,
-                "slots": {
-                    "mod_pistol_grip": [
-                        "medved_svds_pistol_grip"
-                    ],
-                    "mod_magazine": [
-                        "5c88f24b2e22160bc12c69a6"
-                    ],
-                    "mod_stock": [
-                        "medved_svds_stock"
-                    ],
-                    "mod_barrel": [
-                        "medved_svds_barrel"
-                    ],
-                    "mod_mount_001": [
-                        "medved_svds_chassis_mount"
-                    ],
-                    "mod_reciever": [
-                        "5dfce88fe9dc277128008b2e"
-                    ]
-                }
-            },
-            "t5000_medved_preset": {
-                "id": "5df24cf80dee1b22f862e9bc",
-                "chance": 25,
-                "slots": {
-                    "mod_magazine": [
-                        "5df25b6c0b92095fd441e4cf"
-                    ],
-                    "mod_barrel": [
-                        "medved_t5000_barrel"
-                    ],
-                    "mod_stock": [
-                        "medved_t5000_stock"
-                    ],
-                    "mod_mount": [
-                        "medved_t5000_scope_mount"
-                    ]
-                }
-            },
-            "vss_medved_preset": {
-                "id": "57838ad32459774a17445cd2",
-                "chance": 35,
-                "slots": {
-                    "mod_magazine": [
-                        "57838f9f2459774a150289a0"
-                    ],
-                    "mod_muzzle": [
-                        "medved_vss_muzzle"
-                    ],
-                    "mod_reciever": [
-                        "578395402459774a256959b5"
-                    ],
-                    "mod_stock": [
-                        "578395e82459774a0e553c7b"
-                    ],
-                    "mod_charge": [
-                        "6130ca3fd92c473c77020dbd"
-                    ],
-                    "mod_mount_004": [
-                        "medved_vss_scope_mount"
-                    ],
-                    "mod_handguard": [
-                        "6565bb7eb4b12a56eb04b084"
-                    ]
-                }
-            }
-        },
-        "ArmorVest": {
-            "6b13_emr": {
-                "id": "5c0e53c886f7747fa54205c7",
-                "chance": 100,
-                "slots": {
-                    "soft_armor_front": [
-                        "654a8b0b0337d53f9102c2ae"
-                    ],
-                    "soft_armor_back": [
-                        "654a8976f414fcea4004d78b"
-                    ],
-                    "soft_armor_left": [
-                        "654a8b3df414fcea4004d78f"
-                    ],
-                    "soft_armor_right": [
-                        "654a8b80f414fcea4004d797"
-                    ],
-                    "Collar": [
-                        "654a8ae00337d53f9102c2aa"
-                    ],
-                    "Groin": [
-                        "654a8bc5f414fcea4004d79b"
-                    ],
-                    "front_plate": [
-                        "656f603f94b480b8a500c0d6"
-                    ],
-                    "back_plate": [
-                        "656efd66034e8e01c407f35c"
-                    ]
-                }
-            },
-            "6b23_emr": {
-                "id": "5c0e5bab86f77461f55ed1f3",
-                "chance": 80,
-                "slots": {
-                    "Soft_armor_front": [
-                        "6571b27a6d84a2b8b6007f92"
-                    ],
-                    "Soft_armor_back": [
-                        "6571baa74cb80d995d0a1490"
-                    ],
-                    "Soft_armor_left": [
-                        "6571baac6d84a2b8b6007fa3"
-                    ],
-                    "soft_armor_right": [
-                        "6571bab0f41985531a038091"
-                    ],
-                    "Collar": [
-                        "6571babb4076795e5e07383f"
-                    ],
-                    "Groin": [
-                        "6571bac34076795e5e073843"
-                    ],
-                    "Groin_back": [
-                        "6571babf4cb80d995d0a1494"
-                    ],
-                    "Front_plate": [
-                        "654a4dea7c17dec2f50cc86a"
-                    ],
-                    "Back_plate": [
-                        "657b22485f444d6dff0c6c2f"
-                    ]
-                }
-            }
-        },
-        "TacticalVest": {
-            "6sh112": {
-                "id": "5929a2a086f7744f4b234d43",
-                "chance": 120
-            },
-            "tv109": {
-                "id": "59e7643b86f7742cbf2c109a",
-                "chance": 60
-            }
-        },
-        "Headwear": {
-            "6b47_emr": {
-                "id": "5aa7cfc0e5b5b00015693143",
-                "chance": 100,
-                "slots": {
-                    "Helmet_top": [
-                        "657baaf0b7e9ca9a02045c02"
-                    ],
-                    "Helmet_back": [
-                        "657bab6ec6f689d3a205b85f"
-                    ],
-                    "Helmet_ears": [
-                        "657babc6f58ba5a6250107a2"
-                    ]
-                }
-            },
-            "uxpro": {
-                "id": "5aa2ba46e5b5b000137b758d",
-                "chance": 40
-            }
-        },
-        "Eyewear": {
-            "tactical_glasses": {
-                "id": "557ff21e4bdc2d89578b4586",
-                "chance": 45
-            },
-            "dundukk_orange": {
-                "id": "67af41dd1eb308667602db4a",
-                "chance": 20
-            }
-        },
-        "FaceCover": {
-            "balaclava": {
-                "id": "572b7f1624597762ae139822",
-                "chance": 55
-            },
-            "cold_fear": {
-                "id": "5ab8f39486f7745cd93a1cca",
-                "chance": 35
-            }
+  "equipment": {
+    "FirstPrimaryWeapon": {
+      "sr3m": {
+        "id": "651450ce0e00edc794068371",
+        "chance": 55,
+        "slots": {
+          "mod_muzzle": [
+            "65144ff50e00edc79406836f"
+          ],
+          "mod_reciever": [
+            "57c44f4f2459772d2c627113"
+          ],
+          "mod_magazine": [
+            "65118f531b90b4fc77015083"
+          ],
+          "mod_pistol_grip": [
+            "medved_sr3m_grips"
+          ],
+          "mod_charge": [
+            "6130ca3fd92c473c77020dbd"
+          ],
+          "mod_handguard": [
+            "medved_sr3m_handguards"
+          ],
+          "mod_foregrip": [
+            "medved_sr3m_foregrips"
+          ]
         }
+      },
+      "ak74n": {
+        "id": "5644bd2b4bdc2d3b4c8b4572",
+        "chance": 30,
+        "slots": {
+          "mod_gas_block": [
+            "medved_ak74n_gas_block"
+          ],
+          "mod_muzzle": [
+            "5f633f791b231926f2329f13"
+          ],
+          "mod_pistol_grip": [
+            "6087e663132d4d12c81fd96b"
+          ],
+          "mod_reciever": [
+            "medved_ak74n_bastion"
+          ],
+          "mod_stock": [
+            "5b0e794b5acfc47a877359b2"
+          ],
+          "mod_magazine": [
+            "55d482194bdc2d1d4e8b456b"
+          ],
+          "mod_charge": [
+            "6130ca3fd92c473c77020dbd"
+          ]
+        }
+      },
+      "vss_bloody_saint": {
+        "id": "57838ad32459774a17445cd2",
+        "chance": 15,
+        "slots": {
+          "mod_magazine": [
+            "57838f9f2459774a150289a0"
+          ],
+          "mod_muzzle": [
+            "medved_vss_muzzle"
+          ],
+          "mod_reciever": [
+            "578395402459774a256959b5"
+          ],
+          "mod_stock": [
+            "578395e82459774a0e553c7b"
+          ],
+          "mod_charge": [
+            "6130ca3fd92c473c77020dbd"
+          ],
+          "mod_mount_004": [
+            "medved_vss_scope_mount"
+          ],
+          "mod_handguard": [
+            "6565bb7eb4b12a56eb04b084"
+          ]
+        }
+      }
     },
-    "weapons": {},
-    "categories": {
-        "medved_svds_pistol_grip": {
-            "SVDS pistol grip assembly": {
-                "id": "6516b129609aaf354b34b3a8",
-                "slots": {
-                    "mod_pistolgrip": [
-                        "6087e663132d4d12c81fd96b"
-                    ]
-                }
-            }
-        },
-        "medved_svds_stock": {
-            "SVDS stock assembly": {
-                "id": "6197b229af1f5202c57a9bea",
-                "slots": {
-                    "mod_stock": [
-                        "medved_svds_buffer_tube"
-                    ]
-                }
-            }
-        },
-        "medved_svds_buffer_tube": {
-            "SVDS buffer tube": {
-                "id": "5ef1ba28c64c5d0dfc0571a5",
-                "slots": {
-                    "mod_stock": [
-                        "medved_svds_ar_stock_adapter"
-                    ]
-                }
-            }
-        },
-        "medved_svds_ar_stock_adapter": {
-            "SVDS AR stock adapter": {
-                "id": "58d2946c86f7744e271174b5",
-                "slots": {
-                    "mod_stock": [
-                        "58d2912286f7744e27117493"
-                    ]
-                }
-            }
-        },
-        "medved_svds_barrel": {
-            "SVDS barrel assembly": {
-                "id": "5c471cb32e221602b177afaa",
-                "slots": {
-                    "mod_muzzle": [
-                        "medved_svds_muzzle_stack"
-                    ],
-                    "mod_gas_block": [
-                        "5c471c842e221615214259b5"
-                    ]
-                }
-            }
-        },
-        "medved_svds_muzzle_stack": {
-            "SVDS muzzle stack": {
-                "id": "5c471bfc2e221602b21d4e17",
-                "slots": {
-                    "mod_sight_front": [
-                        "5c471ba12e221602b3137d76"
-                    ],
-                    "mod_muzzle": [
-                        "medved_svds_suppressor_mount"
-                    ]
-                }
-            }
-        },
-        "medved_svds_suppressor_mount": {
-            "SVDS suppressor mount": {
-                "id": "5e01e9e273d8eb11426f5bc3",
-                "slots": {
-                    "mod_muzzle": [
-                        "5e01ea19e9dc277128008c0b"
-                    ]
-                }
-            }
-        },
-        "medved_svds_chassis_mount": {
-            "SVDS chassis mount with optic and accessories": {
-                "id": "5dfcd0e547101c39625f66f9",
-                "slots": {
-                    "mod_mount_002": [
-                        "medved_svds_light_mount"
-                    ],
-                    "mod_scope": [
-                        "medved_svds_scope_mount"
-                    ],
-                    "mod_foregrip": [
-                        "medved_svds_foregrip_mount"
-                    ]
-                }
-            }
-        },
-        "medved_svds_light_mount": {
-            "SVDS light mount": {
-                "id": "59e0be5d86f7742d48765bd2",
-                "slots": {
-                    "mod_tactical": [
-                        "56def37dd2720bec348b456a"
-                    ]
-                }
-            }
-        },
-        "medved_svds_scope_mount": {
-            "SVDS scope mount": {
-                "id": "618b9643526131765025ab35",
-                "slots": {
-                    "mod_scope": [
-                        "5b3b99475acfc432ff4dcbee"
-                    ],
-                    "mod_mount": [
-                        "618b9671d14d6d5ab879c5ea"
-                    ]
-                }
-            }
-        },
-        "medved_svds_foregrip_mount": {
-            "SVDS foregrip mount": {
-                "id": "59e0bed186f774156f04ce84",
-                "slots": {
-                    "mod_foregrip": [
-                        "5b057b4f5acfc4771e1bd3e9"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_barrel": {
-            "T-5000M barrel with suppressor": {
-                "id": "5df256570dee1b22f862e9c4",
-                "slots": {
-                    "mod_muzzle": [
-                        "medved_t5000_muzzle_stack"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_muzzle_stack": {
-            "T-5000M muzzle adapter with suppressor": {
-                "id": "6130c43c67085e45ef1405a1",
-                "slots": {
-                    "mod_muzzle": [
-                        "5dfa3d2b0dee1b22f862eade"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_stock": {
-            "T-5000M stock assembly": {
-                "id": "5df35e59c41b2312ea3334d5",
-                "slots": {
-                    "mod_handguard": [
-                        "medved_t5000_handguard"
-                    ],
-                    "mod_pistol_grip": [
-                        "5df38a5fb74cd90030650cb6"
-                    ],
-                    "mod_stock_axis": [
-                        "5df35ddddfc58d14537c2036"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_handguard": {
-            "T-5000M handguard with rails, grip, and light": {
-                "id": "5df25d3bfd6b4e6e2276dc9a",
-                "slots": {
-                    "mod_mount_000": [
-                        "5df35eb2b11454561e3923e2"
-                    ],
-                    "mod_mount_001": [
-                        "5df35eb2b11454561e3923e2"
-                    ],
-                    "mod_mount_002": [
-                        "5df35ea9c41b2312ea3334d8"
-                    ],
-                    "mod_mount_003": [
-                        "medved_t5000_light_mount"
-                    ],
-                    "mod_foregrip": [
-                        "5df36948bb49d91fb446d5ad"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_light_mount": {
-            "T-5000M light mount": {
-                "id": "5df35eb2b11454561e3923e2",
-                "slots": {
-                    "mod_tactical": [
-                        "56def37dd2720bec348b456a"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_scope_mount": {
-            "T-5000M scope rail": {
-                "id": "5df35e970b92095fd441e4d2",
-                "slots": {
-                    "mod_scope": [
-                        "medved_t5000_razor_mount"
-                    ]
-                }
-            }
-        },
-        "medved_t5000_razor_mount": {
-            "T-5000M scope mount with Razor": {
-                "id": "618b9643526131765025ab35",
-                "slots": {
-                    "mod_scope": [
-                        "618ba27d9008e4636a67f61d"
-                    ],
-                    "mod_mount": [
-                        "618b9671d14d6d5ab879c5ea"
-                    ]
-                }
-            }
-        },
-        "medved_vss_muzzle": {
-            "VSS suppressor with rear sight and rail": {
-                "id": "57838c962459774a1651ec63",
-                "slots": {
-                    "mod_sight_rear": [
-                        "57838e1b2459774a256959b1"
-                    ],
-                    "mod_mount_000": [
-                        "medved_vss_front_mount"
-                    ]
-                }
-            }
-        },
-        "medved_vss_front_mount": {
-            "VSS front mount with light and grip": {
-                "id": "59eb7ebe86f7740b373438ce",
-                "slots": {
-                    "mod_tactical_001": [
-                        "56def37dd2720bec348b456a"
-                    ],
-                    "mod_foregrip": [
-                        "5b057b4f5acfc4771e1bd3e9"
-                    ]
-                }
-            }
-        },
-        "medved_vss_scope_mount": {
-            "VSS optic rail with scope mount": {
-                "id": "5e569a2e56edd02abe09f280",
-                "slots": {
-                    "mod_scope": [
-                        "medved_vss_razor_mount"
-                    ]
-                }
-            }
-        },
-        "medved_vss_razor_mount": {
-            "VSS scope mount with optic": {
-                "id": "618bab21526131765025ab3f",
-                "slots": {
-                    "mod_scope": [
-                        "5b2388675acfc4771e1be0be"
-                    ],
-                    "mod_mount": [
-                        "618ba91477b82356f91ae0e8"
-                    ]
-                }
-            }
-        }
+    "Holster": {
+      "grach": {
+        "chance": 100
+      }
+    },
+    "ArmorVest": {
+      "6b23 emr": {
+        "chance": 115
+      },
+      "6b13 emr": {
+        "chance": 20
+      },
+      "6b43": {
+        "chance": 0
+      }
+    },
+    "TacticalVest": {
+      "alpha vest": {
+        "chance": 115
+      },
+      "tv-109": {
+        "chance": 35
+      },
+      "6sh112": {
+        "chance": 25
+      }
+    },
+    "Headwear": {
+      "uxpro": {
+        "chance": 100
+      },
+      "ulach coyote": {
+        "chance": 80
+      },
+      "6b47": {
+        "chance": 45
+      },
+      "6b47 emr": {
+        "chance": 35
+      },
+      "ulach black": {
+        "chance": 10
+      }
+    },
+    "Eyewear": {
+      "tactical glasses": {
+        "chance": 30
+      },
+      "dundukk orange": {
+        "chance": 20
+      }
+    },
+    "FaceCover": {
+      "balaclava": {
+        "chance": 90
+      },
+      "cold fear": {
+        "chance": 80
+      }
     }
+  },
+  "weapons": {},
+  "categories": {}
 }

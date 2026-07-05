@@ -34,7 +34,7 @@
       "FaceCover": 65,
       "FirstPrimaryWeapon": 100,
       "Headwear": 85,
-      "Holster": 0,
+      "Holster": 100,
       "Pockets": 100,
       "Scabbard": 0,
       "SecondPrimaryWeapon": 0,
@@ -465,8 +465,10 @@
         "DOG_FIGHT_IN": 3,
         "DOG_FIGHT_OUT": 6,
         "ENEMY_BOT_TYPES": [
-          "pmcBEAR",
-          "pmcUSEC"
+          "pmcUsec",
+          "assault",
+          "exUsec",
+          "pmcBot"
         ],
         "ENEMY_LOOK_AT_ME_ANG": 15,
         "FIND_COVER_TO_GET_POSITION_WITH_SHOOT": 2,
@@ -517,7 +519,10 @@
         "TIME_TO_FIND_ENEMY": 22,
         "TIME_TO_FORGOR_ABOUT_ENEMY_SEC": 75,
         "TIME_TO_RUN_TO_COVER_CAUSE_SHOOT_SEC": 15,
-        "WARN_BOT_TYPES": []
+        "WARN_BOT_TYPES": [
+          "assault",
+          "pmcBear"
+        ]
       },
       "Move": {
         "BASESTART_SLOW_DIST": 1.1,
@@ -1012,8 +1017,10 @@
         "DOG_FIGHT_IN": 3,
         "DOG_FIGHT_OUT": 6,
         "ENEMY_BOT_TYPES": [
-          "pmcBEAR",
-          "pmcUSEC"
+          "pmcUsec",
+          "assault",
+          "exUsec",
+          "pmcBot"
         ],
         "ENEMY_LOOK_AT_ME_ANG": 15,
         "FIND_COVER_TO_GET_POSITION_WITH_SHOOT": 2,
@@ -1064,7 +1071,10 @@
         "TIME_TO_FIND_ENEMY": 22,
         "TIME_TO_FORGOR_ABOUT_ENEMY_SEC": 95,
         "TIME_TO_RUN_TO_COVER_CAUSE_SHOOT_SEC": 15,
-        "WARN_BOT_TYPES": []
+        "WARN_BOT_TYPES": [
+          "assault",
+          "pmcBear"
+        ]
       },
       "Move": {
         "BASESTART_SLOW_DIST": 1.1,
@@ -1559,8 +1569,10 @@
         "DOG_FIGHT_IN": 3,
         "DOG_FIGHT_OUT": 6,
         "ENEMY_BOT_TYPES": [
-          "pmcBEAR",
-          "pmcUSEC"
+          "pmcUsec",
+          "assault",
+          "exUsec",
+          "pmcBot"
         ],
         "ENEMY_LOOK_AT_ME_ANG": 15,
         "FIND_COVER_TO_GET_POSITION_WITH_SHOOT": 2,
@@ -1611,7 +1623,10 @@
         "TIME_TO_FIND_ENEMY": 22,
         "TIME_TO_FORGOR_ABOUT_ENEMY_SEC": 95,
         "TIME_TO_RUN_TO_COVER_CAUSE_SHOOT_SEC": 15,
-        "WARN_BOT_TYPES": []
+        "WARN_BOT_TYPES": [
+          "assault",
+          "pmcBear"
+        ]
       },
       "Move": {
         "BASESTART_SLOW_DIST": 1.1,
@@ -2106,8 +2121,10 @@
         "DOG_FIGHT_IN": 3,
         "DOG_FIGHT_OUT": 6,
         "ENEMY_BOT_TYPES": [
-          "pmcBEAR",
-          "pmcUSEC"
+          "pmcUsec",
+          "assault",
+          "exUsec",
+          "pmcBot"
         ],
         "ENEMY_LOOK_AT_ME_ANG": 15,
         "FIND_COVER_TO_GET_POSITION_WITH_SHOOT": 2,
@@ -2158,7 +2175,10 @@
         "TIME_TO_FIND_ENEMY": 22,
         "TIME_TO_FORGOR_ABOUT_ENEMY_SEC": 75,
         "TIME_TO_RUN_TO_COVER_CAUSE_SHOOT_SEC": 15,
-        "WARN_BOT_TYPES": []
+        "WARN_BOT_TYPES": [
+          "assault",
+          "pmcBear"
+        ]
       },
       "Move": {
         "BASESTART_SLOW_DIST": 1.1,
@@ -2491,8 +2511,8 @@
     "equipment": {
       "ArmBand": {},
       "ArmorVest": {
-        "5c0e53c886f7747fa54205c7": 90,
-        "5c0e5bab86f77461f55ed1f3": 65
+        "5c0e53c886f7747fa54205c7": 55,
+        "5c0e5bab86f77461f55ed1f3": 95
       },
       "Backpack": {},
       "Earpiece": {},
@@ -2501,12 +2521,12 @@
         "67af41dd1eb308667602db4a": 20
       },
       "FaceCover": {
-        "572b7f1624597762ae139822": 55,
-        "5ab8f39486f7745cd93a1cca": 30
+        "572b7f1624597762ae139822": 60,
+        "5ab8f39486f7745cd93a1cca": 25
       },
       "FirstPrimaryWeapon": {
-        "5ac4cd105acfc40016339859": 80,
-        "6499849fc93611967b034949": 40
+        "5ac4cd105acfc40016339859": 85,
+        "6499849fc93611967b034949": 25
       },
       "Headwear": {
         "5aa7cfc0e5b5b00015693143": 100,
@@ -2523,8 +2543,8 @@
       },
       "TacticalVest": {
         "5929a2a086f7744f4b234d43": 100,
-        "592c2d1a86f7746dbe2af32a": 60,
-        "59e7643b86f7742cbf2c109a": 35
+        "592c2d1a86f7746dbe2af32a": 35,
+        "59e7643b86f7742cbf2c109a": 60
       }
     },
     "items": {

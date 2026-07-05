@@ -1,0 +1,16 @@
+{
+  "66a30f00d2999bc7b9bba930 name": "The Last Cell",
+  "66a30f00d2999bc7b9bba930 description": "Medved Cell has stopped moving in pieces. Sokol, Buran, and Kedr are operating together under full readiness. Tony wants the whole cell removed in one raid before they scatter again.",
+  "66a30f00d2999bc7b9bba930 note": "Sokol is the commander. Buran is the shield. Kedr is the scout. Tony wants all three dead in the same raid.",
+  "66a30f00d2999bc7b9bba930 startedMessageText": "This is not a hunt anymore. This is cleanup. Sokol, Buran, Kedr. Same raid. You leave one breathing, the cell grows back.",
+  "66a30f00d2999bc7b9bba930 successMessageText": "Good. Commander is dead, shield is broken, scout is quiet. Medved Cell is not a cell anymore. Just bodies with bad patches.",
+  "66a30f00d2999bc7b9bba930 failMessageText": "No. One of them is still breathing, and that means all of them are still a problem.",
+  "66a30f00d2999bc7b9bba930 acceptPlayerMessage": "Understood. I will finish Medved Cell.",
+  "66a30f00d2999bc7b9bba930 declinePlayerMessage": "Not now.",
+  "66a30f00d2999bc7b9bba930 completePlayerMessage": "Medved Cell is finished.",
+  "66a30f00d2999bc7b9bba930 changeQuestMessageText": "The Last Cell updated.",
+
+  "66a30f02d2999bc7b9bba932": "Eliminate Sokol in the same raid.",
+  "66a30f05d2999bc7b9bba935": "Eliminate Buran in the same raid.",
+  "66a30f08d2999bc7b9bba938": "Eliminate Kedr in the same raid."
+}

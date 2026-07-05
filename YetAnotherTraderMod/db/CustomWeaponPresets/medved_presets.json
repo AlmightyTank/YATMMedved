@@ -1,0 +1,237 @@
+{
+    "6a710003d2999bc7b9bba903": {
+        "_changeWeaponName": true,
+        "_encyclopedia": "57838ad32459774a17445cd2",
+        "_id": "6a710003d2999bc7b9bba903",
+        "_items": [
+            {
+                "_id": "6a4afbcf7f817e776c002f60",
+                "_tpl": "57838ad32459774a17445cd2",
+                "upd": {
+                    "Repairable": {
+                        "Durability": 100,
+                        "MaxDurability": 100
+                    }
+                }
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b000118",
+                "_tpl": "5a9e81fba2750c00164f6b11",
+                "slotId": "mod_magazine",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbcf7f817e776c002f62",
+                "_tpl": "57838c962459774a1651ec63",
+                "slotId": "mod_muzzle",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbcf7f817e776c002f64",
+                "_tpl": "578395402459774a256959b5",
+                "slotId": "mod_reciever",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbcf7f817e776c002f65",
+                "_tpl": "578395e82459774a0e553c7b",
+                "slotId": "mod_stock",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b000044",
+                "_tpl": "5e569a2e56edd02abe09f280",
+                "slotId": "mod_mount_004",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbcf7f817e776c002f66",
+                "_tpl": "6565bb7eb4b12a56eb04b084",
+                "slotId": "mod_handguard",
+                "parentId": "6a4afbcf7f817e776c002f60"
+            },
+            {
+                "_id": "6a4afbcf7f817e776c002f63",
+                "_tpl": "57838e1b2459774a256959b1",
+                "slotId": "mod_sight_rear",
+                "parentId": "6a4afbcf7f817e776c002f62"
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b000003",
+                "_tpl": "59eb7ebe86f7740b373438ce",
+                "slotId": "mod_mount_000",
+                "parentId": "6a4afbcf7f817e776c002f62"
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b00010e",
+                "_tpl": "64785e7c19d732620e045e15",
+                "slotId": "mod_scope",
+                "parentId": "6a4afbc42d0dcaa42b000044"
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b00012e",
+                "_tpl": "56def37dd2720bec348b456a",
+                "slotId": "mod_tactical_001",
+                "parentId": "6a4afbc42d0dcaa42b000003"
+            },
+            {
+                "_id": "6a4afbc42d0dcaa42b000033",
+                "_tpl": "5b057b4f5acfc4771e1bd3e9",
+                "slotId": "mod_foregrip",
+                "parentId": "6a4afbc42d0dcaa42b000003"
+            }
+        ],
+        "_name": "VSS \"Bloody Saint\"",
+        "_parent": "6a4afbcf7f817e776c002f60",
+        "_type": "Preset"
+    },
+    "6a4b159b2f67c758c2529316": {
+        "_changeWeaponName": true,
+        "_encyclopedia": "588892092459774ac91d4b11",
+        "_id": "6a4b159b2f67c758c2529316",
+        "_items": [
+            {
+                "_id": "6a4b1557018a2c4a9b00333a",
+                "_tpl": "588892092459774ac91d4b11",
+                "upd": {
+                    "Repairable": {
+                        "MaxDurability": 100.0,
+                        "Durability": 100.0
+                    },
+                    "Foldable": { "Folded": false }
+                }
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b00333b",
+                "_tpl": "5888988e24597752fe43a6fa",
+                "slotId": "mod_magazine",
+                "parentId": "6a4b1557018a2c4a9b00333a"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b00333c",
+                "_tpl": "618b9643526131765025ab35",
+                "slotId": "mod_scope",
+                "parentId": "6a4b1557018a2c4a9b00333a"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b00333f",
+                "_tpl": "5888945a2459774bf43ba385",
+                "slotId": "mod_barrel",
+                "parentId": "6a4b1557018a2c4a9b00333a"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b003342",
+                "_tpl": "6113cc78d3a39d50044c065a",
+                "slotId": "mod_pistol_grip",
+                "parentId": "6a4b1557018a2c4a9b00333a"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b003343",
+                "_tpl": "58889d0c2459775bc215d981",
+                "slotId": "mod_stock",
+                "parentId": "6a4b1557018a2c4a9b00333a"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b00333d",
+                "_tpl": "618ba27d9008e4636a67f61d",
+                "slotId": "mod_scope",
+                "parentId": "6a4b1557018a2c4a9b00333c"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b00333e",
+                "_tpl": "618b9671d14d6d5ab879c5ea",
+                "slotId": "mod_mount",
+                "parentId": "6a4b1557018a2c4a9b00333c"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b003340",
+                "_tpl": "58889c7324597754281f9439",
+                "slotId": "mod_muzzle",
+                "parentId": "6a4b1557018a2c4a9b00333f"
+            },
+            {
+                "_id": "6a4b1557018a2c4a9b003341",
+                "_tpl": "5888961624597754281f93f3",
+                "slotId": "mod_bipod",
+                "parentId": "6a4b1557018a2c4a9b00333f"
+            }
+        ],
+        "_name": "The Last Goodbye",
+        "_parent": "6a4b1557018a2c4a9b00333a",
+        "_type": "Preset"
+    },
+    "6a4b16212f67c758c2529317": {
+        "_changeWeaponName": true,
+        "_encyclopedia": "64637076203536ad5600c990",
+        "_id": "6a4b16212f67c758c2529317",
+        "_items": [
+            {
+                "_id": "6a4b1636018a2c4a9b0033e0",
+                "_tpl": "64637076203536ad5600c990",
+                "upd": {
+                    "Repairable": {
+                        "MaxDurability": 100.0,
+                        "Durability": 100.0
+                    }
+                }
+            },
+            {
+                "_id": "6a4b162d6cff0c810c00004e",
+                "_tpl": "6087e663132d4d12c81fd96b",
+                "slotId": "mod_pistolgrip",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b1636018a2c4a9b0033e2",
+                "_tpl": "646372518610c40fc20204e8",
+                "slotId": "mod_magazine",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b162d6cff0c810c00001c",
+                "_tpl": "6492e3a97df7d749100e29ee",
+                "slotId": "mod_stock",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b1636018a2c4a9b0033e4",
+                "_tpl": "646371faf2404ab67905c8e9",
+                "slotId": "mod_barrel",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b162d6cff0c810c000001",
+                "_tpl": "6491c6f6ef312a876705191b",
+                "slotId": "mod_handguard",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b1636018a2c4a9b0033e7",
+                "_tpl": "6492fb8253acae0af00a29b6",
+                "slotId": "mod_sight_rear",
+                "parentId": "6a4b1636018a2c4a9b0033e0"
+            },
+            {
+                "_id": "6a4b1636018a2c4a9b0033e5",
+                "_tpl": "6492efb8cfcf7c89e701abf3",
+                "slotId": "mod_muzzle",
+                "parentId": "6a4b1636018a2c4a9b0033e4"
+            },
+            {
+                "_id": "6a4b162d6cff0c810c000019",
+                "_tpl": "56def37dd2720bec348b456a",
+                "slotId": "mod_tactical_001",
+                "parentId": "6a4b162d6cff0c810c000001"
+            },
+            {
+                "_id": "6a4b162d6cff0c810c000003",
+                "_tpl": "5c1cd46f2e22164bef5cfedb",
+                "slotId": "mod_foregrip",
+                "parentId": "6a4b162d6cff0c810c000001"
+            }
+        ],
+        "_name": "PKM  \"Police Knock\"",
+        "_parent": "6a4b1636018a2c4a9b0033e0",
+        "_type": "Preset"
+    }
+}

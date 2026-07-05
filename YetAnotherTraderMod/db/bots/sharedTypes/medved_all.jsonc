@@ -1,0 +1,47 @@
+{
+  "firstName": [
+    "Sgt",
+    "Cpl",
+    "Lt",
+    "Maj",
+    "Medved"
+  ],
+  "lastName": [
+    "Sokol",
+    "Buran",
+    "Kedr",
+    "Volk",
+    "Bars",
+    "Kurgan",
+    "Ural",
+    "Tuman",
+    "Shtorm",
+    "Korshun",
+    "Rubezh",
+    "Osa",
+    "Sever",
+    "Vyuga",
+    "Zarya"
+  ],
+  "difficulty": {
+    "all": {
+      "Mind": {
+        "DEFAULT_BEAR_BEHAVIOUR": "Warn",
+        "DEFAULT_USEC_BEHAVIOUR": "AlwaysEnemies",
+        "DEFAULT_SAVAGE_BEHAVIOUR": "AlwaysEnemies",
+        "ENEMY_BOT_TYPES": [
+          "pmcUsec",
+          "assault",
+          "exUsec",
+          "pmcBot"
+        ],
+        "FRIENDLY_BOT_TYPES": [
+          660010,
+          660011,
+          660012,
+          660013
+        ]
+      }
+    }
+  }
+}

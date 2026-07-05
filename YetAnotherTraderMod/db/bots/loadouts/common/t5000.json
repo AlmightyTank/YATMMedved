@@ -1,0 +1,122 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_t5000_barrel": {
+      "T-5000M barrel with suppressor": {
+        "id": "5df256570dee1b22f862e9c4",
+        "slots": {
+          "mod_muzzle": [
+            "medved_t5000_muzzle_stack"
+          ]
+        }
+      }
+    },
+    "medved_t5000_handguard": {
+      "T-5000M handguard with rails, grip, and light": {
+        "id": "5df25d3bfd6b4e6e2276dc9a",
+        "slots": {
+          "mod_mount_000": [
+            "5df35eb2b11454561e3923e2"
+          ],
+          "mod_mount_001": [
+            "5df35eb2b11454561e3923e2"
+          ],
+          "mod_mount_002": [
+            "5df35ea9c41b2312ea3334d8"
+          ],
+          "mod_mount_003": [
+            "medved_t5000_light_mount"
+          ],
+          "mod_foregrip": [
+            "5df36948bb49d91fb446d5ad"
+          ]
+        }
+      }
+    },
+    "medved_t5000_light_mount": {
+      "T-5000M light mount": {
+        "id": "5df35eb2b11454561e3923e2",
+        "slots": {
+          "mod_tactical": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_t5000_mounts": {
+      "t5000_scope_base": {
+        "id": "5df35e970b92095fd441e4d2",
+        "chance": 100,
+        "slots": {
+          "mod_scope": [
+            "medved_scopes_long"
+          ]
+        }
+      }
+    },
+    "medved_t5000_muzzle_stack": {
+      "T-5000M muzzle adapter with suppressor": {
+        "id": "6130c43c67085e45ef1405a1",
+        "slots": {
+          "mod_muzzle": [
+            "5dfa3d2b0dee1b22f862eade"
+          ]
+        }
+      }
+    },
+    "medved_t5000_parts": {
+      "t5000_barrel": {
+        "id": "5df256570dee1b22f862e9c4",
+        "chance": 100
+      },
+      "t5000_stock": {
+        "id": "5df35e59c41b2312ea3334d5",
+        "chance": 100
+      },
+      "t5000_mag": {
+        "id": "5df25b6c0b92095fd441e4cf",
+        "chance": 100
+      }
+    },
+    "medved_t5000_razor_mount": {
+      "T-5000M scope mount with Razor": {
+        "id": "618b9643526131765025ab35",
+        "slots": {
+          "mod_scope": [
+            "618ba27d9008e4636a67f61d"
+          ],
+          "mod_mount": [
+            "618b9671d14d6d5ab879c5ea"
+          ]
+        }
+      }
+    },
+    "medved_t5000_scope_mount": {
+      "T-5000M scope rail": {
+        "id": "5df35e970b92095fd441e4d2",
+        "slots": {
+          "mod_scope": [
+            "medved_t5000_razor_mount"
+          ]
+        }
+      }
+    },
+    "medved_t5000_stock": {
+      "T-5000M stock assembly": {
+        "id": "5df35e59c41b2312ea3334d5",
+        "slots": {
+          "mod_handguard": [
+            "medved_t5000_handguard"
+          ],
+          "mod_pistol_grip": [
+            "5df38a5fb74cd90030650cb6"
+          ],
+          "mod_stock_axis": [
+            "5df35ddddfc58d14537c2036"
+          ]
+        }
+      }
+    }
+  }
+}

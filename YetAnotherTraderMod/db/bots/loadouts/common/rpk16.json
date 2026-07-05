@@ -1,0 +1,98 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_rpk16_barrel": {
+      "RPK-16 barrel with muzzle": {
+        "id": "5beec2820db834001b095426",
+        "slots": {
+          "mod_muzzle": [
+            "5943eeeb86f77412d6384f6b"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_dustcover": {
+      "rpk16_dustcover": {
+        "id": "5beec91a0db834001961942d",
+        "chance": 100,
+        "children": {
+          "rpk16_rear_sight_base": {
+            "id": "5beec9450db83400970084fd",
+            "chance": 100,
+            "slots": {
+              "mod_sight_rear": [
+                "5bf3f59f0db834001a6fa060"
+              ]
+            }
+          }
+        },
+        "slots": {
+          "mod_scope": [
+            "medved_sights"
+          ],
+          "mod_sight_rear": [
+            "rpk16_rear_sight_base"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_handguard": {
+      "RPK-16 handguard with light and grip": {
+        "id": "5beec3e30db8340019619424",
+        "slots": {
+          "mod_mount_001": [
+            "medved_rpk16_light_mount"
+          ],
+          "mod_foregrip": [
+            "5b057b4f5acfc4771e1bd3e9"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_light_mount": {
+      "RPK-16 tactical light mount": {
+        "id": "5beecbb80db834001d2c465e",
+        "slots": {
+          "mod_tactical_000": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_long_barrel": {
+      "rpk16_long_barrel": {
+        "id": "5beec2820db834001b095426",
+        "chance": 100,
+        "slots": {
+          "mod_muzzle": [
+            "5beec3420db834001b095429"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_rear_sight": {
+      "RPK-16 rear sight base": {
+        "id": "5beec9450db83400970084fd",
+        "slots": {
+          "mod_sight_rear": [
+            "649ec2cec93611967b03495e"
+          ]
+        }
+      }
+    },
+    "medved_rpk16_receiver": {
+      "RPK-16 receiver with optic and rear sight": {
+        "id": "5beec91a0db834001961942d",
+        "slots": {
+          "mod_scope": [
+            "58491f3324597764bc48fa02"
+          ],
+          "mod_sight_rear": [
+            "medved_rpk16_rear_sight"
+          ]
+        }
+      }
+    }
+  }
+}

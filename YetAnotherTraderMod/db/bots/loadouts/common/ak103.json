@@ -1,0 +1,187 @@
+{
+  "equipment": {},
+  "weapons": {},
+  "categories": {
+    "medved_ak103_bastion": {
+      "AK-103 Bastion with optic": {
+        "id": "5d2c76ed48f03532f2136169",
+        "slots": {
+          "mod_scope": [
+            "64785e7c19d732620e045e15"
+          ]
+        }
+      }
+    },
+    "medved_ak103_dustcovers": {
+      "ak100_dustcover": {
+        "id": "5ac50da15acfc4001718d287",
+        "chance": 60
+      },
+      "ak_dustcover": {
+        "id": "5649af094bdc2df8348b4586",
+        "chance": 35
+      },
+      "bastion": {
+        "id": "5d2c772c48f0355d95672c25",
+        "chance": 25
+      }
+    },
+    "medved_ak103_gas_block": {
+      "AK-103 gas block with tactical mounts": {
+        "id": "5b237e425acfc4771e1be0b6",
+        "slots": {
+          "mod_mount_001": [
+            "medved_ak103_light_mount"
+          ],
+          "mod_mount_002": [
+            "medved_ak103_grip_mount"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gas_blocks": {
+      "ak100_gas_block": {
+        "id": "5a01ad4786f77450561fda02",
+        "chance": 50
+      },
+      "akm_gas_block": {
+        "id": "59d64ec286f774171d1e0a42",
+        "chance": 40
+      },
+      "ultimak_m1b": {
+        "id": "59ccfdba86f7747f2109a587",
+        "chance": 25
+      }
+    },
+    "medved_ak103_gp25_gas_block": {
+      "AK-103 gas block with GP-25 handguard": {
+        "id": "59d64ec286f774171d1e0a42",
+        "slots": {
+          "mod_handguard": [
+            "medved_ak103_gp25_handguard"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_handguard": {
+      "AK-103 GP-25 handguard with light": {
+        "id": "5648b4534bdc2d3d1c8b4580",
+        "slots": {
+          "mod_tactical_002": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_reciever": {
+      "AK-103 dust cover with optic": {
+        "id": "5649af884bdc2d1b2b8b4589",
+        "slots": {
+          "mod_scope": [
+            "64785e7c19d732620e045e15"
+          ]
+        }
+      }
+    },
+    "medved_ak103_gp25_stock": {
+      "AK-103 folding stock with pad": {
+        "id": "5ac78eaf5acfc4001926317a",
+        "slots": {
+          "mod_stock": [
+            "59ecc3dd86f7746dc827481c"
+          ]
+        }
+      }
+    },
+    "medved_ak103_grip_mount": {
+      "AK-103 foregrip mount": {
+        "id": "5b4736b986f77405cb415c10",
+        "slots": {
+          "mod_foregrip": [
+            "5b057b4f5acfc4771e1bd3e9"
+          ]
+        }
+      }
+    },
+    "medved_ak103_light_mount": {
+      "AK-103 light mount": {
+        "id": "5b4736a986f774040571e998",
+        "slots": {
+          "mod_tactical": [
+            "56def37dd2720bec348b456a"
+          ]
+        }
+      }
+    },
+    "medved_ak103_mags_heavy": {
+      "ak103_40_bakelite": {
+        "id": "5a01c29586f77474660c694c",
+        "chance": 55
+      },
+      "ak103_30_polymer": {
+        "id": "5ac66bea5acfc43b321d4aec",
+        "chance": 45
+      },
+      "ak103_75_drum": {
+        "id": "59e5f5a486f7746c530b3ce2",
+        "chance": 20
+      }
+    },
+    "medved_ak103_mags_standard": {
+      "ak103_30_polymer": {
+        "id": "5ac66bea5acfc43b321d4aec",
+        "chance": 55
+      },
+      "ak103_30_bakelite": {
+        "id": "59d625f086f774661516605d",
+        "chance": 45
+      },
+      "ak103_30_steel": {
+        "id": "59e5d83b86f7745aed03d262",
+        "chance": 35
+      },
+      "ak103_40_bakelite": {
+        "id": "5a01c29586f77474660c694c",
+        "chance": 20
+      }
+    },
+    "medved_ak103_muzzles": {
+      "ak103_compensator": {
+        "id": "5ac72e7d5acfc40016339a02",
+        "chance": 60
+      },
+      "ak103_thread_adapter": {
+        "id": "5ac72e895acfc43b321d4bd5",
+        "chance": 25
+      },
+      "dtk_1": {
+        "id": "5649ab884bdc2ded0b8b457f",
+        "chance": 20
+      }
+    },
+    "medved_ak103_rear_sights": {
+      "ak103_rear_sight": {
+        "id": "5ac733a45acfc400192630e2",
+        "chance": 55
+      },
+      "ak_rear_sight": {
+        "id": "5649b0544bdc2d1b2b8b458a",
+        "chance": 45
+      }
+    },
+    "medved_ak103_stocks": {
+      "ak100_stock": {
+        "id": "5ac50c185acfc400163398d4",
+        "chance": 55
+      },
+      "pt_1": {
+        "id": "5cf50fc5d7f00c056c53f83c",
+        "chance": 35
+      },
+      "zhukov_s": {
+        "id": "5ac78eaf5acfc4001926317a",
+        "chance": 25
+      }
+    }
+  }
+}
