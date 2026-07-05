@@ -2,32 +2,24 @@
   <PropertyGroup>
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{3EAD611D-2C72-403B-9050-310452A3A9FA}</ProjectGuid>
   </PropertyGroup>
-
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <BuildProjects Include="..\Prepatch\Prepatch.csproj" />
     <BuildProjects Include="..\Plugin\Plugin.csproj" />
     <BuildProjects Include="..\YetAnotherTraderMod\yatm-medved-server.csproj" />
   </ItemGroup>
-
   <Target Name="Build">
-    <MSBuild
-      Projects="@(BuildProjects)"
-      Targets="Build"
-      Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+    <MSBuild Projects="@(BuildProjects)" Targets="Build" Properties="Configuration=$(Configuration);Platform=$(Platform)" />
   </Target>
-
   <Target Name="Rebuild">
-    <MSBuild
-      Projects="@(BuildProjects)"
-      Targets="Rebuild"
-      Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+    <MSBuild Projects="@(BuildProjects)" Targets="Rebuild" Properties="Configuration=$(Configuration);Platform=$(Platform)" />
   </Target>
-
   <Target Name="Clean">
-    <MSBuild
-      Projects="@(BuildProjects)"
-      Targets="Clean"
-      Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+    <MSBuild Projects="@(BuildProjects)" Targets="Clean" Properties="Configuration=$(Configuration);Platform=$(Platform)" />
   </Target>
+  <Import Project="ZipPackage.targets" Condition="Exists('ZipPackage.targets')" />
 </Project>

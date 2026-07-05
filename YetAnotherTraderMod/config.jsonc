@@ -1,6 +1,8 @@
 {
     "MedvedCell": {
         "Enabled": true,
+        "IsDebugEnabled": false,
+        "IsRealDebugEnabled": false,
         "DebugForceSpawn": true,
         "AvoidTakenBossZones": true,
 
@@ -23,7 +25,9 @@
             "interchange": "ZoneCenter,ZoneIDEA,ZoneOLI"
         },
 
-        // WTT quest completion controls the Medved stage.
+        // Tony main story completion controls the Medved stage.
+        // YATMMedved only adds one WTT quest: yatm_medved_the_last_cell.
+        // That quest is the final Stage 6 payoff; it does not control the ramp.
         // Stage effects are code-defined:
         // Stage 0 = easy       = Reserve only
         // Stage 1 = easy       = Customs + Reserve
@@ -37,48 +41,54 @@
 
             "Stages": [
                 {
-                    "Name": "Stage 1 - Medved Attention",
+                    "Name": "Stage 1 - First Medved Movement / Tony Quest 15",
                     "RequiredQuestIds": [
-                        "yatm_medved_bear_tracks"
+                        "66aa0000000000000000000f"
                     ],
                     "RequireAllQuestIds": true
                 },
                 {
-                    "Name": "Stage 2 - Kedr Quieted",
+                    "Name": "Stage 2 - Medved Pressure / Tony Quest 19",
                     "RequiredQuestIds": [
-                        "yatm_medved_voices_in_the_static"
+                        "66aa00000000000000000013"
                     ],
                     "RequireAllQuestIds": true
                 },
                 {
-                    "Name": "Stage 3 - Buran Broken",
+                    "Name": "Stage 3 - Medved Expansion / Tony Quest 23",
                     "RequiredQuestIds": [
-                        "yatm_medved_the_heavy_one"
+                        "66aa00000000000000000017"
                     ],
                     "RequireAllQuestIds": true
                 },
                 {
-                    "Name": "Stage 4 - Sokol Exposed",
+                    "Name": "Stage 4 - Medved Hard Hunt / Tony Quest 28",
                     "RequiredQuestIds": [
-                        "yatm_medved_cut_the_falcon"
+                        "66aa0000000000000000001c"
                     ],
                     "RequireAllQuestIds": true
                 },
                 {
-                    "Name": "Stage 5 - No Loose Ends",
+                    "Name": "Stage 5 - Last Warning / Tony Quest 29",
                     "RequiredQuestIds": [
-                        "yatm_medved_no_loose_ends"
+                        "66aa0000000000000000001d"
                     ],
                     "RequireAllQuestIds": true
                 },
                 {
-                    "Name": "Stage 6 - Volkov's Warning",
+                    "Name": "Stage 6 - Full Cell Active / Tony Quest 30",
                     "RequiredQuestIds": [
-                        "yatm_medved_volkovs_warning"
+                        "66aa0000000000000000001e"
                     ],
                     "RequireAllQuestIds": true
                 }
-            ]
+            ],
+
+            // Legacy single-quest fields are intentionally empty.
+            // If QuestId is set and completed, MedvedSpawnController treats it as Stage 6.
+            "QuestId": "",
+            "CompletedSpawnChances": {},
+            "CompletedSpawnZones": {}
         }
     }
 }

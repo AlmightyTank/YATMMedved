@@ -39,6 +39,7 @@
 		<PackageReference Include="SPTarkov.DI" Version="4.0.13" />
 		<PackageReference Include="SPTarkov.Server.Core" Version="4.0.13" />
 		<PackageReference Include="SPTarkov.Reflection" Version="4.0.13" />
+		<PackageReference Include="WTT-ServerCommonLib" Version="2.0.20" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -50,6 +51,10 @@
 			<Private>false</Private>
 			<HintPath>..\Reference\WTT-ServerCommonLib\WTT-ServerCommonLib.dll</HintPath>
 		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="db\CustomQuests\" />
 	</ItemGroup>
 
 	<Target Name="DeployServerModToSPT" AfterTargets="Build">

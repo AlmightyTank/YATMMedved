@@ -55,7 +55,7 @@ public class MedvedSpawnController(
                 _logger.Info($"Medved legacy progression quest {config.QuestProgression.QuestId} completed. Applying Stage 6 rules.");
             }
 
-            _logger.Info(
+            _logger.Debug(
                 $"Medved Cell stage resolved: Stage {medvedStage}, difficulty={difficulty}, " +
                 $"maps={string.Join(", ", stageSpawnZones.Keys)}."
             );

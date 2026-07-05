@@ -6,6 +6,8 @@ namespace YATMMedved.Models;
 public class MedvedCellConfig
 {
     public bool Enabled { get; set; } = true;
+    public bool IsDebugEnabled { get; set; } = false;
+    public bool IsRealDebugEnabled { get; set; } = false;
     public bool DebugForceSpawn { get; set; } = false;
 
     // Does not block other bosses or Goons. It only removes configured Medved zones
@@ -43,44 +45,46 @@ public class MedvedQuestProgressionConfig
 {
     public bool Enabled { get; set; } = true;
 
-    // Stages are checked in order. The highest completed stage becomes the active
-    // Medved stage. Stage data should only identify quest requirements.
+    // Tony main story completion controls Medved stage 1-6.
+    // YATMMedved only adds one WTT quest: yatm_medved_the_last_cell.
+    // That final quest should require Tony Quest 30 / Stage 6, but it does not
+    // control the boss spawn ramp itself.
     public List<MedvedQuestProgressionStage> Stages { get; set; } = new()
     {
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 1 - Medved Attention",
-            RequiredQuestIds = new List<string> { "yatm_medved_bear_tracks" },
+            Name = "Stage 1 - First Medved Movement / Tony Quest 15",
+            RequiredQuestIds = new List<string> { "66aa0000000000000000000f" },
             RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 2 - Kedr Quieted",
-            RequiredQuestIds = new List<string> { "yatm_medved_voices_in_the_static" },
+            Name = "Stage 2 - Medved Pressure / Tony Quest 19",
+            RequiredQuestIds = new List<string> { "66aa00000000000000000013" },
             RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 3 - Buran Broken",
-            RequiredQuestIds = new List<string> { "yatm_medved_the_heavy_one" },
+            Name = "Stage 3 - Medved Expansion / Tony Quest 23",
+            RequiredQuestIds = new List<string> { "66aa00000000000000000017" },
             RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 4 - Sokol Exposed",
-            RequiredQuestIds = new List<string> { "yatm_medved_cut_the_falcon" },
+            Name = "Stage 4 - Medved Hard Hunt / Tony Quest 28",
+            RequiredQuestIds = new List<string> { "66aa0000000000000000001c" },
             RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 5 - No Loose Ends",
-            RequiredQuestIds = new List<string> { "yatm_medved_no_loose_ends" },
+            Name = "Stage 5 - Last Warning / Tony Quest 29",
+            RequiredQuestIds = new List<string> { "66aa0000000000000000001d" },
             RequireAllQuestIds = true
         },
         new MedvedQuestProgressionStage
         {
-            Name = "Stage 6 - Volkov's Warning",
-            RequiredQuestIds = new List<string> { "yatm_medved_volkovs_warning" },
+            Name = "Stage 6 - Full Cell Active / Tony Quest 30",
+            RequiredQuestIds = new List<string> { "66aa0000000000000000001e" },
             RequireAllQuestIds = true
         }
     };

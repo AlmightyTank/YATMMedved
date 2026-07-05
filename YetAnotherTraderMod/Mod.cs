@@ -42,8 +42,18 @@ public class YATMModPreload(ModHelper modHelper, YATMLogger logger) : IOnLoad
     public Task OnLoad()
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
+
         ModConfig = modHelper.GetJsonDataFromFile<MainConfig>(pathToMod, "config.jsonc") ?? new MainConfig();
-        logger.Info("Loaded config.jsonc.");
+
+        var medvedConfig = ModConfig.MedvedCell ?? new MedvedCellConfig();
+
+        logger.IsDebugEnabled = medvedConfig.IsDebugEnabled;
+        logger.IsRealDebugEnabled = medvedConfig.IsRealDebugEnabled;
+
+        logger.Init(pathToMod);
+
+        logger.RealDebug("Loaded config.jsonc.");
+
         return Task.CompletedTask;
     }
 }

@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <ModName Condition="'$(ModName)' == ''">YATMMedvedMoreBots</ModName>
+    <ServerModFolderName Condition="'$(ServerModFolderName)' == ''">YATMMedved</ServerModFolderName>
+    <ServerModRoot Condition="'$(ServerModRoot)' == ''">SPT\user\mods</ServerModRoot>
+  </PropertyGroup>
+
+  <Target Name="ZipPackage" AfterTargets="Build" Condition="'$(SkipZipPackage)' != 'true'">
+    <Exec Command='powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(MSBuildThisFileDirectory)..\tools\package-mod.ps1&quot; -Configuration &quot;$(Configuration)&quot; -ModName &quot;$(ModName)&quot; -ServerModFolderName &quot;$(ServerModFolderName)&quot; -ServerModRoot &quot;$(ServerModRoot)&quot; -SkipBuild' />
+  </Target>
+</Project>
