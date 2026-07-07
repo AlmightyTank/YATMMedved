@@ -51,16 +51,41 @@
 			<Private>false</Private>
 			<HintPath>..\Reference\WTT-ServerCommonLib\WTT-ServerCommonLib.dll</HintPath>
 		</Reference>
+		<Reference Include="YetAnotherTraderMod">
+			<HintPath>..\..\YetAnotherTraderMod\YetAnotherTraderMod-ServerMod\bin\Debug\YetAnotherTraderMod.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="config\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+
+		<Content Include="db\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="db\CustomTraderOffers\" />
 	</ItemGroup>
 
 	<Target Name="DeployServerModToSPT" AfterTargets="Build">
 		<MakeDir Directories="$(ServerModDeployDir)" />
 
 		<ItemGroup>
-			<ServerDeployFiles Include="$(TargetDir)**\*.*" />
+			<ConfigDeployFiles Include="$(ProjectDir)config\**\*.*" />
+			<DbDeployFiles Include="$(ProjectDir)db\**\*.*" />
 		</ItemGroup>
 
-		<Copy SourceFiles="@(ServerDeployFiles)" DestinationFiles="@(ServerDeployFiles->'$(ServerModDeployDir)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+		<!-- Copy only the server mod DLL -->
+		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(ServerModDeployDir)$(TargetFileName)" SkipUnchangedFiles="true" />
+
+		<!-- Copy config folder only -->
+		<Copy SourceFiles="@(ConfigDeployFiles)" DestinationFiles="@(ConfigDeployFiles->'$(ServerModDeployDir)config\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(ConfigDeployFiles)' != ''" />
+
+		<!-- Copy db folder only -->
+		<Copy SourceFiles="@(DbDeployFiles)" DestinationFiles="@(DbDeployFiles->'$(ServerModDeployDir)db\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(DbDeployFiles)' != ''" />
 	</Target>
 
 </Project>

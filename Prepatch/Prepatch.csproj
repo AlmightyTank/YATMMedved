@@ -1,44 +1,68 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
-    <AssemblyName>YATMMedvedPrepatch</AssemblyName>
-    <Description>YATM Medved prepatch needed to add custom MoreBotsAPI WildSpawnTypes.</Description>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>latest</LangVersion>
-    <Configurations>Debug;Release</Configurations>
-    <RootNamespace>YetAnotherTraderMod</RootNamespace>
 
-    <!-- Change this if your SPT folder is somewhere else. Do NOT prefix this with $(ProjectDir). -->
-    <SptInstallPath Condition="'$(SptInstallPath)' == ''">C:\RealSPT</SptInstallPath>
-    <PrepatchDeployDir>$(SptInstallPath)\BepInEx\patchers\</PrepatchDeployDir>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+		<OutputType>Library</OutputType>
+		<AssemblyName>YATMMedvedPrepatch</AssemblyName>
+		<RootNamespace>YATMMedvedPrepatch</RootNamespace>
+		<Description>YATM Medved prepatch needed to add custom MoreBotsAPI WildSpawnTypes.</Description>
 
-  <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="MoreBotsPrepatch">
-      <HintPath>..\Reference\MoreBotsPrepatch.dll</HintPath>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>$(SptInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx">
-      <HintPath>$(SptInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>$(SptInstallPath)\BepInEx\core\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+		<Configurations>Debug;Release</Configurations>
 
-  <Target Name="DeployPrepatchToSPT" AfterTargets="Build">
-    <MakeDir Directories="$(PrepatchDeployDir)" />
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PrepatchDeployDir)" SkipUnchangedFiles="true" />
-  </Target>
+		<!-- Change this if your SPT folder is somewhere else. Do NOT prefix this with $(ProjectDir). -->
+		<SptInstallPath Condition="'$(SptInstallPath)' == ''">C:\RealSPT</SptInstallPath>
+		<PrepatchDeployDir>$(SptInstallPath)\BepInEx\patchers\</PrepatchDeployDir>
+
+		<AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="MoreBotsPrepatch">
+			<HintPath>..\Reference\MoreBotsPrepatch.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="0Harmony">
+			<HintPath>$(SptInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="BepInEx">
+			<HintPath>$(SptInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="Mono.Cecil">
+			<HintPath>$(SptInstallPath)\BepInEx\core\Mono.Cecil.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine">
+			<HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(SptInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="DeployPrepatchToSPT" AfterTargets="Build">
+		<MakeDir Directories="$(PrepatchDeployDir)" />
+
+		<Copy
+		  SourceFiles="$(TargetPath)"
+		  DestinationFiles="$(PrepatchDeployDir)$(TargetFileName)"
+		  SkipUnchangedFiles="true" />
+	</Target>
+
 </Project>

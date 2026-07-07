@@ -28,7 +28,7 @@ public record ModMetadata : AbstractModMetadata
     {
         { "com.morebotsapi.tacticaltoaster", new SemanticVersioning.Range(">=2.0.1") },
         { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.20") },
-        { "com.amightytank.yatm", new SemanticVersioning.Range(">=0.2.0") }
+        { "com.amightytank.yatm", new SemanticVersioning.Range(">=0.1.1") }
     };
     public override string? Url { get; init; }
     public override bool? IsBundleMod { get; init; }

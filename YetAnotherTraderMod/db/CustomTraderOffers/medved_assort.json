@@ -1,0 +1,98 @@
+{
+    "66a0f6b2c4d8e90123456789": {
+        "items": [
+            {
+                "_id": "6a4b0059674ac44d6e002ecf",
+                "_tpl": "64637076203536ad5600c990",
+                "parentId": "hideout",
+                "slotId": "hideout",
+                "upd": {
+                    "UnlimitedCount": false,
+                    "StackObjectsCount": 12,
+                    "BuyRestrictionMax": 1,
+                    "BuyRestrictionCurrent": 0
+                }
+            },
+            {
+                "_id": "6a4b00524d137e587f000020",
+                "_tpl": "6087e663132d4d12c81fd96b",
+                "slotId": "mod_pistolgrip",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b0059674ac44d6e002ed1",
+                "_tpl": "646372518610c40fc20204e8",
+                "slotId": "mod_magazine",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b00524d137e587f000023",
+                "_tpl": "6492e3a97df7d749100e29ee",
+                "slotId": "mod_stock",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b0059674ac44d6e002ed3",
+                "_tpl": "646371faf2404ab67905c8e9",
+                "slotId": "mod_barrel",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b00524d137e587f000004",
+                "_tpl": "6491c6f6ef312a876705191b",
+                "slotId": "mod_handguard",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b00524d137e587f000026",
+                "_tpl": "6492fb8253acae0af00a29b6",
+                "slotId": "mod_sight_rear",
+                "parentId": "6a4b0059674ac44d6e002ecf"
+            },
+            {
+                "_id": "6a4b00524d137e587f000002",
+                "_tpl": "6492ef63cfcf7c89e701abf1",
+                "slotId": "mod_muzzle",
+                "parentId": "6a4b0059674ac44d6e002ed3"
+            },
+            {
+                "_id": "6a4b00524d137e587f00003c",
+                "_tpl": "56def37dd2720bec348b456a",
+                "slotId": "mod_tactical_001",
+                "parentId": "6a4b00524d137e587f000004"
+            },
+            {
+                "_id": "6a4b00524d137e587f000007",
+                "_tpl": "5c1cd46f2e22164bef5cfedb",
+                "slotId": "mod_foregrip",
+                "parentId": "6a4b00524d137e587f000004"
+            }
+        ],
+        "barter_scheme": {
+            "6a4b0059674ac44d6e002ecf": [
+                [
+                    {
+                        "count": 500000,
+                        "_tpl": "5449016a4bdc2d6f028b456f"
+                    }
+                ]
+            ]
+        },
+        "loyal_level_items": {
+            "6a4b0059674ac44d6e002ecf": 4
+        },
+        "yatm_settings": {
+            "6a4b0059674ac44d6e002ecf": [
+                [
+                    {
+                        "CashOnly": true,
+                        "AlwaysBarter": false,
+                        "AlwaysInStock": false,
+                        //"AmmoBarterPackTplId": "657023f81419851aef03e6f1", use if ammo is required for barter, otherwise comment out
+                        //"PackOfferId": "6bc44f10412a56b764637823"
+                    }
+                ]
+            ]
+        }
+    }
+}
