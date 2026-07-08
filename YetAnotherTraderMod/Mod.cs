@@ -66,7 +66,6 @@ public class YATMMedvedBots(
     MoreBotsCustomBotConfigService customBotConfigService,
     FactionService factionService,
     LoadoutService loadoutService,
-    WTTServerCommonLib.WTTServerCommonLib commonLib,
     DatabaseService databaseService,
     MedvedSpawnController medvedSpawnController,
     YATMLogger logger) : IOnLoad

@@ -20,6 +20,9 @@ public sealed class YATMWTTLoader(
         {
             var assembly = Assembly.GetExecutingAssembly();
 
+            _logger.Info("Loading WTT Medved custom items...");
+            _wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
+
             _logger.Info("Loading WTT Medved custom weapon presets...");
             _wttCommon.CustomWeaponPresetService.CreateCustomWeaponPresets(assembly);
 

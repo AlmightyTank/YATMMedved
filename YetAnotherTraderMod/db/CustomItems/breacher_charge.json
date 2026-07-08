@@ -1,0 +1,50 @@
+{
+    "6a43f02138a6d33bffe98334": {
+        "itemTplToClone": "5a0c27731526d80618476ac4",
+        "parentId": "543be6564bdc2df4348b4568",
+        "handbookParentId": "5b5f7a2386f774093f2ed3c4",
+        "overrideProperties": {
+            "ExaminedByDefault": true,
+            "CanSellOnRagfair": false,
+            "CanRequireOnRagfair": false,
+            "BackgroundColor": "yellow",
+            "RarityPvE": "Superrare",
+
+            "ExplDelay": 1.5,
+            "explDelay": 1.5,
+
+            "Blindness": {
+                "x": 12,
+                "y": 24,
+                "z": 45
+            },
+            "Contusion": {
+                "x": 2,
+                "y": 5,
+                "z": 25
+            },
+            "ContusionDistance": 12,
+
+            "ExplosionEffectType": "Flashbang",
+            "ThrowType": "flash_grenade",
+            "FragmentsCount": 0,
+            "MaxExplosionDistance": 0,
+            "MinExplosionDistance": 0,
+            "throwDamMax": 0,
+
+            "Weight": 0.35,
+            "StackMaxSize": 1,
+            "StackObjectsCount": 1
+        },
+        "locales": {
+            "en": {
+                "name": "Breacher Charge",
+                "shortName": "Breach",
+                "description": "A compact flash charge pulled from Buran's kit. The casing is dented, the markings are scratched off, and the fuse has been tuned for violent room entry. It hits harder and faster than a standard Zarya, but it is still a stun device, not a fragmentation grenade. Tony says Buran never knocked twice."
+            }
+        },
+        "fleaPriceRoubles": 85000,
+        "handbookPriceRoubles": 85000,
+        "addtoItemBlacklist": true
+    }
+}

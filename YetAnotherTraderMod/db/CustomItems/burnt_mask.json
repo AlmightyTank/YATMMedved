@@ -1,0 +1,21 @@
+{
+    "6a43f02138a6d33bffe98333": {
+        "itemTplToClone": "5fd8d28367cb5e077335170f",
+        "parentId": "5a341c4686f77469e155819e",
+        "handbookParentId": "5b47574386f77428ca22b32f",
+        "overrideProperties": {
+            "ExaminedByDefault": true,
+            "CanSellOnRagfair": false
+        },
+        "locales": {
+            "en": {
+                "name": "Kedr's Burnt Mask",
+                "shortName": "Kedr Mask",
+                "description": "A smoke-stained balaclava pulled from Kedr's kit. The fabric smells like ash, cordite, and old firehouse gear. Tony says Kedr wore it through stairwells, rooftops, and burning halls long after he stopped saving people from them."
+            }
+        },
+        "fleaPriceRoubles": 65000,
+        "handbookPriceRoubles": 65000,
+        "addtoItemBlacklist": false
+    }
+}

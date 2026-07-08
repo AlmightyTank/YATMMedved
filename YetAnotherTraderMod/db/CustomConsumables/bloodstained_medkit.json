@@ -1,0 +1,93 @@
+{
+    "cloneOrigin": "5d02797c86f774203f38e30a",
+    "id": "6a43f02138a6d33bffe98332",
+    "fleaPrice": 1.75,
+    "handBookPrice": 1.75,
+    "includeInSameQuestsAsOrigin": false,
+    "addSpawnsInSamePlacesAsOrigin": false,
+    "spawnWeightComparedToOrigin": 0.02,
+    "BackgroundColor": "yellow",
+    "MaxHpResource": 12,
+    "medUseTime": 15,
+    "effects_damage": {
+        "DestroyedPart": {
+            "delay": 0,
+            "duration": 15,
+            "fadeOut": 0,
+            "healthPenaltyMin": 0.82,
+            "healthPenaltyMax": 0.92
+        },
+        "Fracture": {
+            "delay": 0,
+            "duration": 0,
+            "fadeOut": 0
+        },
+        "LightBleeding": {
+            "delay": 0,
+            "duration": 0,
+            "fadeOut": 0
+        },
+        "HeavyBleeding": {
+            "delay": 0,
+            "duration": 0,
+            "fadeOut": 0
+        },
+        "Pain": {
+            "delay": 0,
+            "duration": 120,
+            "fadeOut": 15
+        }
+    },
+    "effects_health": {},
+    "Buffs": [
+        {
+            "AbsoluteValue": true,
+            "BuffType": "HealthRate",
+            "Chance": 1,
+            "Delay": 10,
+            "Duration": 90,
+            "Value": 0.6
+        },
+        {
+            "AbsoluteValue": true,
+            "BuffType": "SkillRate",
+            "Chance": 1,
+            "Delay": 20,
+            "Duration": 180,
+            "SkillName": "StressResistance",
+            "Value": 2
+        },
+        {
+            "AbsoluteValue": true,
+            "BuffType": "StaminaRate",
+            "Chance": 1,
+            "Delay": 10,
+            "Duration": 90,
+            "Value": 1
+        },
+        {
+            "AbsoluteValue": true,
+            "BuffType": "HydrationRate",
+            "Chance": 1,
+            "Delay": 105,
+            "Duration": 40,
+            "Value": -0.25
+        },
+        {
+            "AbsoluteValue": true,
+            "BuffType": "EnergyRate",
+            "Chance": 1,
+            "Delay": 105,
+            "Duration": 40,
+            "Value": -0.1
+        }
+    ],
+    "locales": {
+        "en": {
+            "name": "Bloodstained Medkit",
+            "shortName": "Bloodmed",
+            "description": "A modified Surv12 field surgical kit carried by Sokol. The case is stained with old blood and marked with worn BEAR field codes. It was built for ugly wounds, fast patch jobs, and keeping a dying man moving long enough to finish the job."
+        }
+    },
+    "addtoItemBlacklist": true
+}
