@@ -1,122 +1,170 @@
 [
-  {
-    "id": "6a700004d2999bc7b9bba904",
-    "imageUrl": "/files/achievement/medved_cell.png",
-    "assetPath": "",
-    "rewards": [],
-    "conditions": {
-      "availableForFinish": [
-        {
-          "id": "6a700041d2999bc7b9bba941",
-          "index": 0,
-          "dynamicLocale": false,
-          "visibilityConditions": [],
-          "globalQuestCounterId": "",
-          "parentId": "",
-          "value": 1,
-          "type": "Elimination",
-          "oneSessionOnly": false,
-          "completeInSeconds": 0,
-          "doNotResetIfCounterCompleted": false,
-          "isResetOnConditionFailed": false,
-          "isNecessary": false,
-          "counter": {
-            "id": "6a700042d2999bc7b9bba942",
-            "conditions": [
-              {
-                "id": "6a700043d2999bc7b9bba943",
-                "dynamicLocale": false,
-                "target": "bossMedvedSokol",
-                "value": 1,
-                "compareMethod": ">=",
-                "conditionType": "Kills",
-                "weapon": [],
-                "bodyPart": [],
-                "daytime": {
-                  "from": 0,
-                  "to": 0
+    {
+        "id": "6a700004d2999bc7b9bba904",
+        "imageUrl": "/files/achievement/medved_cell.png",
+        "assetPath": "",
+        "rewards": [],
+        "conditions": {
+            "availableForFinish": [
+                {
+                    "id": "6a700041d2999bc7b9bba941",
+                    "index": 0,
+                    "dynamicLocale": false,
+                    "visibilityConditions": [],
+                    "globalQuestCounterId": "",
+                    "parentId": "",
+                    "value": 1,
+                    "type": "Completion",
+                    "oneSessionOnly": false,
+                    "completeInSeconds": 0,
+                    "doNotResetIfCounterCompleted": false,
+                    "isResetOnConditionFailed": false,
+                    "isNecessary": false,
+                    "counter": {
+                        "id": "6a700042d2999bc7b9bba942",
+                        "conditions": [
+                            {
+                                "id": "6a700043d2999bc7b9bba943",
+                                "dynamicLocale": false,
+                                "target": "Savage",
+                                "value": 1,
+                                "compareMethod": ">=",
+                                "conditionType": "Kills",
+                                "weapon": [],
+                                "bodyPart": [],
+                                "daytime": {
+                                    "from": 0,
+                                    "to": 0
+                                },
+                                "distance": {
+                                    "compareMethod": ">=",
+                                    "value": 0
+                                },
+                                "resetOnSessionEnd": false,
+                                "savageRole": [
+                                    "bossMedvedSokol"
+                                ],
+                                "enemyEquipmentExclusive": [],
+                                "enemyEquipmentInclusive": [],
+                                "enemyHealthEffects": [],
+                                "weaponCaliber": [],
+                                "weaponModsExclusive": [],
+                                "weaponModsInclusive": []
+                            }
+                        ]
+                    },
+                    "conditionType": "CounterCreator"
                 },
-                "distance": {
-                  "compareMethod": ">=",
-                  "value": 0
+                {
+                    "id": "6a700046d2999bc7b9bba946",
+                    "index": 1,
+                    "dynamicLocale": false,
+                    "visibilityConditions": [],
+                    "globalQuestCounterId": "",
+                    "parentId": "",
+                    "value": 1,
+                    "type": "Completion",
+                    "oneSessionOnly": false,
+                    "completeInSeconds": 0,
+                    "doNotResetIfCounterCompleted": false,
+                    "isResetOnConditionFailed": false,
+                    "isNecessary": false,
+                    "counter": {
+                        "id": "6a700047d2999bc7b9bba947",
+                        "conditions": [
+                            {
+                                "id": "6a700048d2999bc7b9bba948",
+                                "dynamicLocale": false,
+                                "target": "Savage",
+                                "value": 1,
+                                "compareMethod": ">=",
+                                "conditionType": "Kills",
+                                "weapon": [],
+                                "bodyPart": [],
+                                "daytime": {
+                                    "from": 0,
+                                    "to": 0
+                                },
+                                "distance": {
+                                    "compareMethod": ">=",
+                                    "value": 0
+                                },
+                                "resetOnSessionEnd": false,
+                                "savageRole": [
+                                    "followerMedvedBuran"
+                                ],
+                                "enemyEquipmentExclusive": [],
+                                "enemyEquipmentInclusive": [],
+                                "enemyHealthEffects": [],
+                                "weaponCaliber": [],
+                                "weaponModsExclusive": [],
+                                "weaponModsInclusive": []
+                            }
+                        ]
+                    },
+                    "conditionType": "CounterCreator"
                 },
-                "resetOnSessionEnd": false,
-                "savageRole": [],
-                "enemyEquipmentExclusive": [],
-                "enemyEquipmentInclusive": [],
-                "enemyHealthEffects": [],
-                "weaponCaliber": [],
-                "weaponModsExclusive": [],
-                "weaponModsInclusive": []
-              },
-              {
-                "id": "6a700044d2999bc7b9bba944",
-                "dynamicLocale": false,
-                "target": "followerMedvedBuran",
-                "value": 1,
-                "compareMethod": ">=",
-                "conditionType": "Kills",
-                "weapon": [],
-                "bodyPart": [],
-                "daytime": {
-                  "from": 0,
-                  "to": 0
-                },
-                "distance": {
-                  "compareMethod": ">=",
-                  "value": 0
-                },
-                "resetOnSessionEnd": false,
-                "savageRole": [],
-                "enemyEquipmentExclusive": [],
-                "enemyEquipmentInclusive": [],
-                "enemyHealthEffects": [],
-                "weaponCaliber": [],
-                "weaponModsExclusive": [],
-                "weaponModsInclusive": []
-              },
-              {
-                "id": "6a700045d2999bc7b9bba945",
-                "dynamicLocale": false,
-                "target": "followerMedvedKedr",
-                "value": 1,
-                "compareMethod": ">=",
-                "conditionType": "Kills",
-                "weapon": [],
-                "bodyPart": [],
-                "daytime": {
-                  "from": 0,
-                  "to": 0
-                },
-                "distance": {
-                  "compareMethod": ">=",
-                  "value": 0
-                },
-                "resetOnSessionEnd": false,
-                "savageRole": [],
-                "enemyEquipmentExclusive": [],
-                "enemyEquipmentInclusive": [],
-                "enemyHealthEffects": [],
-                "weaponCaliber": [],
-                "weaponModsExclusive": [],
-                "weaponModsInclusive": []
-              }
-            ]
-          },
-          "conditionType": "CounterCreator"
-        }
-      ],
-      "fail": []
-    },
-    "instantComplete": false,
-    "showNotificationsInGame": true,
-    "showProgress": true,
-    "prefab": "",
-    "rarity": "Legendary",
-    "hidden": false,
-    "showConditions": true,
-    "progressBarEnabled": true,
-    "side": "Pmc",
-    "index": 9104
-  }
+                {
+                    "id": "6a700049d2999bc7b9bba949",
+                    "index": 2,
+                    "dynamicLocale": false,
+                    "visibilityConditions": [],
+                    "globalQuestCounterId": "",
+                    "parentId": "",
+                    "value": 1,
+                    "type": "Completion",
+                    "oneSessionOnly": false,
+                    "completeInSeconds": 0,
+                    "doNotResetIfCounterCompleted": false,
+                    "isResetOnConditionFailed": false,
+                    "isNecessary": false,
+                    "counter": {
+                        "id": "6a700050d2999bc7b9bba950",
+                        "conditions": [
+                            {
+                                "id": "6a700051d2999bc7b9bba951",
+                                "dynamicLocale": false,
+                                "target": "Savage",
+                                "value": 1,
+                                "compareMethod": ">=",
+                                "conditionType": "Kills",
+                                "weapon": [],
+                                "bodyPart": [],
+                                "daytime": {
+                                    "from": 0,
+                                    "to": 0
+                                },
+                                "distance": {
+                                    "compareMethod": ">=",
+                                    "value": 0
+                                },
+                                "resetOnSessionEnd": false,
+                                "savageRole": [
+                                    "followerMedvedKedr"
+                                ],
+                                "enemyEquipmentExclusive": [],
+                                "enemyEquipmentInclusive": [],
+                                "enemyHealthEffects": [],
+                                "weaponCaliber": [],
+                                "weaponModsExclusive": [],
+                                "weaponModsInclusive": []
+                            }
+                        ]
+                    },
+                    "conditionType": "CounterCreator"
+                }
+            ],
+            "fail": []
+        },
+        "instantComplete": false,
+        "showNotificationsInGame": true,
+        "showProgress": true,
+        "prefab": "",
+        "rarity": "Legendary",
+        "hidden": false,
+        "showConditions": true,
+        "progressBarEnabled": true,
+        "side": "Pmc",
+        "index": 9104
+    }
 ]
