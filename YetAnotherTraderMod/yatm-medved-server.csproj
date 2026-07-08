@@ -54,6 +54,7 @@
 		<Reference Include="YetAnotherTraderMod">
 			<HintPath>..\..\YetAnotherTraderMod\YetAnotherTraderMod-ServerMod\bin\Debug\YetAnotherTraderMod.dll</HintPath>
 		</Reference>
+		
 	</ItemGroup>
 
 	<ItemGroup>
@@ -68,6 +69,7 @@
 
 	<ItemGroup>
 	  <Folder Include="db\CustomTraderOffers\" />
+	  <Folder Include="db\CustomConsumables\" />
 	</ItemGroup>
 
 	<Target Name="DeployServerModToSPT" AfterTargets="Build">
