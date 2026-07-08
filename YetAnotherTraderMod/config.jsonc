@@ -3,7 +3,7 @@
         "Enabled": true,
         "IsDebugEnabled": false,
         "IsRealDebugEnabled": false,
-        "DebugForceSpawn": true,
+        "DebugForceSpawn": false,
         "AvoidTakenBossZones": true,
 
         // Spawn chance stays config-driven. Quest progression does not change chance.

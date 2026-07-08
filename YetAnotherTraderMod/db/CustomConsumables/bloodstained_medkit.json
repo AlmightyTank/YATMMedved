@@ -88,6 +88,5 @@
             "shortName": "Bloodmed",
             "description": "A modified Surv12 field surgical kit carried by Sokol. The case is stained with old blood and marked with worn BEAR field codes. It was built for ugly wounds, fast patch jobs, and keeping a dying man moving long enough to finish the job."
         }
-    },
-    "addtoItemBlacklist": true
+    }
 }

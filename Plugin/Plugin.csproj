@@ -11,6 +11,7 @@
     <!-- Change this if your SPT folder is somewhere else. Do NOT prefix this with $(ProjectDir). -->
     <SptInstallPath Condition="'$(SptInstallPath)' == ''">C:\RealSPT</SptInstallPath>
     <PluginDeployDir>$(SptInstallPath)\BepInEx\plugins\yatm-medved\</PluginDeployDir>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>

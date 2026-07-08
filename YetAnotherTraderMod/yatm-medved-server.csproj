@@ -13,9 +13,11 @@
 		<PlatformTarget>x64</PlatformTarget>
 		<Prefer32Bit>false</Prefer32Bit>
 
-		<OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
+		<OutputPath>bin\$(Configuration)\$(MSBuildProjectName)\$(AssemblyName)\</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<EnableDefaultContentItems>false</EnableDefaultContentItems>
+
+		<DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
 
 		<!-- Change this if your SPT folder is somewhere else. Do NOT prefix this with $(ProjectDir). -->
 		<SptInstallPath Condition="'$(SptInstallPath)' == ''">C:\RealSPT</SptInstallPath>
@@ -27,9 +29,10 @@
 
 	<ItemGroup>
 		<Content Include="config.jsonc">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="db\**\*">
+
+		<Content Include="db\**\*.*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
@@ -47,47 +50,52 @@
 			<Private>false</Private>
 			<HintPath>..\Reference\MoreBotsServer\MoreBotsServer.dll</HintPath>
 		</Reference>
-		<Reference Include="WTT-ServerCommonLib">
-			<Private>false</Private>
-			<HintPath>..\Reference\WTT-ServerCommonLib\WTT-ServerCommonLib.dll</HintPath>
-		</Reference>
+
 		<Reference Include="YetAnotherTraderMod">
+			<Private>false</Private>
 			<HintPath>..\..\YetAnotherTraderMod\YetAnotherTraderMod-ServerMod\bin\Debug\YetAnotherTraderMod.dll</HintPath>
 		</Reference>
-		
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="config\**\*">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-
-		<Content Include="db\**\*">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
+		<Folder Include="db\CustomTraderOffers\" />
+		<Folder Include="db\CustomConsumables\" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="db\CustomTraderOffers\" />
-	  <Folder Include="db\CustomConsumables\" />
-	</ItemGroup>
-
-	<Target Name="DeployServerModToSPT" AfterTargets="Build">
+	<Target Name="DeployServerModToSPT" AfterTargets="Build" Condition="'$(DesignTimeBuild)' != 'true'">
 		<MakeDir Directories="$(ServerModDeployDir)" />
+		<MakeDir Directories="$(ServerModDeployDir)db\" />
 
 		<ItemGroup>
-			<ConfigDeployFiles Include="$(ProjectDir)config\**\*.*" />
 			<DbDeployFiles Include="$(ProjectDir)db\**\*.*" />
 		</ItemGroup>
 
-		<!-- Copy only the server mod DLL -->
-		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(ServerModDeployDir)$(TargetFileName)" SkipUnchangedFiles="true" />
+		<Message Importance="High" Text="Deploying YATMMedved to: $(ServerModDeployDir)" />
+		<Message Importance="High" Text="ProjectDir: $(ProjectDir)" />
+		<Message Importance="High" Text="Config path: $(ProjectDir)config.jsonc" />
 
-		<!-- Copy config folder only -->
-		<Copy SourceFiles="@(ConfigDeployFiles)" DestinationFiles="@(ConfigDeployFiles->'$(ServerModDeployDir)config\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(ConfigDeployFiles)' != ''" />
+		<Error
+			Text="Missing config.jsonc at $(ProjectDir)config.jsonc"
+			Condition="!Exists('$(ProjectDir)config.jsonc')" />
 
-		<!-- Copy db folder only -->
-		<Copy SourceFiles="@(DbDeployFiles)" DestinationFiles="@(DbDeployFiles->'$(ServerModDeployDir)db\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(DbDeployFiles)' != ''" />
+		<!-- Copy server mod DLL -->
+		<Copy
+			SourceFiles="$(TargetPath)"
+			DestinationFiles="$(ServerModDeployDir)$(TargetFileName)"
+			SkipUnchangedFiles="false" />
+
+		<!-- Copy root config.jsonc -->
+		<Copy
+			SourceFiles="$(ProjectDir)config.jsonc"
+			DestinationFiles="$(ServerModDeployDir)config.jsonc"
+			SkipUnchangedFiles="false" />
+
+		<!-- Copy db folder -->
+		<Copy
+			SourceFiles="@(DbDeployFiles)"
+			DestinationFiles="@(DbDeployFiles->'$(ServerModDeployDir)db\%(RecursiveDir)%(Filename)%(Extension)')"
+			SkipUnchangedFiles="false"
+			Condition="'@(DbDeployFiles)' != ''" />
 	</Target>
 
 </Project>

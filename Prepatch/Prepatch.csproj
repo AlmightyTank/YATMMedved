@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net471</TargetFramework>
@@ -17,6 +17,7 @@
 
 		<AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
 		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -59,10 +60,7 @@
 	<Target Name="DeployPrepatchToSPT" AfterTargets="Build">
 		<MakeDir Directories="$(PrepatchDeployDir)" />
 
-		<Copy
-		  SourceFiles="$(TargetPath)"
-		  DestinationFiles="$(PrepatchDeployDir)$(TargetFileName)"
-		  SkipUnchangedFiles="true" />
+		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(PrepatchDeployDir)$(TargetFileName)" SkipUnchangedFiles="true" />
 	</Target>
 
 </Project>
