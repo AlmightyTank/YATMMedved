@@ -1,5 +1,5 @@
 {
-  // Marksman: Serzhant Kedr. Built for SVDS / T-5000 / VSS loadouts.
+  // Light assault: Serzhant Kedr. Fast close-range kit with Death Shadow/CQCM-style masks.
   "type": "medved",
   "presetBatch": 15,
   "isBoss": false,
@@ -27,7 +27,7 @@
   },
 
   "equipment": {
-    "faceShieldIsActiveChancePercent": 55,
+    "faceShieldIsActiveChancePercent": 20,
     "forceOnlyArmoredRigWhenNoArmor": false,
     "forceStock": true,
     "laserIsActiveChancePercent": 65,

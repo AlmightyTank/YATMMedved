@@ -1,5 +1,5 @@
 {
-  // Heavy support: Starshina Buran. Built for RPK-16 / AK-103 GP-25 / RPD / PKM loadouts.
+  // Heavy breacher: Starshina Buran. Always helmeted, face-shielded, and armored.
   "type": "medved",
   "presetBatch": 15,
   "isBoss": false,
@@ -27,7 +27,7 @@
   },
 
   "equipment": {
-    "faceShieldIsActiveChancePercent": 80,
+    "faceShieldIsActiveChancePercent": 100,
     "forceOnlyArmoredRigWhenNoArmor": false,
     "forceStock": true,
     "laserIsActiveChancePercent": 75,

@@ -199,6 +199,51 @@
       "uxpro": {
         "id": "5aa2ba46e5b5b000137b758d",
         "chance": 50
+      },
+      "altyn_full": {
+        "id": "5aa7e276e5b5b000171d0647",
+        "chance": 65,
+        "slots": {
+          "mod_equipment_000": [
+            "5aa7e373e5b5b000137b76f0"
+          ]
+        }
+      },
+      "rys_t_full": {
+        "id": "5f60c74e3b85f6263c145586",
+        "chance": 50,
+        "slots": {
+            "mod_equipment": [
+                "5f60b85bbdb8e27dee3dc985"
+            ],
+            "Helmet_top": [
+                "657bc285aab96fccee08bea3"
+            ],
+            "Helmet_back": [
+                "657bc2c5a1c61ee0c3036333"
+            ],
+            "Helmet_ears": [
+                "657bc2e7b30eca976305118d"
+            ]
+        }
+      },
+      "maska_1sch": {
+        "id": "5c091a4e0db834001d5addc8",
+        "chance": 45,
+        "slots": {
+          "mod_equipment_000": [
+            "5c0919b50db834001b7ce3b9"
+          ]
+        }
+      },
+      "vulkan_5": {
+        "id": "5ca20ee186f774799474abc2",
+        "chance": 15,
+        "slots": {
+          "mod_equipment_000": [
+            "5ca2113f86f7740b2547e1d2"
+          ]
+        }
       }
     },
     "Eyewear": {
@@ -219,6 +264,54 @@
       "cold fear": {
         "id": "5ab8f39486f7745cd93a1cca",
         "chance": 25
+      },
+      "death_shadow": {
+        "id": "6570aead4d84f81fd002a033",
+        "chance": 120
+      },
+      "cqcm_black": {
+        "id": "657089638db3adca1009f4ca",
+        "chance": 90
+      }
+    },
+    "Backpack": {
+      "tri_zip_foliage": {
+        "id": "545cdae64bdc2d39198b4568",
+        "chance": 90
+      },
+      "lbt_1476a": {
+        "id": "618cfae774bb2d036a049e7c",
+        "chance": 70
+      },
+      "attack_2": {
+        "id": "5ab8ebf186f7742d8b372e80",
+        "chance": 45
+      },
+      "beta_2": {
+        "id": "5b44c6ae86f7742d1627baea",
+        "chance": 35
+      },
+      "pilgrim": {
+        "id": "59e763f286f7742ee57895da",
+        "chance": 10
+      }
+    },
+    "Earpiece": {
+      "comtac2": {
+        "id": "5645bcc04bdc2d363b8b4572",
+        "chance": 70
+      },
+      "sordin": {
+        "id": "5aa2ba19e5b5b00014028f4e",
+        "chance": 45
+      },
+      "tactical_sport": {
+        "id": "5c165d832e2216398b5a7e36",
+        "chance": 35
+      },
+      "gssh": {
+        "id": "5b432b965acfc47a8774094e",
+        "chance": 15
       }
     }
   },

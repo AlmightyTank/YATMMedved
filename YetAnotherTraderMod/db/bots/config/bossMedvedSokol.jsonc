@@ -1,5 +1,5 @@
 {
-  // Boss: Mayor Sokol. Higher preset batch and cleaner durability than followers.
+  // Boss: Mayor Sokol. Cell handler/medic-marksman. Always carries a backpack.
   "type": "medved",
   "presetBatch": 15,
   "isBoss": true,

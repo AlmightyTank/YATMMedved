@@ -1,100 +1,96 @@
 {
-  "equipment": {
-    "FirstPrimaryWeapon": {
-      "ak74m": {
-        "id": "5ac4cd105acfc40016339859",
-        "chance": 100,
-        "slots": {
-          "mod_gas_block": [
-            "medved_ak74m_gas_block"
-          ],
-          "mod_muzzle": [
-            "5ac7655e5acfc40016339a19"
-          ],
-          "mod_pistol_grip": [
-            "5649ade84bdc2d1b2b8b4587",
-            "5beec8ea0db834001a6f9dbf"
-          ],
-          "mod_reciever": [
-            "medved_ak74m_dustcovers"
-          ],
-          "mod_magazine": [
-            "medved_ak74_mags_standard"
-          ],
-          "mod_stock": [
-            "medved_ak74m_stocks_special"
-          ],
-          "mod_mount_000": [
-            "medved_dovetail_mid",
-            "medved_dovetail_optics"
-          ],
-          "mod_sight_rear": [
-            "5ac72e475acfc400180ae6fe"
-          ]
+    "equipment": {
+        "FirstPrimaryWeapon": {
+            "ak74m_medved_standard": {
+                "id": "5ac4cd105acfc40016339859",
+                "chance": 100,
+                "presetId": "6a4d05bc2373cd1c4e9ba8f0",
+                "slots": {
+                    "mod_gas_block": [
+                        "5a01ad4786f77450561fda02"
+                    ],
+                    "mod_muzzle": [
+                        "5649ab884bdc2ded0b8b457f"
+                    ],
+                    "mod_pistol_grip": [
+                        "6087e663132d4d12c81fd96b"
+                    ],
+                    "mod_reciever": [
+                        "5d2c76ed48f03532f2136169"
+                    ],
+                    "mod_stock": [
+                        "6761779c48fa5c377e06fc3f"
+                    ],
+                    "mod_magazine": [
+                        "5aaa4194e5b5b055d06310a5"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ]
+                }
+            }
+        },
+        "Holster": {
+            "grach": {
+                "chance": 100
+            }
+        },
+        "ArmorVest": {
+            "6b23 emr": {
+                "chance": 105
+            },
+            "6b13 emr": {
+                "chance": 70
+            },
+            "6b43": {
+                "chance": 0
+            }
+        },
+        "TacticalVest": {
+            "6sh112": {
+                "chance": 115
+            },
+            "tv-109": {
+                "chance": 45
+            },
+            "alpha vest": {
+                "chance": 35
+            }
+        },
+        "Headwear": {
+            "6b47 emr": {
+                "chance": 120
+            },
+            "6b47": {
+                "chance": 75
+            },
+            "uxpro": {
+                "chance": 20
+            },
+            "ulach black": {
+                "chance": 0
+            },
+            "ulach coyote": {
+                "chance": 0
+            }
+        },
+        "Eyewear": {
+            "tactical glasses": {
+                "chance": 30
+            },
+            "dundukk orange": {
+                "chance": 20
+            }
+        },
+        "FaceCover": {
+            "balaclava": {
+                "chance": 55
+            },
+            "cold fear": {
+                "chance": 30
+            }
         }
-      }
     },
-    "Holster": {
-      "grach": {
-        "chance": 100
-      }
-    },
-    "ArmorVest": {
-      "6b23 emr": {
-        "chance": 105
-      },
-      "6b13 emr": {
-        "chance": 70
-      },
-      "6b43": {
-        "chance": 0
-      }
-    },
-    "TacticalVest": {
-      "6sh112": {
-        "chance": 115
-      },
-      "tv-109": {
-        "chance": 45
-      },
-      "alpha vest": {
-        "chance": 35
-      }
-    },
-    "Headwear": {
-      "6b47 emr": {
-        "chance": 120
-      },
-      "6b47": {
-        "chance": 75
-      },
-      "uxpro": {
-        "chance": 20
-      },
-      "ulach black": {
-        "chance": 0
-      },
-      "ulach coyote": {
-        "chance": 0
-      }
-    },
-    "Eyewear": {
-      "tactical glasses": {
-        "chance": 30
-      },
-      "dundukk orange": {
-        "chance": 20
-      }
-    },
-    "FaceCover": {
-      "balaclava": {
-        "chance": 55
-      },
-      "cold fear": {
-        "chance": 30
-      }
-    }
-  },
-  "weapons": {},
-  "categories": {}
+    "weapons": {},
+    "categories": {}
 }

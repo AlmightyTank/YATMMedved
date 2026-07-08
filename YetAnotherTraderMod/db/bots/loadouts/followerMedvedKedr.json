@@ -1,149 +1,211 @@
 {
-  "equipment": {
-    "FirstPrimaryWeapon": {
-      "sr3m": {
-        "id": "651450ce0e00edc794068371",
-        "chance": 55,
-        "slots": {
-          "mod_muzzle": [
-            "65144ff50e00edc79406836f"
-          ],
-          "mod_reciever": [
-            "57c44f4f2459772d2c627113"
-          ],
-          "mod_magazine": [
-            "65118f531b90b4fc77015083"
-          ],
-          "mod_pistol_grip": [
-            "medved_sr3m_grips"
-          ],
-          "mod_charge": [
-            "6130ca3fd92c473c77020dbd"
-          ],
-          "mod_handguard": [
-            "medved_sr3m_handguards"
-          ],
-          "mod_foregrip": [
-            "medved_sr3m_foregrips"
-          ]
+    "equipment": {
+        "FirstPrimaryWeapon": {
+            "sr3m_backdraft_common": {
+                "id": "651450ce0e00edc794068371",
+                "chance": 75,
+                "presetId": "6a4d05bc2373cd1c4e9ba8eb",
+                "slots": {
+                    "mod_muzzle": [
+                        "65144ff50e00edc79406836f"
+                    ],
+                    "mod_reciever": [
+                        "57c44f4f2459772d2c627113"
+                    ],
+                    "mod_magazine": [
+                        "65118f531b90b4fc77015083"
+                    ],
+                    "mod_pistol_grip": [
+                        "57c44fa82459772d2d75e415"
+                    ],
+                    "mod_stock": [
+                        "57c450252459772d28133253"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ],
+                    "mod_mount_000": [
+                        "67069cbbb29a2cd33803338c"
+                    ],
+                    "mod_handguard": [
+                        "6565c3ab977bcc2dbb01c2e7"
+                    ],
+                    "mod_foregrip": [
+                        "6565c0c2ff7eb7070409084c"
+                    ]
+                }
+            },
+            "ak74n_fireline_uncommon": {
+                "id": "5644bd2b4bdc2d3b4c8b4572",
+                "chance": 20,
+                "presetId": "6a4d05bc2373cd1c4e9ba8ef",
+                "slots": {
+                    "mod_gas_block": [
+                        "59c6633186f7740cf0493bb9"
+                    ],
+                    "mod_muzzle": [
+                        "5f633f791b231926f2329f13"
+                    ],
+                    "mod_pistol_grip": [
+                        "5e2192a498a36665e8337386"
+                    ],
+                    "mod_reciever": [
+                        "5649af094bdc2df8348b4586"
+                    ],
+                    "mod_sight_rear": [
+                        "5649b0544bdc2d1b2b8b458a"
+                    ],
+                    "mod_stock": [
+                        "5e217ba4c1434648c13568cd"
+                    ],
+                    "mod_magazine": [
+                        "55d481904bdc2d8c2f8b456a"
+                    ],
+                    "mod_mount_000": [
+                        "57486e672459770abd687134"
+                    ]
+                }
+            },
+            "vss_bloody_saint_rare": {
+                "id": "57838ad32459774a17445cd2",
+                "chance": 5,
+                "presetId": "6a710003d2999bc7b9bba903",
+                "slots": {
+                    "mod_mount_000": [
+                        "67069cbbb29a2cd33803338c"
+                    ],
+                    "mod_magazine": [
+                        "65118f531b90b4fc77015083"
+                    ],
+                    "mod_muzzle": [
+                        "57838c962459774a1651ec63"
+                    ],
+                    "mod_reciever": [
+                        "578395402459774a256959b5"
+                    ],
+                    "mod_stock": [
+                        "578395e82459774a0e553c7b"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ],
+                    "mod_handguard": [
+                        "651178336cad06c37c049eb4"
+                    ]
+                }
+            }
+        },
+        "Holster": {
+            "pmt_smoke_signal": {
+                "id": "579204f224597773d619e051",
+                "chance": 100,
+                "presetId": "6a4d05f62373cd1c4e9ba8f4",
+                "slots": {
+                    "mod_magazine": [
+                        "55d485be4bdc2d962f8b456f"
+                    ],
+                    "mod_muzzle": [
+                        "5c7e8fab2e22165df16b889b"
+                    ],
+                    "mod_reciever": [
+                        "6374a822e629013b9c0645c8"
+                    ],
+                    "mod_pistolgrip": [
+                        "637b6d610aef6cfc5e02dd14"
+                    ]
+                }
+            }
+        },
+        "ArmorVest": {
+            "6b23 emr": {
+                "chance": 115
+            },
+            "6b13 emr": {
+                "chance": 20
+            },
+            "6b43": {
+                "chance": 0
+            }
+        },
+        "TacticalVest": {
+            "alpha vest": {
+                "chance": 115
+            },
+            "tv-109": {
+                "chance": 35
+            },
+            "6sh112": {
+                "chance": 25
+            }
+        },
+        "Headwear": {
+            "6b47": {
+                "id": "5aa7cfc0e5b5b00015693143",
+                "chance": 80
+            },
+            "ulach coyote": {
+                "id": "5b40e2bc5acfc40016388216",
+                "chance": 65,
+                "slots": {
+                    "Helmet_top": [
+                        "657112234269e9a568089eac"
+                    ],
+                    "Helmet_back": [
+                        "657112a4818110db4600aa66"
+                    ],
+                    "Helmet_ears": [
+                        "657112ce22996eaf110881fb"
+                    ]
+                }
+            },
+            "light_cap": {
+                "id": "5aa2ba46e5b5b000137b758d",
+                "chance": 35
+            }
+        },
+        "Eyewear": {
+            "tactical glasses": {
+                "chance": 30
+            },
+            "dundukk orange": {
+                "chance": 20
+            }
+        },
+        "FaceCover": {
+            "death_shadow": {
+                "id": "6570aead4d84f81fd002a033",
+                "chance": 120
+            },
+            "cqcm": {
+                "id": "67a4b71ad3228756b6088ee2",
+                "chance": 100
+            },
+            "cold_fear": {
+                "id": "67a9dc769de6826a650ee066",
+                "chance": 25
+            },
+            "balaclava": {
+                "id": "572b7f1624597762ae139822",
+                "chance": 15
+            }
+        },
+        "SecondPrimaryWeapon": {},
+        "Backpack": {},
+        "Earpiece": {
+            "gssh": {
+                "id": "5b432b965acfc47a8774094e",
+                "chance": 100
+            },
+            "comtac2": {
+                "id": "5645bcc04bdc2d363b8b4572",
+                "chance": 60
+            },
+            "razor": {
+                "id": "5e4d34ca86f774264f758330",
+                "chance": 35
+            }
         }
-      },
-      "ak74n": {
-        "id": "5644bd2b4bdc2d3b4c8b4572",
-        "chance": 30,
-        "slots": {
-          "mod_gas_block": [
-            "medved_ak74n_gas_block"
-          ],
-          "mod_muzzle": [
-            "5f633f791b231926f2329f13"
-          ],
-          "mod_pistol_grip": [
-            "6087e663132d4d12c81fd96b"
-          ],
-          "mod_reciever": [
-            "medved_ak74n_bastion"
-          ],
-          "mod_stock": [
-            "5b0e794b5acfc47a877359b2"
-          ],
-          "mod_magazine": [
-            "55d482194bdc2d1d4e8b456b"
-          ],
-          "mod_charge": [
-            "6130ca3fd92c473c77020dbd"
-          ]
-        }
-      },
-      "vss_bloody_saint": {
-        "id": "57838ad32459774a17445cd2",
-        "chance": 15,
-        "slots": {
-          "mod_magazine": [
-            "57838f9f2459774a150289a0"
-          ],
-          "mod_muzzle": [
-            "medved_vss_muzzle"
-          ],
-          "mod_reciever": [
-            "578395402459774a256959b5"
-          ],
-          "mod_stock": [
-            "578395e82459774a0e553c7b"
-          ],
-          "mod_charge": [
-            "6130ca3fd92c473c77020dbd"
-          ],
-          "mod_mount_004": [
-            "medved_vss_scope_mount"
-          ],
-          "mod_handguard": [
-            "6565bb7eb4b12a56eb04b084"
-          ]
-        }
-      }
     },
-    "Holster": {
-      "grach": {
-        "chance": 100
-      }
-    },
-    "ArmorVest": {
-      "6b23 emr": {
-        "chance": 115
-      },
-      "6b13 emr": {
-        "chance": 20
-      },
-      "6b43": {
-        "chance": 0
-      }
-    },
-    "TacticalVest": {
-      "alpha vest": {
-        "chance": 115
-      },
-      "tv-109": {
-        "chance": 35
-      },
-      "6sh112": {
-        "chance": 25
-      }
-    },
-    "Headwear": {
-      "uxpro": {
-        "chance": 100
-      },
-      "ulach coyote": {
-        "chance": 80
-      },
-      "6b47": {
-        "chance": 45
-      },
-      "6b47 emr": {
-        "chance": 35
-      },
-      "ulach black": {
-        "chance": 10
-      }
-    },
-    "Eyewear": {
-      "tactical glasses": {
-        "chance": 30
-      },
-      "dundukk orange": {
-        "chance": 20
-      }
-    },
-    "FaceCover": {
-      "balaclava": {
-        "chance": 90
-      },
-      "cold fear": {
-        "chance": 80
-      }
-    }
-  },
-  "weapons": {},
-  "categories": {}
+    "weapons": {},
+    "categories": {}
 }

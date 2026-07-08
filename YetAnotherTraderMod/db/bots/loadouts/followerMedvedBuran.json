@@ -1,170 +1,206 @@
 {
-  "equipment": {
-    "FirstPrimaryWeapon": {
-      "rpd": {
-        "id": "6513ef33e06849f06c0957ca",
-        "chance": 45,
-        "slots": {
-          "mod_magazine": [
-            "6513f0a194c72326990a3868"
-          ],
-          "mod_stock": [
-            "medved_rpd_stock"
-          ],
-          "mod_barrel": [
-            "medved_rpd_barrel"
-          ],
-          "mod_handguard": [
-            "6513f05a94c72326990a3866"
-          ],
-          "mod_sight_rear": [
-            "6513f153e63f29908d0ffaba"
-          ]
-        }
-      },
-      "rpk16": {
-        "id": "5beed0f50db834001c062b12",
-        "chance": 30,
-        "slots": {
-          "mod_pistol_grip": [
-            "6087e663132d4d12c81fd96b"
-          ],
-          "mod_reciever": [
-            "medved_rpk16_receiver"
-          ],
-          "mod_magazine": [
-            "5bed625c0db834001c062946"
-          ],
-          "mod_charge": [
-            "6130ca3fd92c473c77020dbd"
-          ],
-          "mod_stock_001": [
-            "6761779c48fa5c377e06fc3f"
-          ],
-          "mod_handguard": [
-            "medved_rpk16_handguard"
-          ],
-          "mod_barrel": [
-            "medved_rpk16_barrel"
-          ]
-        }
-      },
-      "ak103_gp25": {
-        "id": "5ac66d2e5acfc43b321d4b53",
-        "chance": 20,
-        "slots": {
-          "mod_gas_block": [
-            "medved_ak103_gp25_gas_block"
-          ],
-          "mod_launcher": [
-            "62e7e7bbe6da9612f743f1e0"
-          ],
-          "mod_muzzle": [
-            "5f633f791b231926f2329f13"
-          ],
-          "mod_pistol_grip": [
-            "5649ae4a4bdc2d1b2b8b4588"
-          ],
-          "mod_reciever": [
-            "medved_ak103_gp25_reciever"
-          ],
-          "mod_stock": [
-            "medved_ak103_gp25_stock"
-          ],
-          "mod_magazine": [
-            "59fafc5086f7740dbe19f6c3"
-          ],
-          "mod_charge": [
-            "6130ca3fd92c473c77020dbd"
-          ]
-        }
-      },
-      "pkm_police_knock": {
-        "id": "64637076203536ad5600c990",
-        "chance": 5,
-        "slots": {
-          "mod_pistolgrip": [
-            "6087e663132d4d12c81fd96b"
-          ],
-          "mod_magazine": [
-            "646372518610c40fc20204e8"
-          ],
-          "mod_stock": [
-            "6492e3a97df7d749100e29ee"
-          ],
-          "mod_barrel": [
-            "medved_pkm_barrel"
-          ],
-          "mod_handguard": [
-            "medved_pkm_handguard"
-          ],
-          "mod_sight_rear": [
-            "6492fb8253acae0af00a29b6"
-          ]
-        }
-      }
+    "equipment": {
+        "FirstPrimaryWeapon": {
+            "rpd_crowd_control_common": {
+                "id": "6513ef33e06849f06c0957ca",
+                "chance": 65,
+                "presetId": "6a4d05bc2373cd1c4e9ba8ea",
+                "slots": {
+                    "mod_magazine": [
+                        "6513f0a194c72326990a3868"
+                    ],
+                    "mod_stock": [
+                        "6513f1798cb24472490ee331"
+                    ],
+                    "mod_barrel": [
+                        "6513eff1e06849f06c0957d4"
+                    ],
+                    "mod_handguard": [
+                        "6513f05a94c72326990a3866"
+                    ],
+                    "mod_sight_rear": [
+                        "6513f153e63f29908d0ffaba"
+                    ]
+                }
+            },
+            "rpk16_line_holder_uncommon": {
+                "id": "5beed0f50db834001c062b12",
+                "chance": 30,
+                "presetId": "6a4d05bc2373cd1c4e9ba8ee",
+                "slots": {
+                    "mod_pistol_grip": [
+                        "6087e663132d4d12c81fd96b"
+                    ],
+                    "mod_reciever": [
+                        "5beec91a0db834001961942d"
+                    ],
+                    "mod_magazine": [
+                        "5bed625c0db834001c062946"
+                    ],
+                    "mod_stock_001": [
+                        "6761779c48fa5c377e06fc3f"
+                    ],
+                    "mod_handguard": [
+                        "5beec3e30db8340019619424"
+                    ],
+                    "mod_barrel": [
+                        "5beec2820db834001b095426"
+                    ]
+                }
+            },
+            "pkm_police_knock_rare": {
+                "id": "64637076203536ad5600c990",
+                "chance": 5,
+                "presetId": "6a4b16212f67c758c2529317",
+                "slots": {
+                    "mod_pistolgrip": [
+                        "6087e663132d4d12c81fd96b"
+                    ],
+                    "mod_magazine": [
+                        "646372518610c40fc20204e8"
+                    ],
+                    "mod_stock": [
+                        "6492e3a97df7d749100e29ee"
+                    ],
+                    "mod_barrel": [
+                        "646371faf2404ab67905c8e9"
+                    ],
+                    "mod_handguard": [
+                        "6491c6f6ef312a876705191b"
+                    ],
+                    "mod_sight_rear": [
+                        "6492fb8253acae0af00a29b6"
+                    ]
+                }
+            }
+        },
+        "Holster": {
+            "rsh12_final_notice": {
+                "id": "633ec7c2a6918cb895019c6c",
+                "chance": 100,
+                "presetId": "6a4d05f62373cd1c4e9ba8f3",
+                "slots": {
+                    "mod_magazine": [
+                        "633ec6ee025b096d320a3b15"
+                    ],
+                    "mod_pistol_grip": [
+                        "633ec8e4025b096d320a3b1e"
+                    ],
+                    "mod_tactical": [
+                        "56def37dd2720bec348b456a"
+                    ],
+                    "mod_scope": [
+                        "64785e7c19d732620e045e15"
+                    ]
+                }
+            }
+        },
+        "ArmorVest": {
+            "6b23 emr": {
+                "chance": 135
+            },
+            "6b13 emr": {
+                "chance": 75
+            },
+            "6b43": {
+                "chance": 35
+            }
+        },
+        "TacticalVest": {
+            "6sh112": {
+                "chance": 150
+            },
+            "tv-109": {
+                "chance": 110
+            },
+            "alpha vest": {
+                "chance": 20
+            }
+        },
+        "Headwear": {
+            "altyn_full": {
+                "id": "5aa7e276e5b5b000171d0647",
+                "chance": 100
+            },
+            "rys_t_full": {
+                "id": "5f60c74e3b85f6263c145586",
+                "chance": 85,
+                "slots": {
+                    "mod_equipment": [
+                        "5f60b85bbdb8e27dee3dc985"
+                    ],
+                    "Helmet_top": [
+                        "657bc285aab96fccee08bea3"
+                    ],
+                    "Helmet_back": [
+                        "657bc2c5a1c61ee0c3036333"
+                    ],
+                    "Helmet_ears": [
+                        "657bc2e7b30eca976305118d"
+                    ]
+                }
+            },
+            "maska_1sch": {
+                "id": "5c0919b50db834001b7ce3b9",
+                "chance": 70
+            },
+            "vulkan_5": {
+                "id": "5ca20ee186f774799474abc2",
+                "chance": 55
+            }
+        },
+        "Eyewear": {
+            "tactical glasses": {
+                "chance": 25
+            },
+            "dundukk orange": {
+                "chance": 10
+            }
+        },
+        "FaceCover": {
+            "cold fear": {
+                "chance": 85
+            },
+            "balaclava": {
+                "chance": 65
+            }
+        },
+        "SecondPrimaryWeapon": {
+            "ak103_riot_signal_gp25": {
+                "id": "5ac66d2e5acfc43b321d4b53",
+                "chance": 100,
+                "presetId": "6a4d05bc2373cd1c4e9ba8f1",
+                "slots": {
+                    "mod_gas_block": [
+                        "59d64ec286f774171d1e0a42"
+                    ],
+                    "mod_launcher": [
+                        "62e7e7bbe6da9612f743f1e0"
+                    ],
+                    "mod_muzzle": [
+                        "5f633f791b231926f2329f13"
+                    ],
+                    "mod_pistol_grip": [
+                        "5649ae4a4bdc2d1b2b8b4588"
+                    ],
+                    "mod_reciever": [
+                        "5649af884bdc2d1b2b8b4589"
+                    ],
+                    "mod_stock": [
+                        "5ac78eaf5acfc4001926317a"
+                    ],
+                    "mod_magazine": [
+                        "59fafc5086f7740dbe19f6c3"
+                    ],
+                    "mod_charge": [
+                        "6130ca3fd92c473c77020dbd"
+                    ]
+                }
+            }
+        },
+        "Backpack": {},
+        "Earpiece": {}
     },
-    "Holster": {
-      "grach": {
-        "chance": 100
-      }
-    },
-    "ArmorVest": {
-      "6b23 emr": {
-        "chance": 135
-      },
-      "6b13 emr": {
-        "chance": 75
-      },
-      "6b43": {
-        "chance": 35
-      }
-    },
-    "TacticalVest": {
-      "6sh112": {
-        "chance": 150
-      },
-      "tv-109": {
-        "chance": 110
-      },
-      "alpha vest": {
-        "chance": 20
-      }
-    },
-    "Headwear": {
-      "ulach black": {
-        "chance": 135
-      },
-      "6b47 emr": {
-        "chance": 75
-      },
-      "6b47": {
-        "chance": 35
-      },
-      "ulach coyote": {
-        "chance": 20
-      },
-      "uxpro": {
-        "chance": 0
-      }
-    },
-    "Eyewear": {
-      "tactical glasses": {
-        "chance": 25
-      },
-      "dundukk orange": {
-        "chance": 10
-      }
-    },
-    "FaceCover": {
-      "cold fear": {
-        "chance": 85
-      },
-      "balaclava": {
-        "chance": 65
-      }
-    }
-  },
-  "weapons": {},
-  "categories": {}
+    "weapons": {},
+    "categories": {}
 }
