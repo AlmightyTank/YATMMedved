@@ -35,7 +35,7 @@ public record ModMetadata : AbstractModMetadata
     public override string License { get; init; } = "MIT";
 }
 
-[Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 10)]
+[Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 7)]
 public class YATMModPreload(ModHelper modHelper, YATMLogger logger) : IOnLoad
 {
     public static MainConfig ModConfig { get; private set; } = new();

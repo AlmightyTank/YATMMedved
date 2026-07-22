@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YATMMedved.Loaders;
 
-[Injectable(InjectionType.Singleton, TypePriority = OnLoadOrder.PostDBModLoader + 20)]
+[Injectable(InjectionType.Singleton, TypePriority = OnLoadOrder.PostDBModLoader + 2)]
 public sealed class YATMWTTLoader(
     WTTServerCommonLib.WTTServerCommonLib wttCommon,
     YATMLogger logger) : IOnLoad
